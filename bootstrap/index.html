@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, minimal-ui">
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/kss.css">
   <link rel="stylesheet" href="public/style.css">
 
 </head>
@@ -103,8 +104,15 @@
   <!-- SCRIPTS -->
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <script src="public/less.js"></script>
   <script src="public/kss.js"></script>
+  <script src="public/prettify.js"></script>
+  <script>
+    jQuery(document).ready(function(){
+      // Ensure code blocks are highlighted properly...
+      jQuery('pre>code').addClass('prettyprint');
+      prettyPrint();
+    });
+  </script>
 
 </div>
 </body>
