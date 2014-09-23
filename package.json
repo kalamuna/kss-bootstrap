@@ -1,0 +1,25 @@
+{
+  "name": "kss-bootstrap",
+  "description": "A KSS template and style guide for Bootstrap.",
+  "author": "Rob Loach (http://github.com/robloach)",
+  "dependencies": {
+    "kss": "^1.0.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/kss-node styleguide out -t bootstrap"
+  },
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/RobLoach/kss-bootstrap"
+	},
+	"bugs": {
+	  "url": "https://github.com/robloach/kss-bootstrap/issues"
+	},
+	"license": "MIT",
+  "maintainers": [
+    "RobLoach (https://github.com/RobLoach)"
+  ],
+  "contributors": [
+    "RobLoach (https://github.com/RobLoach)"
+  ]
+}
