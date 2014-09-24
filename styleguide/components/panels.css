@@ -3,22 +3,78 @@ Panels
 
 While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.
 
-Markup: <div class="panel {$modifiers}">
+Styleguide 2.19
+*/
+
+/*
+Basic example
+
+By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.
+
+Markup:
+<div class="panel panel-default">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+Styleguide 2.19.1
+*/
+
+/*
+Panel with heading
+
+Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any <code<h1></code>-<code><h6></code> with a <code>.panel-title</code> class to add a pre-styled heading.
+
+For proper link coloring, be sure to place links in headings within <code>.panel-title</code>.
+
+Markup:
+<div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+<div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Panel title</h3>
   </div>
   <div class="panel-body">
     Panel content
   </div>
+</div>
+
+Styleguide 2.19.2
+*/
+
+/*
+Panel with footer
+
+Wrap buttons or secondary text in <code>.panel-footer</code>. Note that panel footers do not inherit colors and borders when using contextual variations as they are not meant to be in the foreground.
+
+Markup:
+<div class="panel panel-default">
+  <div class="panel-body">
+    Panel content
+  </div>
   <div class="panel-footer">Panel footer</div>
 </div>
 
-.panel-default - default panel
-.panel-primary - default primary
-.panel-success - default success
-.panel-info - default info
-.panel-warning - default warning
-.panel-danger - default danger
+Styleguide 2.19.3
+*/
 
-Styleguide 2.19
+/*
+Contextual alternatives
+
+Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.
+
+<div class="panel {$modifier}">...</div>
+
+.panel-primary - Primary
+.panel-success - Success
+.panel-info - Information
+.panel-warning - Warning
+.panel-danger - Danger
+
+Styleguide 2.19.4
 */
