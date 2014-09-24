@@ -40,7 +40,7 @@
   </nav>
 
   <div class="container">
-    <div class="col-md-12">
+    <div class="col-md-9">
       <div role="main">
         <article>
           {{#if overview}}
@@ -57,10 +57,10 @@
             }}
             {{#eachSection rootNumber}}
               {{#ifDepth 1}}
-                <h1 class="kss-title"><span class="kss-ref">{{ reference }}.0</span> - {{ header }}</h1>
+                <h1 class="kss-title" id="{{ reference }}">{{ header }}</h1>
               {{else}}
                <section class="kss-depth-{{ refDepth }}">
-                <h1 class="kss-title"><span class="kss-ref">{{ reference }}</span> - {{ header }}</h1>
+                <h1 class="kss-title" id="{{ reference }}"><span class="kss-ref">{{ reference }}</span> - {{ header }}</h1>
               {{/ifDepth}}
                 {{#ifAny markup}}
                     <div class="kss-box">{{{description}}}</div>
@@ -96,6 +96,27 @@
             {{/eachSection}}
           {{/if}}
         </article>
+      </div>
+    </div>
+    <div class="col-md-3">
+
+
+      <div class="list-group">
+            {{#eachSection rootNumber}}
+              {{#ifDepth 1}}
+                <a href="#" class="list-group-item disabled">
+                  <h3 class="list-group-item-heading">{{ header }}</h4>
+                </a>
+              {{else}}
+                {{#ifDepth 2}}
+                  <a href="#{{reference}}" class="list-group-item">
+                    <h4 class="list-group-item-heading"><span class="kss-ref badge pull-right" >{{ reference }}</span> {{ header }}</h4>
+                  </a>
+                {{else}}
+                  <a href="#{{reference}}" class="list-group-item"><span class="kss-ref badge">{{ reference }}</span> {{ header }}</a>
+                {{/ifDepth}}
+              {{/ifDepth}}
+            {{/eachSection}}
       </div>
     </div>
   </div>
