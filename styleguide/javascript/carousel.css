@@ -37,7 +37,11 @@ Markup:
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
-<script>window.onload = function() { jQuery(document).ready(function() { jQuery('#carousel-example-generic').carousel(); }); }</script>
+<script>window.addEventListener("load", function() {
+  jQuery(document).ready(function() {
+    jQuery('#carousel-example-generic').carousel();
+  });
+});</script>
 
 Styleguide 3.11
 */
