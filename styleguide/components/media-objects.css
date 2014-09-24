@@ -5,7 +5,7 @@ Abstract object styles for building various types of components (like blog comme
 
 <div class="media">
   <a class="pull-left" href="#">
-    <img class="media-object" src="http://placehold.it/140x140 alt="...">
+    <img class="media-object" src="http://placehold.it/140x140" alt="...">
   </a>
   <div class="media-body">
     <h4 class="media-heading">Media heading</h4>
