@@ -64,13 +64,8 @@
                 
                     <div class="kss-box"><p>Wrap the dropdown&apos;s trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then add the menu&apos;s HTML.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="dropdown">
+
+                        <div class="dropdown">
   <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
     Dropdown <span class="caret"></span>
   </a>
@@ -81,12 +76,11 @@
       <li role="presentation" class="divider"></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
   </ul>
-</div></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;div class=&quot;dropdown&quot;&gt;
+</div>
+
+                        
+
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;dropdown&quot;&gt;
   &lt;a id=&quot;dLabel&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; data-target=&quot;#&quot; href=&quot;/page.html&quot;&gt;
     Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
   &lt;/a&gt;
@@ -98,7 +92,7 @@
       &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -111,66 +105,63 @@
                 
                     <div class="kss-box"><p>Group of buttons</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="btn-group {$modifiers}">
+
+                        <div class="btn-group {$modifiers}">
   <button type="button" class="btn btn-default">Left</button>
   <button type="button" class="btn btn-default">Middle</button>
   <button type="button" class="btn btn-default">Right</button>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>larger</p>
-</td>
-                        <td class="kss-mod-name"><code>.btn-group-lg</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="btn-group btn-group-lg">
+</div>
+
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.btn-group-lg</code></h4><p>larger</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="btn-group btn-group-lg">
   <button type="button" class="btn btn-default">Left</button>
   <button type="button" class="btn btn-default">Middle</button>
   <button type="button" class="btn btn-default">Right</button>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>smaller</p>
-</td>
-                        <td class="kss-mod-name"><code>.btn-group-sm</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="btn-group btn-group-sm">
+</div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.btn-group-sm</code></h4><p>smaller</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="btn-group btn-group-sm">
   <button type="button" class="btn btn-default">Left</button>
   <button type="button" class="btn btn-default">Middle</button>
   <button type="button" class="btn btn-default">Right</button>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>extra smaller</p>
-</td>
-                        <td class="kss-mod-name"><code>.btn-group-xs</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="btn-group btn-group-xs">
+</div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.btn-group-xs</code></h4><p>extra smaller</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="btn-group btn-group-xs">
   <button type="button" class="btn btn-default">Left</button>
   <button type="button" class="btn btn-default">Middle</button>
   <button type="button" class="btn btn-default">Right</button>
-</div></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;div class=&quot;btn-group {$modifiers}&quot;&gt;
+</div>
+                            </div>
+                          </div>
+                        
+
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;btn-group {$modifiers}&quot;&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
 &lt;/div&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -183,105 +174,105 @@
                 
                     <div class="kss-box"><p>Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="nav {$modifiers}">
+
+                        <ul class="nav {$modifiers}">
   <li class="active"><a href="#">Home</a></li>
   <li><a href="#">Profile</a></li>
   <li><a href="#">Messages</a></li>
-</ul></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>simple nav</p>
-</td>
-                        <td class="kss-mod-name"><code>.nav-tabs</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="nav nav-tabs">
+</ul>
+
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.nav-tabs</code></h4><p>simple nav</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <ul class="nav nav-tabs">
   <li class="active"><a href="#">Home</a></li>
   <li><a href="#">Profile</a></li>
   <li><a href="#">Messages</a></li>
-</ul></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>nav pills</p>
-</td>
-                        <td class="kss-mod-name"><code>.nav-pills</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="nav nav-pills">
+</ul>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.nav-pills</code></h4><p>nav pills</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <ul class="nav nav-pills">
   <li class="active"><a href="#">Home</a></li>
   <li><a href="#">Profile</a></li>
   <li><a href="#">Messages</a></li>
-</ul></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>simple nav stacked</p>
-</td>
-                        <td class="kss-mod-name"><code>.nav-tabs.nav-stacked</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="nav nav-tabs nav-stacked">
+</ul>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.nav-tabs.nav-stacked</code></h4><p>simple nav stacked</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <ul class="nav nav-tabs nav-stacked">
   <li class="active"><a href="#">Home</a></li>
   <li><a href="#">Profile</a></li>
   <li><a href="#">Messages</a></li>
-</ul></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>nav pills stacked</p>
-</td>
-                        <td class="kss-mod-name"><code>.nav-pills.nav-stacked</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="nav nav-pills nav-stacked">
+</ul>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.nav-pills.nav-stacked</code></h4><p>nav pills stacked</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <ul class="nav nav-pills nav-stacked">
   <li class="active"><a href="#">Home</a></li>
   <li><a href="#">Profile</a></li>
   <li><a href="#">Messages</a></li>
-</ul></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>simple nav justified</p>
-</td>
-                        <td class="kss-mod-name"><code>.nav-tabs.nav-justified</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="nav nav-tabs nav-justified">
+</ul>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.nav-tabs.nav-justified</code></h4><p>simple nav justified</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <ul class="nav nav-tabs nav-justified">
   <li class="active"><a href="#">Home</a></li>
   <li><a href="#">Profile</a></li>
   <li><a href="#">Messages</a></li>
-</ul></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>nav pills justified</p>
-</td>
-                        <td class="kss-mod-name"><code>.nav-pills.nav-justified</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="nav nav-pills nav-justified">
+</ul>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.nav-pills.nav-justified</code></h4><p>nav pills justified</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <ul class="nav nav-pills nav-justified">
   <li class="active"><a href="#">Home</a></li>
   <li><a href="#">Profile</a></li>
   <li><a href="#">Messages</a></li>
-</ul></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;ul class=&quot;nav {$modifiers}&quot;&gt;
+</ul>
+                            </div>
+                          </div>
+                        
+
+                        <pre class="prettyprint lang-html">&lt;ul class=&quot;nav {$modifiers}&quot;&gt;
   &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -294,27 +285,21 @@
                 
                     <div class="kss-box"><p>Indicate the current page&apos;s location within a navigational hierarchy.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ol class="breadcrumb">
+
+                        <ol class="breadcrumb">
   <li><a href="#">Home</a></li>
   <li><a href="#">Library</a></li>
   <li class="active">Data</li>
-</ol></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;ol class=&quot;breadcrumb&quot;&gt;
+</ol>
+
+                        
+
+                        <pre class="prettyprint lang-html">&lt;ol class=&quot;breadcrumb&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
   &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
 &lt;/ol&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -327,13 +312,8 @@
                 
                     <div class="kss-box"><p>Provide pagination links for your site or app with the multi-page pagination component, or the simpler pager alternative.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="pagination {$modifiers}">
+
+                        <ul class="pagination {$modifiers}">
   <li><a href="#">&laquo;</a></li>
     <li><a href="#">Previous</a></li>
   <li><a href="#">1</a></li>
@@ -343,16 +323,16 @@
   <li><a href="#">5</a></li>
   <li><a href="#">Next</a></li>
   <li><a href="#">&raquo;</a></li>
-</ul></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>larger</p>
-</td>
-                        <td class="kss-mod-name"><code>.pagination-lg</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="pagination pagination-lg">
+</ul>
+
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.pagination-lg</code></h4><p>larger</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <ul class="pagination pagination-lg">
   <li><a href="#">&laquo;</a></li>
     <li><a href="#">Previous</a></li>
   <li><a href="#">1</a></li>
@@ -362,16 +342,17 @@
   <li><a href="#">5</a></li>
   <li><a href="#">Next</a></li>
   <li><a href="#">&raquo;</a></li>
-</ul></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>smaller</p>
-</td>
-                        <td class="kss-mod-name"><code>.pagination-sm</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="pagination pagination-sm">
+</ul>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.pagination-sm</code></h4><p>smaller</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <ul class="pagination pagination-sm">
   <li><a href="#">&laquo;</a></li>
     <li><a href="#">Previous</a></li>
   <li><a href="#">1</a></li>
@@ -381,12 +362,12 @@
   <li><a href="#">5</a></li>
   <li><a href="#">Next</a></li>
   <li><a href="#">&raquo;</a></li>
-</ul></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;ul class=&quot;pagination {$modifiers}&quot;&gt;
+</ul>
+                            </div>
+                          </div>
+                        
+
+                        <pre class="prettyprint lang-html">&lt;ul class=&quot;pagination {$modifiers}&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
@@ -397,7 +378,7 @@
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -410,73 +391,73 @@
                 
                     <div class="kss-box"><p>Add any of the below mentioned modifier classes to change the appearance of a label.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><h3>Example heading <span class="label {$modifiers}">New</span></h3></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Default</p>
-</td>
-                        <td class="kss-mod-name"><code>.label-default</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><h3>Example heading <span class="label label-default">New</span></h3></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Primary</p>
-</td>
-                        <td class="kss-mod-name"><code>.label-primary</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><h3>Example heading <span class="label label-primary">New</span></h3></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Success</p>
-</td>
-                        <td class="kss-mod-name"><code>.label-success</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><h3>Example heading <span class="label label-success">New</span></h3></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Info</p>
-</td>
-                        <td class="kss-mod-name"><code>.label-info</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><h3>Example heading <span class="label label-info">New</span></h3></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Warning</p>
-</td>
-                        <td class="kss-mod-name"><code>.label-warning</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><h3>Example heading <span class="label label-warning">New</span></h3></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Danger</p>
-</td>
-                        <td class="kss-mod-name"><code>.label-danger</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><h3>Example heading <span class="label label-danger">New</span></h3></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;h3&gt;Example heading &lt;span class=&quot;label {$modifiers}&quot;&gt;New&lt;/span&gt;&lt;/h3&gt;</pre>
-                    </div>
+
+                        <h3>Example heading <span class="label {$modifiers}">New</span></h3>
+
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.label-default</code></h4><p>Default</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <h3>Example heading <span class="label label-default">New</span></h3>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.label-primary</code></h4><p>Primary</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <h3>Example heading <span class="label label-primary">New</span></h3>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.label-success</code></h4><p>Success</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <h3>Example heading <span class="label label-success">New</span></h3>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.label-info</code></h4><p>Info</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <h3>Example heading <span class="label label-info">New</span></h3>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.label-warning</code></h4><p>Warning</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <h3>Example heading <span class="label label-warning">New</span></h3>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.label-danger</code></h4><p>Danger</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <h3>Example heading <span class="label label-danger">New</span></h3>
+                            </div>
+                          </div>
+                        
+
+                        <pre class="prettyprint lang-html">&lt;h3&gt;Example heading &lt;span class=&quot;label {$modifiers}&quot;&gt;New&lt;/span&gt;&lt;/h3&gt;</pre>
+                      
                 
               
                 </section>
@@ -489,19 +470,13 @@
                 
                     <div class="kss-box"><p>Easily highlight new or unread items by adding a <code>&lt;span class=&quot;badge&quot;&gt;</code> to links, Bootstrap navs, and more.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><a href="#">Inbox <span class="badge">42</span></a></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/a&gt;</pre>
-                    </div>
+
+                        <a href="#">Inbox <span class="badge">42</span></a>
+
+                        
+
+                        <pre class="prettyprint lang-html">&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/a&gt;</pre>
+                      
                 
               
                 </section>
@@ -514,31 +489,25 @@
                 
                     <div class="kss-box"><p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="jumbotron">
+
+                        <div class="jumbotron">
   <div class="container">
       <h1>Hello, world!</h1>
       <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
       <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
     </div>
-</div></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;div class=&quot;jumbotron&quot;&gt;
+</div>
+
+                        
+
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;jumbotron&quot;&gt;
   &lt;div class=&quot;container&quot;&gt;
       &lt;h1&gt;Hello, world!&lt;/h1&gt;
       &lt;p&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
       &lt;p&gt;&lt;a class=&quot;btn btn-primary btn-lg&quot; role=&quot;button&quot;&gt;Learn more&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -551,61 +520,59 @@
                 
                     <div class="kss-box"><p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="alert {$modifiers}">Well done! You successfully read this important alert message.</div>
-<div class="alert {$modifiers} alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>alert success</p>
-</td>
-                        <td class="kss-mod-name"><code>.alert-success</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="alert alert-success">Well done! You successfully read this important alert message.</div>
-<div class="alert alert-success alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>alert info</p>
-</td>
-                        <td class="kss-mod-name"><code>.alert-info</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="alert alert-info">Well done! You successfully read this important alert message.</div>
-<div class="alert alert-info alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>alert warning</p>
-</td>
-                        <td class="kss-mod-name"><code>.alert-warning</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="alert alert-warning">Well done! You successfully read this important alert message.</div>
-<div class="alert alert-warning alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>alert danger</p>
-</td>
-                        <td class="kss-mod-name"><code>.alert-danger</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="alert alert-danger">Well done! You successfully read this important alert message.</div>
-<div class="alert alert-danger alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;div class=&quot;alert {$modifiers}&quot;&gt;Well done! You successfully read this important alert message.&lt;/div&gt;
+
+                        <div class="alert {$modifiers}">Well done! You successfully read this important alert message.</div>
+<div class="alert {$modifiers} alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div>
+
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.alert-success</code></h4><p>alert success</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="alert alert-success">Well done! You successfully read this important alert message.</div>
+<div class="alert alert-success alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.alert-info</code></h4><p>alert info</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="alert alert-info">Well done! You successfully read this important alert message.</div>
+<div class="alert alert-info alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.alert-warning</code></h4><p>alert warning</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="alert alert-warning">Well done! You successfully read this important alert message.</div>
+<div class="alert alert-warning alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.alert-danger</code></h4><p>alert danger</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="alert alert-danger">Well done! You successfully read this important alert message.</div>
+<div class="alert alert-danger alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div>
+                            </div>
+                          </div>
+                        
+
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;alert {$modifiers}&quot;&gt;Well done! You successfully read this important alert message.&lt;/div&gt;
 &lt;div class=&quot;alert {$modifiers} alert-dismissable&quot;&gt;Well done! You successfully read this important alert message.&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;&lt;/div&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -618,13 +585,8 @@
                 
                     <div class="kss-box"><p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="progress">
+
+                        <div class="progress">
   <div class="progress-bar {$modifiers}" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     <span class="sr-only">60% Complete</span>
   </div>
@@ -633,16 +595,16 @@
   <div class="progress-bar {$modifiers}" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Success</p>
-</td>
-                        <td class="kss-mod-name"><code>.progress-bar-success</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="progress">
+</div>
+
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.progress-bar-success</code></h4><p>Success</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="progress">
   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     <span class="sr-only">60% Complete</span>
   </div>
@@ -651,16 +613,17 @@
   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Information</p>
-</td>
-                        <td class="kss-mod-name"><code>.progress-bar-info</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="progress">
+</div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.progress-bar-info</code></h4><p>Information</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="progress">
   <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     <span class="sr-only">60% Complete</span>
   </div>
@@ -669,16 +632,17 @@
   <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Warning</p>
-</td>
-                        <td class="kss-mod-name"><code>.progress-bar-warning</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="progress">
+</div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.progress-bar-warning</code></h4><p>Warning</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="progress">
   <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     <span class="sr-only">60% Complete</span>
   </div>
@@ -687,16 +651,17 @@
   <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Danger</p>
-</td>
-                        <td class="kss-mod-name"><code>.progress-bar-danger</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="progress">
+</div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.progress-bar-danger</code></h4><p>Danger</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="progress">
   <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     <span class="sr-only">60% Complete</span>
   </div>
@@ -705,12 +670,12 @@
   <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
-</div></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;div class=&quot;progress&quot;&gt;
+</div>
+                            </div>
+                          </div>
+                        
+
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;progress&quot;&gt;
   &lt;div class=&quot;progress-bar {$modifiers}&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%;&quot;&gt;
     &lt;span class=&quot;sr-only&quot;&gt;60% Complete&lt;/span&gt;
   &lt;/div&gt;
@@ -720,7 +685,7 @@
     60%
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -757,31 +722,25 @@
                 
                     <div class="kss-box"><p>List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="list-group">
+
+                        <ul class="list-group">
     <li class="list-group-item">Cras justo odio</li>
     <li class="list-group-item">Dapibus ac facilisis in</li>
     <li class="list-group-item">Morbi leo risus</li>
     <li class="list-group-item">Porta ac consectetur ac</li>
     <li class="list-group-item">Vestibulum at eros</li>
-</ul></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;ul class=&quot;list-group&quot;&gt;
+</ul>
+
+                        
+
+                        <pre class="prettyprint lang-html">&lt;ul class=&quot;list-group&quot;&gt;
     &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
     &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
     &lt;li class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;/li&gt;
     &lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;/li&gt;
     &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
 &lt;/ul&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -794,27 +753,21 @@
                 
                     <div class="kss-box"><p>Add the badges component to any list group item and it will automatically be positioned on the right.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><ul class="list-group">
+
+                        <ul class="list-group">
     <li class="list-group-item"><span class="badge">14</span>Cras justo odio</li>
     <li class="list-group-item"><span class="badge">2</span>Dapibus ac facilisis in</li>
     <li class="list-group-item"><span class="badge">1</span>Morbi leo risus</li>
-</ul></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;ul class=&quot;list-group&quot;&gt;
+</ul>
+
+                        
+
+                        <pre class="prettyprint lang-html">&lt;ul class=&quot;list-group&quot;&gt;
     &lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;14&lt;/span&gt;Cras justo odio&lt;/li&gt;
     &lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;2&lt;/span&gt;Dapibus ac facilisis in&lt;/li&gt;
     &lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;1&lt;/span&gt;Morbi leo risus&lt;/li&gt;
 &lt;/ul&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -841,27 +794,21 @@
                 
                     <div class="kss-box"><p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="panel panel-default">
+
+                        <div class="panel panel-default">
   <div class="panel-body">
     Basic panel example
   </div>
-</div></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+</div>
+
+                        
+
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
   &lt;div class=&quot;panel-body&quot;&gt;
     Basic panel example
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -877,13 +824,8 @@
 </p>
 <p>For proper link coloring, be sure to place links in headings within <code>.panel-title</code>.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="panel panel-default">
+
+                        <div class="panel panel-default">
   <div class="panel-heading">Panel heading without title</div>
   <div class="panel-body">
     Panel content
@@ -896,12 +838,11 @@
   <div class="panel-body">
     Panel content
   </div>
-</div></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+</div>
+
+                        
+
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
   &lt;div class=&quot;panel-heading&quot;&gt;Panel heading without title&lt;/div&gt;
   &lt;div class=&quot;panel-body&quot;&gt;
     Panel content
@@ -915,7 +856,7 @@
     Panel content
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -928,29 +869,23 @@
                 
                     <div class="kss-box"><p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note that panel footers do not inherit colors and borders when using contextual variations as they are not meant to be in the foreground.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="panel panel-default">
+
+                        <div class="panel panel-default">
   <div class="panel-body">
     Panel content
   </div>
   <div class="panel-footer">Panel footer</div>
-</div></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+</div>
+
+                        
+
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
   &lt;div class=&quot;panel-body&quot;&gt;
     Panel content
   &lt;/div&gt;
   &lt;div class=&quot;panel-footer&quot;&gt;Panel footer&lt;/div&gt;
 &lt;/div&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
@@ -963,105 +898,104 @@
                 
                     <div class="kss-box"><p>Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
 </div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="panel {$modifiers}">
+
+                        <div class="panel {$modifiers}">
   <div class="panel-heading">
     <h3 class="panel-title">Panel title</h3>
   </div>
   <div class="panel-body">
     Panel content
   </div>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Primary</p>
-</td>
-                        <td class="kss-mod-name"><code>.panel-primary</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="panel panel-primary">
+</div>
+
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.panel-primary</code></h4><p>Primary</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Panel title</h3>
   </div>
   <div class="panel-body">
     Panel content
   </div>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Success</p>
-</td>
-                        <td class="kss-mod-name"><code>.panel-success</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="panel panel-success">
+</div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.panel-success</code></h4><p>Success</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="panel panel-success">
   <div class="panel-heading">
     <h3 class="panel-title">Panel title</h3>
   </div>
   <div class="panel-body">
     Panel content
   </div>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Information</p>
-</td>
-                        <td class="kss-mod-name"><code>.panel-info</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="panel panel-info">
+</div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.panel-info</code></h4><p>Information</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="panel panel-info">
   <div class="panel-heading">
     <h3 class="panel-title">Panel title</h3>
   </div>
   <div class="panel-body">
     Panel content
   </div>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Warning</p>
-</td>
-                        <td class="kss-mod-name"><code>.panel-warning</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="panel panel-warning">
+</div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.panel-warning</code></h4><p>Warning</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="panel panel-warning">
   <div class="panel-heading">
     <h3 class="panel-title">Panel title</h3>
   </div>
   <div class="panel-body">
     Panel content
   </div>
-</div></td>
-                      </tr>
-                    
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc"><p>Danger</p>
-</td>
-                        <td class="kss-mod-name"><code>.panel-danger</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2"><div class="panel panel-danger">
+</div>
+                            </div>
+                          </div>
+                        
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>.panel-danger</code></h4><p>Danger</p>
+
+                            </div>
+                            <div class="panel-body">
+                              <div class="panel panel-danger">
   <div class="panel-heading">
     <h3 class="panel-title">Panel title</h3>
   </div>
   <div class="panel-body">
     Panel content
   </div>
-</div></td>
-                      </tr>
-                    
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">&lt;div class=&quot;panel {$modifiers}&quot;&gt;
+</div>
+                            </div>
+                          </div>
+                        
+
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;panel {$modifiers}&quot;&gt;
   &lt;div class=&quot;panel-heading&quot;&gt;
     &lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;/h3&gt;
   &lt;/div&gt;
@@ -1069,7 +1003,7 @@
     Panel content
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-                    </div>
+                      
                 
               
                 </section>
