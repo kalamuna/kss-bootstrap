@@ -9,3 +9,9 @@ The *styleguide* directory provides a styleguide for Bootstrap, while the *boots
 
     npm install kss -g
     kss-node styleguide out -t bootstrap
+
+
+## Deploy
+
+    npm test
+    gulp deploy
