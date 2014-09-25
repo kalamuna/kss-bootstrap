@@ -1,5 +1,6 @@
 {
   "name": "kss-bootstrap",
+  "version": "0.0.2",
   "description": "A KSS template and style guide for Bootstrap.",
   "author": "Rob Loach (http://github.com/robloach)",
   "dependencies": {
