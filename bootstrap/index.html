@@ -59,27 +59,22 @@
               {{/ifDepth}}
                 {{#ifAny markup}}
                     <div class="kss-box">{{{description}}}</div>
-                    <table class="kss-mod-list">
-                      <tr class="kss-mod-desc-group">
-                        <!--<td class="kss-mod-desc"><p>Default styling</p></td>-->
-                        <td class="kss-mod-name"></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2">{{modifierMarkup}}</td>
-                      </tr>
-                    {{#eachModifier}}
-                      <tr class="kss-mod-desc-group">
-                        <td class="kss-mod-desc">{{{description}}}</td>
-                        <td class="kss-mod-name"><code>{{name}}</code></td>
-                      </tr>
-                      <tr class="kss-mod-example">
-                        <td colspan="2">{{modifierMarkup}}</td>
-                      </tr>
-                    {{/eachModifier}}
-                    </table>
-                    <div class="kss-markup">
-                      <pre class="prettyprint lang-html">{{markup}}</pre>
-                    </div>
+
+                        {{modifierMarkup}}
+
+                        {{#eachModifier}}
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4><code>{{name}}</code></h4>{{{description}}}
+                            </div>
+                            <div class="panel-body">
+                              {{modifierMarkup}}
+                            </div>
+                          </div>
+                        {{/eachModifier}}
+
+                        <pre class="prettyprint lang-html">{{markup}}</pre>
+                      
                 {{else}}
                     {{#if description}}
                       {{{description}}}
