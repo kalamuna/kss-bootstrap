@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap Styleguide</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width, minimal-ui">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="public/prettify.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+<div>
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-styleguide-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Bootstrap Styleguide</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-styleguide-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          
+            <li><a href="section-1.html"><!--1.0: -->CSS</a></li>
+          
+            <li><a href="section-2.html"><!--2.0: -->Components</a></li>
+          
+            <li><a href="section-3.html"><!--3.0: -->JavaScript</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="col-md-9">
+      <div role="main">
+        <article>
+          
+            <h1>Bootstrap Styleguide</h1>
+<p>A <a href="https://en.wikipedia.org/wiki/Style_guide">style guide</a> provides a means of documenting basic rules or features that will allow you to ensure consistency in the design. It makes your website look and read consistently, translating to a better user experience, higher usability and ultimately fulfils a website’s goals more effectively.
+
+</p>
+<p>Provided is a <a href="http://warpspire.com/kss/">KSS</a>-powered <a href="http://getbootstrap.com">Bootstrap</a> style guide to test various Bootstrap components in three different sections:
+
+</p>
+<ul>
+<li><a href="section-1.html">CSS</a></li>
+<li><a href="section-2.html">Components</a></li>
+<li><a href="section-3.html">JavaScript</a></li>
+</ul>
+<h2>Download</h2>
+<p>Visit the <a href="https://github.com/RobLoach/kss-bootstrap">KSS Bootstrap</a> project to get both the KSS Styleguide components, and the Bootstrap kss-node template.</p>
+
+          
+        </article>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="list-group" data-spy="affix" id="sidebar">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="public/kss.js"></script>
+  <script src="public/prettify.js"></script>
+  <script>
+    jQuery(document).ready(function(){
+      // Ensure code blocks are highlighted properly...
+      jQuery('pre>code').addClass('prettyprint');
+      prettyPrint();
+
+      // Set the navigation to be the correct width.
+      jQuery('#sidebar').width(jQuery('.col-md-3').width());
+    });
+  </script>
+
+</div>
+</body>
+</html>
