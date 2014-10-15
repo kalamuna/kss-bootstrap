@@ -27,13 +27,9 @@
       <div class="collapse navbar-collapse navbar-styleguide-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="index.html">Home</a></li>
-          
             <li><a href="section-1.html"><!--1.0: -->CSS</a></li>
-          
             <li><a href="section-2.html"><!--2.0: -->Components</a></li>
-          
             <li><a href="section-3.html"><!--3.0: -->JavaScript</a></li>
-          
         </ul>
       </div>
     </div>
@@ -42,85 +38,50 @@
     <div class="col-md-9">
       <div role="main">
         <article>
-          
 
-            
-            
-              
                 <h1 class="kss-title" id="1">CSS</h1>
-              
-                
-                    
                       <p>Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system.</p>
 
-                    
-                
-               
-            
-              
-               <section class="kss-depth-2">
+                              <section class="kss-depth-2">
                 <h2 class="kss-title" id="1.1"><span class="kss-ref badge pull-right">1.1</span> Code</h1>
-              
-                
                     <div class="kss-box"><p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
 </div>
 
                         For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
-                        
 
                         <pre class="prettyprint lang-html">For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped as inline.</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-3">
                 <h3 class="kss-title" id="1.1.1"><span class="kss-ref badge pull-right">1.1.1</span> User input</h1>
-              
-                
                     <div class="kss-box"><p>Use the &lt;kbd&gt; to indicate input that is typically entered via keyboard.</p>
 </div>
 
                         To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
 To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 
-                        
 
                         <pre class="prettyprint lang-html">To switch directories, type &lt;kbd&gt;cd&lt;/kbd&gt; followed by the name of the directory.&lt;br&gt;
 To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt;/kbd&gt;&lt;/kbd&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-3">
                 <h3 class="kss-title" id="1.1.2"><span class="kss-ref badge pull-right">1.1.2</span> Basic block</h1>
-              
-                
                     <div class="kss-box"><p>Use &lt;pre&gt; for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
 </div>
 
                         <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
 
-                        
 
                         <pre class="prettyprint lang-html">&lt;pre&gt;&amp;lt;p&amp;gt;Sample text here...&amp;lt;/p&amp;gt;&lt;/pre&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-2">
                 <h2 class="kss-title" id="1.2"><span class="kss-ref badge pull-right">1.2</span> Tables</h1>
-              
-                
                     <div class="kss-box"><p>For basic styling-light padding and only horizontal dividers-add the base class .table to any &lt;table&gt;. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we have opted to isolate our custom table styles.</p>
 </div>
 
@@ -155,7 +116,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
       </tbody>
 </table>
 
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.table-striped</code></h4><p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code></p>
@@ -194,7 +154,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 </table>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.table-bordered</code></h4><p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
@@ -233,7 +192,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 </table>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.table-hover</code></h4><p>Add <code>.table-hover</code> to enable a hover state on table rows within a &lt;tbody&gt;.</p>
@@ -272,7 +230,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 </table>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.table-condensed</code></h4><p>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.</p>
@@ -311,7 +268,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 </table>
                             </div>
                           </div>
-                        
 
                         <pre class="prettyprint lang-html">&lt;table class=&quot;table {$modifiers}&quot;&gt;
     &lt;thead&gt;
@@ -344,16 +300,10 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
       &lt;/tbody&gt;
 &lt;/table&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-3">
                 <h3 class="kss-title" id="1.2.1"><span class="kss-ref badge pull-right">1.2.1</span> Contextual classes</h1>
-              
-                
                     <div class="kss-box"><p>Use contextual classes to color table rows or individual cells.</p>
 </div>
 
@@ -388,7 +338,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
       </tbody>
 </table>
 
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.active</code></h4><p>Applies the hover color to a particular row or cell</p>
@@ -427,7 +376,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 </table>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.success</code></h4><p>Indicates a successful or positive action</p>
@@ -466,7 +414,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 </table>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.info</code></h4><p>Indicates a neutral informative change or action</p>
@@ -505,7 +452,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 </table>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.warning</code></h4><p>Indicates a warning that might need attention</p>
@@ -544,7 +490,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 </table>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.danger</code></h4><p>Indicates a dangerous or potentially negative action</p>
@@ -583,7 +528,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 </table>
                             </div>
                           </div>
-                        
 
                         <pre class="prettyprint lang-html">&lt;table class=&quot;table&quot;&gt;
     &lt;thead&gt;
@@ -616,16 +560,10 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
       &lt;/tbody&gt;
 &lt;/table&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-3">
                 <h3 class="kss-title" id="1.2.2"><span class="kss-ref badge pull-right">1.2.2</span> Responsive tables</h1>
-              
-                
                     <div class="kss-box"><p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
 </div>
 
@@ -662,7 +600,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
     </table>
 </div>
 
-                        
 
                         <pre class="prettyprint lang-html">&lt;div class=&quot;table-responsive&quot;&gt;
     &lt;table class=&quot;table&quot;&gt;
@@ -697,16 +634,10 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
     &lt;/table&gt;
 &lt;/div&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-2">
                 <h2 class="kss-title" id="1.3"><span class="kss-ref badge pull-right">1.3</span> Forms</h1>
-              
-                
                     <div class="kss-box"><p>Individual form controls automatically receive some global styling. All textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements with .form-control are set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.</p>
 </div>
 
@@ -732,7 +663,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
 
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.form-inline</code></h4><p>inline forms</p>
@@ -762,7 +692,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 </form>
                             </div>
                           </div>
-                        
 
                         <pre class="prettyprint lang-html">&lt;form class=&quot;{$modifiers}&quot; role=&quot;form&quot;&gt;
   &lt;div class=&quot;form-group&quot;&gt;
@@ -786,22 +715,15 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
   &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
 &lt;/form&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-2">
                 <h2 class="kss-title" id="1.6"><span class="kss-ref badge pull-right">1.6</span> Buttons</h1>
-              
-                
                     <div class="kss-box"><p>Use any of the available button classes to quickly create a styled button.</p>
 </div>
 
                         <button type="button" class="btn {$modifiers}">Button</button>
 
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.btn-default</code></h4><p>Default</p>
@@ -811,7 +733,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <button type="button" class="btn btn-default">Button</button>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>btn-success</code></h4><p>Success</p>
@@ -821,7 +742,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <button type="button" class="btn btn-success">Button</button>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>btn-info</code></h4><p>Info</p>
@@ -831,7 +751,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <button type="button" class="btn btn-info">Button</button>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>btn-warning</code></h4><p>Warning</p>
@@ -841,7 +760,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <button type="button" class="btn btn-warning">Button</button>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>btn-danger</code></h4><p>Danger</p>
@@ -851,7 +769,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <button type="button" class="btn btn-danger">Button</button>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>btn-link</code></h4><p>Link</p>
@@ -861,26 +778,18 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <button type="button" class="btn btn-link">Button</button>
                             </div>
                           </div>
-                        
 
                         <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn {$modifiers}&quot;&gt;Button&lt;/button&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-3">
                 <h3 class="kss-title" id="1.6.1"><span class="kss-ref badge pull-right">1.6.1</span> Sizes</h1>
-              
-                
                     <div class="kss-box"><p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
 </div>
 
                         <button type="button" class="btn {$modifiers}">Button</button>
 
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.btn-lg</code></h4><p>Large</p>
@@ -890,7 +799,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <button type="button" class="btn btn-lg">Button</button>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>btn-sm</code></h4><p>Small</p>
@@ -900,7 +808,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <button type="button" class="btn btn-sm">Button</button>
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>btn-xs</code></h4><p>Extra small</p>
@@ -910,59 +817,36 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <button type="button" class="btn btn-xs">Button</button>
                             </div>
                           </div>
-                        
 
                         <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn {$modifiers}&quot;&gt;Button&lt;/button&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-2">
                 <h2 class="kss-title" id="1.7"><span class="kss-ref badge pull-right">1.7</span> Images</h1>
-              
-                
-                    
                       <p>There are a number of ways to expose images.</p>
 
-                    
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-3">
                 <h3 class="kss-title" id="1.7.1"><span class="kss-ref badge pull-right">1.7.1</span> Responsive images</h1>
-              
-                
                     <div class="kss-box"><p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.</p>
 </div>
 
                         <img src="http://placehold.it/140x140" class="img-responsive" alt="Responsive image">
 
-                        
 
                         <pre class="prettyprint lang-html">&lt;img src=&quot;http://placehold.it/140x140&quot; class=&quot;img-responsive&quot; alt=&quot;Responsive image&quot;&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-3">
                 <h3 class="kss-title" id="1.7.2"><span class="kss-ref badge pull-right">1.7.2</span> Image shapes</h1>
-              
-                
                     <div class="kss-box"><p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
 </div>
 
                         <img src="http://placehold.it/140x140" alt="..." class="{$modifiers}">
 
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.img-rounded</code></h4><p>Rounded</p>
@@ -972,7 +856,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <img src="http://placehold.it/140x140" alt="..." class="img-rounded">
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.img-circle</code></h4><p>Circle</p>
@@ -982,7 +865,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <img src="http://placehold.it/140x140" alt="..." class="img-circle">
                             </div>
                           </div>
-                        
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4><code>.img-thumbnail</code></h4><p>Thumbnail</p>
@@ -992,34 +874,19 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
                               <img src="http://placehold.it/140x140" alt="..." class="img-thumbnail">
                             </div>
                           </div>
-                        
 
                         <pre class="prettyprint lang-html">&lt;img src=&quot;http://placehold.it/140x140&quot; alt=&quot;...&quot; class=&quot;{$modifiers}&quot;&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-2">
                 <h2 class="kss-title" id="1.8"><span class="kss-ref badge pull-right">1.8</span> Helpers</h1>
-              
-                
-                    
                       <p>There are many helper classes available.</p>
 
-                    
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-3">
                 <h3 class="kss-title" id="1.8.1"><span class="kss-ref badge pull-right">1.8.1</span> Contextual colors</h1>
-              
-                
                     <div class="kss-box"><p>Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.</p>
 </div>
 
@@ -1030,7 +897,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
 <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
 
-                        
 
                         <pre class="prettyprint lang-html">&lt;p class=&quot;text-muted&gt;Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
 &lt;p class=&quot;text-primary&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
@@ -1039,16 +905,10 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 &lt;p class=&quot;text-warning&quot;&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
 &lt;p class=&quot;text-danger&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-3">
                 <h3 class="kss-title" id="1.8.2"><span class="kss-ref badge pull-right">1.8.2</span> Contextual backgrounds</h1>
-              
-                
                     <div class="kss-box"><p>Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes.</p>
 </div>
 
@@ -1058,7 +918,6 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 <p class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
 <p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
 
-                        
 
                         <pre class="prettyprint lang-html">&lt;p class=&quot;bg-primary&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
 &lt;p class=&quot;bg-success&quot;&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;
@@ -1066,166 +925,57 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
 &lt;p class=&quot;bg-warning&quot;&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
 &lt;p class=&quot;bg-danger&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-3">
                 <h3 class="kss-title" id="1.8.3"><span class="kss-ref badge pull-right">1.8.3</span> Close icon</h1>
-              
-                
                     <div class="kss-box"><p>Use the generic close icon for dismissing content like modals and alerts.</p>
 </div>
 
                         <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 
-                        
 
                         <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;&lt;/button&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-              
                <section class="kss-depth-3">
                 <h3 class="kss-title" id="1.8.4"><span class="kss-ref badge pull-right">1.8.4</span> Carets</h1>
-              
-                
                     <div class="kss-box"><p>Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in dropup menus.</p>
 </div>
 
                         <span class="caret"></span>
 
-                        
 
                         <pre class="prettyprint lang-html">&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;</pre>
                       
-                
               
                 </section>
-              
-            
-          
         </article>
       </div>
     </div>
     <div class="col-md-3">
       <div class="list-group" data-spy="affix" id="sidebar">
-        
-          
-            
               <a href="#" class="list-group-item disabled">
                 <h4 class="list-group-item-heading">CSS</h4>
               </a>
-            
-          
-            
-              
                 <a href="#1.1" class="list-group-item"><span class="kss-ref badge" >1.1</span> Code</a>
-              
-            
-          
-            
-              
                 <!--<a href="#1.1.1" class="list-group-item"><span class="kss-ref badge">1.1.1</span> - User input</a>-->
-              
-            
-          
-            
-              
                 <!--<a href="#1.1.2" class="list-group-item"><span class="kss-ref badge">1.1.2</span> - Basic block</a>-->
-              
-            
-          
-            
-              
                 <a href="#1.2" class="list-group-item"><span class="kss-ref badge" >1.2</span> Tables</a>
-              
-            
-          
-            
-              
                 <!--<a href="#1.2.1" class="list-group-item"><span class="kss-ref badge">1.2.1</span> - Contextual classes</a>-->
-              
-            
-          
-            
-              
                 <!--<a href="#1.2.2" class="list-group-item"><span class="kss-ref badge">1.2.2</span> - Responsive tables</a>-->
-              
-            
-          
-            
-              
                 <a href="#1.3" class="list-group-item"><span class="kss-ref badge" >1.3</span> Forms</a>
-              
-            
-          
-            
-              
                 <a href="#1.6" class="list-group-item"><span class="kss-ref badge" >1.6</span> Buttons</a>
-              
-            
-          
-            
-              
                 <!--<a href="#1.6.1" class="list-group-item"><span class="kss-ref badge">1.6.1</span> - Sizes</a>-->
-              
-            
-          
-            
-              
                 <a href="#1.7" class="list-group-item"><span class="kss-ref badge" >1.7</span> Images</a>
-              
-            
-          
-            
-              
                 <!--<a href="#1.7.1" class="list-group-item"><span class="kss-ref badge">1.7.1</span> - Responsive images</a>-->
-              
-            
-          
-            
-              
                 <!--<a href="#1.7.2" class="list-group-item"><span class="kss-ref badge">1.7.2</span> - Image shapes</a>-->
-              
-            
-          
-            
-              
                 <a href="#1.8" class="list-group-item"><span class="kss-ref badge" >1.8</span> Helpers</a>
-              
-            
-          
-            
-              
                 <!--<a href="#1.8.1" class="list-group-item"><span class="kss-ref badge">1.8.1</span> - Contextual colors</a>-->
-              
-            
-          
-            
-              
                 <!--<a href="#1.8.2" class="list-group-item"><span class="kss-ref badge">1.8.2</span> - Contextual backgrounds</a>-->
-              
-            
-          
-            
-              
                 <!--<a href="#1.8.3" class="list-group-item"><span class="kss-ref badge">1.8.3</span> - Close icon</a>-->
-              
-            
-          
-            
-              
                 <!--<a href="#1.8.4" class="list-group-item"><span class="kss-ref badge">1.8.4</span> - Carets</a>-->
-              
-            
-          
-        
       </div>
     </div>
   </div>
