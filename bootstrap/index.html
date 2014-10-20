@@ -55,7 +55,7 @@
                 <h1 class="kss-title" id="{{ reference }}">{{ header }}</h1>
               {{else}}
                <section class="kss-depth-{{ refDepth }}">
-                <h{{ refDepth }} class="kss-title" id="{{ reference }}"><span class="kss-ref badge pull-right">{{ reference }}</span> {{ header }}</h1>
+                <h{{ refDepth }} class="kss-title" id="{{ reference }}"><span class="kss-ref badge pull-right">{{ reference }}</span> {{ header }}</h{{ refDepth }}>
               {{/ifDepth}}
                 {{#ifAny markup}}
                     <div class="kss-box">{{{description}}}</div>
@@ -91,6 +91,7 @@
     <div class="col-md-3">
       <div class="list-group" data-spy="affix" id="sidebar">
         {{#if overview}}
+          <!-- Nothing -->
         {{else}}
           {{#eachSection rootNumber}}
             {{#ifDepth 1}}
