@@ -24,7 +24,7 @@ Styleguide 2.19.1
 /*
 Panel with heading
 
-Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any <code<h1></code>-<code><h6></code> with a <code>.panel-title</code> class to add a pre-styled heading.
+Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any &gt;h1&lt;-&gt;h6&lt; with a <code>.panel-title</code> class to add a pre-styled heading.
 
 For proper link coloring, be sure to place links in headings within <code>.panel-title</code>.
 
