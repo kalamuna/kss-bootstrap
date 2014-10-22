@@ -1,4 +1,4 @@
-# KSS Bootstrap
+# KSS Bootstrap [![Build Status](https://travis-ci.org/RobLoach/kss-bootstrap.svg?branch=master)](https://travis-ci.org/RobLoach/kss-bootstrap)
 
 [KSS Bootstrap](https://github.com/robloach/kss-bootstrap) is a [Knyle Style Sheet](http://warpspire.com/kss/) template and style guide for [Bootstrap](http://getbootstrap.com).
 
@@ -12,11 +12,24 @@ This project includes two components:
 
 ## Build
 
-    npm install kss -g
-    kss-node styleguide out -t bootstrap
+1. Install [KSS-Node](http://kss-node.github.io/kss-node/) by using the following command:
+
+  ``` bash
+  npm install kss -g
+  ```
+
+2. Render the site using the following command:
+
+  ``` bash
+  kss-node styleguide out -t bootstrap
+  ```
+
+  * `styleguide` is the directory to which KSS Styleguide to use
+  * `out` represents where the rendered styleguide should be output
+  * `bootstrap` is the directory of which KSS template to use
 
 
-## Deploy
+## Test and Deploy
 
     npm test
     npm run-script deploy
