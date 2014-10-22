@@ -57,7 +57,7 @@
                <section class="kss-depth-{{ refDepth }}">
                 <h{{ refDepth }} class="kss-title" id="{{ reference }}"><span class="kss-ref badge pull-right">{{ reference }}</span> {{ header }}</h{{ refDepth }}>
               {{/ifDepth}}
-                {{#ifAny markup}}
+                {{#if markup}}
                     <div class="kss-box">{{{description}}}</div>
 
                         {{modifierMarkup}}
@@ -79,7 +79,7 @@
                     {{#if description}}
                       {{{description}}}
                     {{/if}}
-                {{/ifAny}}
+                {{/if}}
               {{#ifDepth 1}} {{else}}
                 </section>
               {{/ifDepth}}
