@@ -10,6 +10,10 @@ This project includes two components:
 1. The *styleguide* directory provides a [KSS](http://warpspire.com/kss/) styleguide for [Bootstrap](http://getbootstrap.com)
 2. The *bootstrap* directory provides the [KSS Node](http://kss-node.github.io/kss-node/) template in order to build the styleguide
 
+## Dependencies
+
+* [kss-node](https://github.com/kss-node/kss-node) `>=2.0.0-alpha.1`
+
 ## Build
 
 1. Install [KSS-Node](http://kss-node.github.io/kss-node/) by using the following command:
@@ -25,8 +29,8 @@ This project includes two components:
   ```
 
   * `styleguide` is the directory to which KSS Styleguide to use
-  * `out` represents where the rendered styleguide should be output
   * `bootstrap` is the directory of which KSS template to use
+  * `out` represents where the rendered styleguide should be output
 
 
 ## Test and Deploy
