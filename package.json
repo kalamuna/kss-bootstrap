@@ -18,9 +18,10 @@
     "RobLoach (https://github.com/RobLoach)"
   ],
   "dependencies": {
-    "kss": "~1.2.0"
+    "bootstrap": "*"
   },
   "devDependencies": {
+    "kss": "git://github.com/kss-node/kss-node.git#v2.0.0-alpha.1",
     "gulp": "^3.8.8",
     "gulp-gh-pages": "^0.3.4",
     "gulp-htmlhint": "0.0.9"
