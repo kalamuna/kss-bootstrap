@@ -4,7 +4,7 @@ Buttons group
 Group of buttons
 
 Markup:
-<div class="btn-group {$modifiers}">
+<div class="btn-group {{modifier_class}}">
   <button type="button" class="btn btn-default">Left</button>
   <button type="button" class="btn btn-default">Middle</button>
   <button type="button" class="btn btn-default">Right</button>

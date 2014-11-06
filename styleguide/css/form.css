@@ -4,7 +4,7 @@ Forms
 Individual form controls automatically receive some global styling. All textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements with .form-control are set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.
 
 Markup:
-<form class="{$modifiers}" role="form">
+<form class="{{modifier_class}}" role="form">
   <div class="form-group">
     <label>Email address</label>
     <input type="email" class="form-control" placeholder="Enter email" name="email">

@@ -5,12 +5,12 @@ Provide up-to-date feedback on the progress of a workflow or action with simple 
 
 Markup:
 <div class="progress">
-  <div class="progress-bar {$modifiers}" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  <div class="progress-bar {{modifier_class}}" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     <span class="sr-only">60% Complete</span>
   </div>
 </div>
 <div class="progress">
-  <div class="progress-bar {$modifiers}" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  <div class="progress-bar {{modifier_class}}" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
 </div>
