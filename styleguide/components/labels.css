@@ -4,7 +4,7 @@ Labels
 Add any of the below mentioned modifier classes to change the appearance of a label.
 
 Markup:
-<h3>Example heading <span class="label {$modifiers}">New</span></h3>
+<h3>Example heading <span class="label {{modifier_class}}">New</span></h3>
 
 .label-default - Default
 .label-primary - Primary

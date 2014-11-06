@@ -17,9 +17,6 @@
   "contributors": [
     "RobLoach (https://github.com/RobLoach)"
   ],
-  "dependencies": {
-    "bootstrap": "*"
-  },
   "devDependencies": {
     "kss": "git://github.com/kss-node/kss-node.git#v2.0.0-alpha.1",
     "gulp": "^3.8.8",
@@ -28,7 +25,7 @@
     "del": "*"
   },
   "scripts": {
-    "pretest": "./node_modules/.bin/gulp clear",
+    "pretest": "./node_modules/.bin/gulp clean",
     "test": "./node_modules/.bin/gulp",
     "deploy": "./node_modules/.bin/gulp deploy"
   }

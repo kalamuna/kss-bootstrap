@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 
-// Delete existing out directory
-gulp.task('clear', function() {
+// Clean existing out directory
+gulp.task('clean', function() {
 	require('del')("out");
 });
 

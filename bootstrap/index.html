@@ -6,10 +6,14 @@
   <meta name="description" content="" />
   <meta name="generator" content="kss-node" />
   <meta name="viewport" content="width=device-width, minimal-ui">
-  <link ref="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="public/kss.css">
-  <link rel="stylesheet" href="public/prettify.css">
-  <link rel="stylesheet" href="public/style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+  <link type="text/css" rel="stylesheet" href="public/kss.css">
+  <link type="text/css" rel="stylesheet" href="public/prettify.css">
+  <link type="text/css" rel="stylesheet" href="public/style.css">
 </head>
 <body>
 <div>
@@ -60,7 +64,7 @@
                 {{#if markup}}
                     <div class="kss-box">{{{description}}}</div>
 
-                        {{markup}}
+                        {{{markup}}}
 
                         {{#eachModifier}}
                           <div class="panel panel-default">
@@ -68,7 +72,7 @@
                               <h4><code>{{name}}</code></h4>{{{description}}}
                             </div>
                             <div class="panel-body">
-                              {{markup}}
+                              {{{markup}}}
                             </div>
                           </div>
                         {{/eachModifier}}
@@ -112,7 +116,7 @@
   </div>
 
   <script src="http://code.jquery.com/jquery.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="public/kss.js"></script>
   <script src="public/prettify.js"></script>
   <script>

@@ -23,7 +23,7 @@ Image shapes
 Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.
 
 Markup:
-<img src="http://placehold.it/140x140" alt="..." class="{$modifiers}">
+<img src="http://placehold.it/140x140" alt="..." class="{{modifier_class}}">
 
 .img-rounded - Rounded
 .img-circle - Circle
