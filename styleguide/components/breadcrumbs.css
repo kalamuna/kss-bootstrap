@@ -3,7 +3,8 @@ Breadcrumbs
 
 Indicate the current page's location within a navigational hierarchy.
 
-Markup: <ol class="breadcrumb">
+Markup:
+<ol class="breadcrumb">
   <li><a href="#">Home</a></li>
   <li><a href="#">Library</a></li>
   <li class="active">Data</li>

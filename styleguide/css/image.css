@@ -11,7 +11,8 @@ Responsive images
 
 Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.
 
-Markup: <img src="http://placehold.it/140x140" class="img-responsive" alt="Responsive image">
+Markup:
+<img src="http://placehold.it/140x140" class="img-responsive" alt="Responsive image">
 
 Styleguide 1.7.1
 */

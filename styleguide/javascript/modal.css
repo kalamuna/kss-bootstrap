@@ -3,7 +3,8 @@ Modal
 
 A rendered modal with header, body, and set of actions in the footer.
 
-Markup: <button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".modal">
+Markup:
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".modal">
   Launch demo modal
 </button>
 <div class="modal fade">

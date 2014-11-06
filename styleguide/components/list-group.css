@@ -3,7 +3,8 @@ List group
 
 List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.
 
-Markup: <ul class="list-group">
+Markup:
+<ul class="list-group">
     <li class="list-group-item">Cras justo odio</li>
     <li class="list-group-item">Dapibus ac facilisis in</li>
     <li class="list-group-item">Morbi leo risus</li>

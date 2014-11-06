@@ -7,11 +7,11 @@ Markup:
 <button type="button" class="btn {$modifiers}">Button</button>
 
 .btn-default - Default
-btn-success - Success
-btn-info - Info
-btn-warning - Warning
-btn-danger - Danger
-btn-link - Link
+.btn-success - Success
+.btn-info - Info
+.btn-warning - Warning
+.btn-danger - Danger
+.btn-link - Link
 
 Styleguide 1.6
 */
@@ -25,8 +25,8 @@ Markup:
 <button type="button" class="btn {$modifiers}">Button</button>
 
 .btn-lg - Large
-btn-sm - Small
-btn-xs - Extra small
+.btn-sm - Small
+.btn-xs - Extra small
 
 Styleguide 1.6.1
 */

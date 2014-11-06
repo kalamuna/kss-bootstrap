@@ -3,7 +3,8 @@ Badges
 
 Easily highlight new or unread items by adding a <code>&lt;span class="badge"&gt;</code> to links, Bootstrap navs, and more.
 
-Markup: <a href="#">Inbox <span class="badge">42</span></a>
+Markup:
+<a href="#">Inbox <span class="badge">42</span></a>
 
 Styleguide 2.10
 */

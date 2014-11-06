@@ -3,7 +3,8 @@ Dropdown
 
 Wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then add the menu's HTML.
 
-Markup: <div class="dropdown">
+Markup:
+<div class="dropdown">
   <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
     Dropdown <span class="caret"></span>
   </a>
