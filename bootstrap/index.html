@@ -16,101 +16,79 @@
   <link type="text/css" rel="stylesheet" href="public/style.css">
 </head>
 <body>
-<div>
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-styleguide-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Bootstrap Styleguide</a>
-      </div>
-      <div class="collapse navbar-collapse navbar-styleguide-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>
+  <div class="container">
+    <div class="row">
+      <nav class="kss-nav col-md-3">
+        <h1><a href="./">KSS Bootstrap</a></h1>
+        <ul class="kss-menu" data-kss-ref="{{rootNumber}}">
+          <li class="kss-menu-item"><a href="./"><span class="kss-name">Home</span></a></li>
           {{#eachRoot}}
-            <li><a href="section-{{reference}}.html"><!--{{reference}}.0: -->{{header}}</a></li>
+            <li class="kss-menu-item"><a href="section-{{reference}}.html"><span class="kss-ref badge">{{reference}}</span><span class="kss-name">{{header}}</span></a></li>
           {{/eachRoot}}
         </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="col-md-9">
-      <div role="main">
-        <article>
-          {{#if overview}}
-            {{{overview}}}
-          {{else}}
-
-            {{!
-              Find each section, in order.
-              If there's no markup or modifiers supplied, use a Markdown-only
-              layout instead.
-
-              The "root" element comes first in this loop, and can be detected using
-              the "#whenDepth 1" block as seen below.
-            }}
+        {{#if overview}}
+        {{else}}
+          <ul class="kss-menu-child">
             {{#eachSection rootNumber}}
               {{#ifDepth 1}}
-                <h1 class="kss-title" id="{{ reference }}">{{ header }}</h1>
               {{else}}
-               <section class="kss-depth-{{ refDepth }}">
-                <h{{ refDepth }} class="kss-title" id="{{ reference }}"><span class="kss-ref badge pull-right">{{ reference }}</span> {{ header }}</h{{ refDepth }}>
-              {{/ifDepth}}
-                {{#if markup}}
-                    <div class="kss-box">{{{description}}}</div>
-
-                        {{{markup}}}
-
-                        {{#eachModifier}}
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h4><code>{{name}}</code></h4>{{{description}}}
-                            </div>
-                            <div class="panel-body">
-                              {{{markup}}}
-                            </div>
-                          </div>
-                        {{/eachModifier}}
-
-                        <pre class="prettyprint lang-html">{{markup}}</pre>
-                      
-                {{else}}
-                    {{#if description}}
-                      {{{description}}}
-                    {{/if}}
-                {{/if}}
-              {{#ifDepth 1}} {{else}}
-                </section>
+                <li class="kss-menu-item"><a href="#section-{{reference}}"><span class="kss-ref badge">{{reference}}</span><span class="kss-name">{{header}}</span></a></li>
               {{/ifDepth}}
             {{/eachSection}}
+          </ul>
+        {{/if}}
+      </nav>
+
+      <div class="kss-content col-md-9">
+        <article class="kss-article">
+          {{#if overview}}
+          <section id="section-0" class="kss-section kss-overview">
+            {{{overview}}}
+          </section>
+          {{else}}
+          {{#eachSection rootNumber}}
+          <section id="section-{{reference}}" class="kss-section kss-depth-{{refDepth}}">
+            <h2 class="kss-title"><span class="kss-ref">{{reference}}</span> {{header}}</h2>
+            {{#if markup}}
+            {{#if description}}
+            <div class="kss-description">
+              {{{description}}}
+            </div>
+            {{/if}}
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  {{{markup}}}
+                </div>
+              </div>
+              {{#eachModifier}}
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">{{name}}</div>
+                  <div class="kss-modifier-description">
+                    {{{description}}}
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  {{{markup}}}
+                </div>
+              </div>
+              {{/eachModifier}}
+              <div class="kss-markup">
+                <pre><code data-language="html">{{markup}}</code></pre>
+              </div>
+            </div>
+            {{else}}
+            {{#if description}}
+            <div class="kss-description">
+              {{{description}}}
+            </div>
+            {{/if}}
+            {{/if}}
+          </section>
+          {{/eachSection}}
           {{/if}}
         </article>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="list-group" data-spy="affix" id="sidebar">
-        {{#if overview}}
-          <!-- Nothing -->
-        {{else}}
-          {{#eachSection rootNumber}}
-            {{#ifDepth 1}}
-              <a href="#" class="list-group-item disabled">
-                <h4 class="list-group-item-heading">{{ header }}</h4>
-              </a>
-            {{else}}
-              {{#ifDepth 2}}
-                <a href="#{{reference}}" class="list-group-item"><span class="kss-ref badge" >{{ reference }}</span> {{ header }}</a>
-              {{else}}
-                <!--<a href="#{{reference}}" class="list-group-item"><span class="kss-ref badge">{{ reference }}</span> - {{ header }}</a>-->
-              {{/ifDepth}}
-            {{/ifDepth}}
-          {{/eachSection}}
-        {{/if}}
       </div>
     </div>
   </div>
@@ -119,16 +97,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="public/kss.js"></script>
   <script src="public/prettify.js"></script>
-  <script>
-    jQuery(document).ready(function(){
-      // Ensure code blocks are highlighted properly...
-      jQuery('pre>code').addClass('prettyprint');
-      prettyPrint();
-
-      // Set the navigation to be the correct width.
-      jQuery('#sidebar').width(jQuery('.col-md-3').width());
-    });
-  </script>
+  <script src="public/kss-bootstrap.js"></script>
 
 </div>
 </body>
