@@ -1,11 +1,19 @@
+/**
+ * Dependencies
+ */
 var gulp = require('gulp');
+var serve = require('gulp-serve');
 
-// Clean existing out directory
+/**
+ * Clean
+ */
 gulp.task('clean', function() {
 	require('del')("out");
 });
 
-// Build the styleguide with KSS.
+/**
+ * KSS
+ */
 gulp.task('kss', function() {
 	var exec = require('child_process').execFile;
 	var kssnode = "./node_modules/.bin/kss-node";
@@ -17,7 +25,9 @@ gulp.task('kss', function() {
 	});
 });
 
-// HTML Hint
+/**
+ * HTML Hint
+ */
 gulp.task('htmlhint', function () {
 	var htmlhint = require("gulp-htmlhint");
 	gulp.src(["./out/*.html"])
@@ -26,15 +36,33 @@ gulp.task('htmlhint', function () {
 		.pipe(htmlhint.failReporter())
 });
 
-// Deploy to GitHub Pages
+/**
+ * Deploy
+ */
 gulp.task('deploy', function () {
 	var deploy = require("gulp-gh-pages");
     gulp.src("./out/**/*")
         .pipe(deploy());
 });
 
-// Test
-gulp.task('test', ['kss', 'htmlhint']);
+/**
+ * Serve
+ */
+gulp.task('serve', serve({
+	root: ['out'],
+	port: 8000
+}));
 
-// Default
+/**
+ * Watch
+ */
+gulp.task('watch', function() {
+	gulp.watch(['styleguide/**', 'bootstrap/**'], ['kss']);
+});
+
+/**
+ * Default tasks
+ */
+gulp.task('start', ['clean', 'kss', 'serve', 'watch']);
+gulp.task('test', ['kss', 'htmlhint']);
 gulp.task('default', ['test']);
