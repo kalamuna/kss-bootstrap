@@ -15,28 +15,34 @@
   <link type="text/css" rel="stylesheet" href="public/prettify.css">
   <link type="text/css" rel="stylesheet" href="public/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-example">
   <div class="container">
     <div class="row">
       <nav class="kss-nav col-md-3">
-        <h1><a href="./">KSS Bootstrap</a></h1>
-        <ul class="kss-menu" data-kss-ref="{{rootNumber}}">
-          <li class="kss-menu-item"><a href="./"><span class="kss-name">Home</span></a></li>
-          {{#eachRoot}}
-            <li class="kss-menu-item"><a href="section-{{reference}}.html"><span class="kss-ref badge">{{reference}}</span><span class="kss-name">{{header}}</span></a></li>
-          {{/eachRoot}}
-        </ul>
-        {{#if overview}}
-        {{else}}
-          <ul class="kss-menu-child">
-            {{#eachSection rootNumber}}
-              {{#ifDepth 1}}
-              {{else}}
-                <li class="kss-menu-item"><a href="#section-{{reference}}"><span class="kss-ref badge">{{reference}}</span><span class="kss-name">{{header}}</span></a></li>
-              {{/ifDepth}}
-            {{/eachSection}}
-          </ul>
-        {{/if}}
+        <div class="affix" data-spy="affix">
+          <h1><a href="./">KSS Bootstrap</a></h1>
+          <div class="kss-menu list-group" data-kss-ref="{{rootNumber}}">
+            <a href="./" class="kss-menu-item list-group-item"><h4 class="kss-name">Home</h4></a>
+            {{#eachRoot}}
+              <a class="kss-menu-item list-group-item section{{reference}}" href="section-{{reference}}.html"><h4 class="kss-name">{{header}}</h4></a>
+            {{/eachRoot}}
+          </div>
+          {{#if overview}}
+          {{else}}
+            <ul class="kss-menu-child list-unstyled">
+              {{#eachSection rootNumber}}
+                {{#ifDepth 1}}
+                {{else}}
+                  {{#ifDepth 2}}
+                    <li class="kss-menu-item depth-2"><a href="#section-{{reference}}"><span class="kss-ref badge pull-right">{{reference}}</span><span class="kss-name">{{header}}</span></a></li>
+                  {{else}}
+                    <li class="kss-menu-item depth-3"><a href="#section-{{reference}}"><span class="kss-ref badge pull-right">{{reference}}</span><span class="kss-name">{{header}}</span></a></li>
+                  {{/ifDepth}}
+                {{/ifDepth}}
+              {{/eachSection}}
+            </ul>
+          {{/if}}
+        </div>
       </nav>
 
       <div class="kss-content col-md-9">
@@ -48,7 +54,7 @@
           {{else}}
           {{#eachSection rootNumber}}
           <section id="section-{{reference}}" class="kss-section kss-depth-{{refDepth}}">
-            <h2 class="kss-title"><span class="kss-ref">{{reference}}</span> {{header}}</h2>
+            <h2 class="kss-title"><span class="kss-ref label label-default pull-right">{{reference}}</span> {{header}}</h2>
             {{#if markup}}
             {{#if description}}
             <div class="kss-description">
