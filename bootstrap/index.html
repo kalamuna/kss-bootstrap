@@ -7,10 +7,6 @@
   <meta name="generator" content="kss-node" />
   <meta name="viewport" content="width=device-width, minimal-ui">
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
   <link type="text/css" rel="stylesheet" href="public/kss.css">
   <link type="text/css" rel="stylesheet" href="public/prettify.css">
   <link type="text/css" rel="stylesheet" href="public/style.css">
@@ -26,13 +22,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Bootstrap Styleguide</a>
+        <a class="navbar-brand" href="./">Styleguide</a>
       </div>
       <div class="collapse navbar-collapse navbar-styleguide-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="./">Home</a></li>
           {{#eachRoot}}
-            <li><a href="section-{{reference}}.html"><!--{{reference}}.0: -->{{header}}</a></li>
+            <li><a href="section-{{referenceURI}}.html"><!--{{referenceURI}}.0: -->{{header}}</a></li>
           {{/eachRoot}}
         </ul>
       </div>
@@ -54,31 +50,33 @@
               The "root" element comes first in this loop, and can be detected using
               the "#whenDepth 1" block as seen below.
             }}
-            {{#eachSection rootNumber}}
+            {{#eachSection rootName}}
               {{#ifDepth 1}}
-                <h1 class="kss-title" id="{{ reference }}">{{ header }}</h1>
+                <h1 class="kss-title" id="{{ referenceURI }}">{{ header }}</h1>
               {{else}}
-               <section class="kss-depth-{{ refDepth }}">
-                <h{{ refDepth }} class="kss-title" id="{{ reference }}"><span class="kss-ref badge pull-right">{{ reference }}</span> {{ header }}</h{{ refDepth }}>
+               <section class="kss-depth-{{ depth }}">
+                <h{{ depth }} class="kss-title" id="{{ referenceURI }}"><span class="kss-ref badge pull-right">{{ referenceURI }}</span> {{ header }}</h{{ depth }}>
               {{/ifDepth}}
-                {{#if markup}}
-                    <div class="kss-box">{{{description}}}</div>
+              {{#if markup}}
+                {{#if description}}
+                  <div class="kss-box">{{{description}}}</div>
+                {{/if}}
 
+                  {{{markup}}}
+
+                  {{#eachModifier}}
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4><code>{{name}}</code></h4>{{{description}}}
+                      </div>
+                      <div class="panel-body">
                         {{{markup}}}
+                      </div>
+                    </div>
+                  {{/eachModifier}}
 
-                        {{#eachModifier}}
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h4><code>{{name}}</code></h4>{{{description}}}
-                            </div>
-                            <div class="panel-body">
-                              {{{markup}}}
-                            </div>
-                          </div>
-                        {{/eachModifier}}
+                  <pre class="prettyprint lang-html">{{markup}}</pre>
 
-                        <pre class="prettyprint lang-html">{{markup}}</pre>
-                      
                 {{else}}
                     {{#if description}}
                       {{{description}}}
@@ -95,18 +93,18 @@
     <div class="col-md-3">
       <div class="list-group" data-spy="affix" id="sidebar">
         {{#if overview}}
-          <!-- Nothing -->
+          {{!-- Nothing --}}
         {{else}}
-          {{#eachSection rootNumber}}
+          {{#eachSection rootName}}
             {{#ifDepth 1}}
               <a href="#" class="list-group-item disabled">
                 <h4 class="list-group-item-heading">{{ header }}</h4>
               </a>
             {{else}}
               {{#ifDepth 2}}
-                <a href="#{{reference}}" class="list-group-item"><span class="kss-ref badge" >{{ reference }}</span> {{ header }}</a>
+                <a href="#{{referenceURI}}" class="list-group-item"><span class="kss-ref badge" >{{ referenceURI }}</span> {{ header }}</a>
               {{else}}
-                <!--<a href="#{{reference}}" class="list-group-item"><span class="kss-ref badge">{{ reference }}</span> - {{ header }}</a>-->
+                {{!-- <a href="#{{referenceURI}}" class="list-group-item"><span class="kss-ref badge">{{ referenceURI }}</span> - {{ header }}</a>--}}
               {{/ifDepth}}
             {{/ifDepth}}
           {{/eachSection}}

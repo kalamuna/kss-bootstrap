@@ -17,7 +17,7 @@ gulp.task('clean', function() {
 gulp.task('kss', function() {
 	var exec = require('child_process').execFile;
 	var kssnode = "./node_modules/.bin/kss-node";
-	var args = ["styleguide", "out", "--template=bootstrap"];
+	var args = ["--config=.kss-node.json"];
 	exec(kssnode, args, function(error, stdout, stderr) {
 		console.log(error);
 		console.log(stdout);

@@ -1,6 +1,6 @@
 {
   "name": "kss-bootstrap",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A KSS template and style guide for Bootstrap.",
   "author": "Rob Loach (http://github.com/robloach)",
   "repository": {
@@ -23,7 +23,10 @@
     "gulp-gh-pages": "~0.3.4",
     "gulp-htmlhint": "~0.0.9",
     "gulp-serve": "^0.3.0",
-    "kss": "git://github.com/kss-node/kss-node.git#v2.0.0-alpha.1"
+    "bootstrap": "~3.3",
+  },
+  "dependencies": {
+    "kss": "~2.0.0-alpha.4"
   },
   "scripts": {
     "start": "./node_modules/.bin/gulp start",
