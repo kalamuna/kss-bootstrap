@@ -23,7 +23,7 @@
     "gulp-gh-pages": "~0.3.4",
     "gulp-htmlhint": "~0.0.9",
     "gulp-serve": "^0.3.0",
-    "bootstrap": "~3.3",
+    "bootstrap": "~3.3"
   },
   "dependencies": {
     "kss": "~2.0.0-alpha.4"
