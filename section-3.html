@@ -6,14 +6,15 @@
   <meta name="description" content="" />
   <meta name="generator" content="kss-node" />
   <meta name="viewport" content="width=device-width, minimal-ui">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="public/kss.css">
-  <link rel="stylesheet" href="public/prettify.css">
-  <link rel="stylesheet" href="public/style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link type="text/css" rel="stylesheet" href="public/kss.css">
+  <link type="text/css" rel="stylesheet" href="public/prettify.css">
+  <link rel="stylesheet" href="public/bootstrap.css">
+
 </head>
 <body>
 <div>
-  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-styleguide-collapse">
@@ -22,11 +23,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Bootstrap Styleguide</a>
+        <a class="navbar-brand" href="./">Styleguide</a>
       </div>
       <div class="collapse navbar-collapse navbar-styleguide-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="./">Home</a></li>
             <li><a href="section-1.html"><!--1.0: -->CSS</a></li>
             <li><a href="section-2.html"><!--2.0: -->Components</a></li>
             <li><a href="section-3.html"><!--3.0: -->JavaScript</a></li>
@@ -43,11 +44,11 @@
                       <p>Bring Bootstrap&#39;s components to life with over a dozen custom jQuery plugins. Easily include them all, or one by one.</p>
 
                               <section class="kss-depth-2">
-                <h2 class="kss-title" id="3.3"><span class="kss-ref badge pull-right">3.3</span> Modal</h1>
-                    <div class="kss-box"><p>A rendered modal with header, body, and set of actions in the footer.</p>
+                <h2 class="kss-title" id="3.3"><span class="kss-ref badge pull-right">3.3</span> Modal</h2>
+                  <div class="kss-box"><p>A rendered modal with header, body, and set of actions in the footer.</p>
 </div>
 
-                        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".modal">
+                  <button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".modal">
   Launch demo modal
 </button>
 <div class="modal fade">
@@ -69,7 +70,7 @@
 </div>
 
 
-                        <pre class="prettyprint lang-html">&lt;button class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;.modal&quot;&gt;
+                  <pre class="prettyprint lang-html">&lt;button class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;.modal&quot;&gt;
   Launch demo modal
 &lt;/button&gt;
 &lt;div class=&quot;modal fade&quot;&gt;
@@ -89,35 +90,35 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
-                      
+
               
                 </section>
                <section class="kss-depth-2">
-                <h2 class="kss-title" id="3.7"><span class="kss-ref badge pull-right">3.7</span> Tooltip</h1>
-                    <div class="kss-box"><p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don&#39;t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+                <h2 class="kss-title" id="3.7"><span class="kss-ref badge pull-right">3.7</span> Tooltip</h2>
+                  <div class="kss-box"><p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don&#39;t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
 </div>
 
-                        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
-<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
-<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
-<script>window.onload = function() { jQuery(document).ready(function() { jQuery('.btn').tooltip(); }); }</script>
+                  <button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+<button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+<button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+<button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+<script>window.onload = function() { jQuery(document).ready(function() { jQuery('.tip').tooltip(); }); }</script>
 
 
-                        <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;&gt;Tooltip on left&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;&gt;Tooltip on top&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;Tooltip on bottom&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;&gt;Tooltip on right&lt;/button&gt;
-&lt;script&gt;window.onload = function() { jQuery(document).ready(function() { jQuery(&#x27;.btn&#x27;).tooltip(); }); }&lt;/script&gt;</pre>
-                      
+                  <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;&gt;Tooltip on left&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;&gt;Tooltip on top&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;Tooltip on bottom&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;&gt;Tooltip on right&lt;/button&gt;
+&lt;script&gt;window.onload = function() { jQuery(document).ready(function() { jQuery(&#x27;.tip&#x27;).tooltip(); }); }&lt;/script&gt;</pre>
+
               
                 </section>
                <section class="kss-depth-2">
-                <h2 class="kss-title" id="3.8"><span class="kss-ref badge pull-right">3.8</span> Popover</h1>
-                    <div class="kss-box"><p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don&#39;t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+                <h2 class="kss-title" id="3.8"><span class="kss-ref badge pull-right">3.8</span> Popover</h2>
+                  <div class="kss-box"><p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don&#39;t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
 </div>
 
-                        <button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  <button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
   Popover on left
 </button>
 <button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
@@ -137,7 +138,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 });</script>
 
 
-                        <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default poptime&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+                  <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default poptime&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
   Popover on left
 &lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-default poptime&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
@@ -155,15 +156,15 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
     jQuery(&#x27;.poptime&#x27;).popover();
   });
 });&lt;/script&gt;</pre>
-                      
+
               
                 </section>
                <section class="kss-depth-2">
-                <h2 class="kss-title" id="3.10"><span class="kss-ref badge pull-right">3.10</span> Collapse</h1>
-                    <div class="kss-box"><p>Get base styles and flexible support for collapsible components like accordions and navigation.</p>
+                <h2 class="kss-title" id="3.10"><span class="kss-ref badge pull-right">3.10</span> Collapse</h2>
+                  <div class="kss-box"><p>Get base styles and flexible support for collapsible components like accordions and navigation.</p>
 </div>
 
-                        <div class="panel-group" id="accordion">
+                  <div class="panel-group" id="accordion">
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -209,7 +210,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
 </div>
 
 
-                        <pre class="prettyprint lang-html">&lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt;
+                  <pre class="prettyprint lang-html">&lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt;
   &lt;div class=&quot;panel panel-default&quot;&gt;
     &lt;div class=&quot;panel-heading&quot;&gt;
       &lt;h4 class=&quot;panel-title&quot;&gt;
@@ -253,15 +254,15 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-                      
+
               
                 </section>
                <section class="kss-depth-2">
-                <h2 class="kss-title" id="3.11"><span class="kss-ref badge pull-right">3.11</span> Carousel</h1>
-                    <div class="kss-box"><p>The slideshow below shows a generic plugin and component for cycling through elements like a carousel.</p>
+                <h2 class="kss-title" id="3.11"><span class="kss-ref badge pull-right">3.11</span> Carousel</h2>
+                  <div class="kss-box"><p>The slideshow below shows a generic plugin and component for cycling through elements like a carousel.</p>
 </div>
 
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -301,7 +302,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
 });</script>
 
 
-                        <pre class="prettyprint lang-html">&lt;div id=&quot;carousel-example-generic&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+                  <pre class="prettyprint lang-html">&lt;div id=&quot;carousel-example-generic&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
   &lt;ol class=&quot;carousel-indicators&quot;&gt;
     &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
     &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
@@ -339,7 +340,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
     jQuery(&#x27;#carousel-example-generic&#x27;).carousel();
   });
 });&lt;/script&gt;</pre>
-                      
+
               
                 </section>
         </article>
@@ -360,7 +361,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
   </div>
 
   <script src="http://code.jquery.com/jquery.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="public/kss.js"></script>
   <script src="public/prettify.js"></script>
   <script>
@@ -373,7 +374,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
       jQuery('#sidebar').width(jQuery('.col-md-3').width());
     });
   </script>
-
+  
 </div>
 </body>
 </html>
