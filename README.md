@@ -36,4 +36,4 @@ This project includes two components:
 ## Test and Deploy
 
     npm test
-    npm run-script deploy
+    npm run deploy
