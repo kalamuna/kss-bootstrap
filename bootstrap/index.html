@@ -9,7 +9,7 @@
   <!-- Latest compiled and minified CSS -->
   <link type="text/css" rel="stylesheet" href="public/kss.css">
   <link type="text/css" rel="stylesheet" href="public/prettify.css">
-  <link type="text/css" rel="stylesheet" href="public/style.css">
+  {{{styles}}}
 </head>
 <body>
 <div>
@@ -38,8 +38,8 @@
     <div class="col-md-9">
       <div role="main">
         <article>
-          {{#if overview}}
-            {{{overview}}}
+          {{#if homepage}}
+            {{{homepage}}}
           {{else}}
 
             {{!
@@ -92,7 +92,7 @@
     </div>
     <div class="col-md-3">
       <div class="list-group" data-spy="affix" id="sidebar">
-        {{#if overview}}
+        {{#if homepage}}
           {{!-- Nothing --}}
         {{else}}
           {{#eachSection rootName}}
@@ -127,7 +127,7 @@
       jQuery('#sidebar').width(jQuery('.col-md-3').width());
     });
   </script>
-
+  {{{scripts}}}
 </div>
 </body>
 </html>

@@ -3,6 +3,7 @@
  */
 var gulp = require('gulp');
 var serve = require('gulp-serve');
+var fs = require('fs');
 
 /**
  * Clean
@@ -19,6 +20,11 @@ gulp.task('kss', function() {
 	var kssnode = "./node_modules/.bin/kss-node";
 	var args = ["--config=.kss-node.json"];
 	exec(kssnode, args, function(error, stdout, stderr) {
+		// Copy Bootstrap into the styleguide folder.
+		fs.createReadStream('node_modules/bootstrap/dist/css/bootstrap.css')
+		  .pipe(fs.createWriteStream('out/public/bootstrap.css'));
+
+		// Output any errors.
 		console.log(error);
 		console.log(stdout);
 		console.log(stderr);

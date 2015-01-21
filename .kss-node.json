@@ -2,5 +2,5 @@
   "source": "styleguide",
   "template": "bootstrap",
   "destination": "out",
-  "css": "node_modules/bootstrap/dist/css/bootstrap.css"
+  "css": "public/bootstrap.css"
 }
