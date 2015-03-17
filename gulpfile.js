@@ -9,7 +9,7 @@ var fs = require('fs');
  * Clean
  */
 gulp.task('clean', function() {
-	require('del')("out");
+	require('del')('out');
 });
 
 /**
@@ -17,16 +17,15 @@ gulp.task('clean', function() {
  */
 gulp.task('kss', function() {
 	var exec = require('child_process').execFile;
-	var kssnode = "./node_modules/.bin/kss-node";
-	var args = ["--config=.kss-node.json"];
-	exec(kssnode, args, function(error, stdout, stderr) {
+	var args = ['--config=.kss-node.json'];
+	exec('kss-node', args, function(error, stdout, stderr) {
 		// Copy Bootstrap into the styleguide folder.
 		fs.createReadStream('node_modules/bootstrap/dist/css/bootstrap.css')
 		  .pipe(fs.createWriteStream('out/public/bootstrap.css'));
 
 		// Output any errors.
-		console.log(error);
 		console.log(stdout);
+    console.log(error);
 		console.log(stderr);
 	});
 });
@@ -35,8 +34,8 @@ gulp.task('kss', function() {
  * HTML Hint
  */
 gulp.task('htmlhint', function () {
-	var htmlhint = require("gulp-htmlhint");
-	gulp.src(["./out/*.html"])
+	var htmlhint = require('gulp-htmlhint');
+	gulp.src(['./out/*.html'])
 		.pipe(htmlhint())
 		.pipe(htmlhint.reporter())
 		.pipe(htmlhint.failReporter())
@@ -46,9 +45,9 @@ gulp.task('htmlhint', function () {
  * Deploy
  */
 gulp.task('deploy', function () {
-	var deploy = require("gulp-gh-pages");
-    gulp.src("./out/**/*")
-        .pipe(deploy());
+	var deploy = require('gulp-gh-pages');
+    gulp.src('./out/**/*')
+      .pipe(deploy());
 });
 
 /**
