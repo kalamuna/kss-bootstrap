@@ -43,7 +43,7 @@ gulp.task('kss-bootstrap', ['kss'], function() {
 /**
  * HTML Hint
  */
-gulp.task('htmlhint', ['kss'], function () {
+gulp.task('htmlhint', ['kss-bootstrap'], function () {
   var htmlhint = require('gulp-htmlhint');
   return gulp.src(['./out/*.html'])
     .pipe(htmlhint())
@@ -54,7 +54,7 @@ gulp.task('htmlhint', ['kss'], function () {
 /**
  * Deploy
  */
-gulp.task('deploy', ['kss'], function () {
+gulp.task('deploy', ['kss-bootstrap'], function () {
   var deploy = require('gulp-gh-pages');
   return gulp.src('./out/**/*')
     .pipe(deploy());
@@ -63,7 +63,7 @@ gulp.task('deploy', ['kss'], function () {
 /**
  * Serve
  */
-gulp.task('serve', ['kss'], serve({
+gulp.task('serve', ['kss-bootstrap'], serve({
   root: ['out'],
   port: 8000
 }));
