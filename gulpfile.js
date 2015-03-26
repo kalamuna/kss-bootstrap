@@ -4,70 +4,80 @@
 var gulp = require('gulp');
 var serve = require('gulp-serve');
 var fs = require('fs');
+var del = require('del');
+var exec = require('gulp-exec');
 
 /**
  * Clean
  */
-gulp.task('clean', function() {
-	require('del')('out');
+gulp.task('clean', function(cb) {
+  del('out', cb);
 });
 
 /**
  * KSS
  */
-gulp.task('kss', function() {
-	var exec = require('child_process').execFile;
-	var args = ['--config=.kss-node.json'];
-	exec('kss-node', args, function(error, stdout, stderr) {
-		// Copy Bootstrap into the styleguide folder.
-		fs.createReadStream('node_modules/bootstrap/dist/css/bootstrap.css')
-		  .pipe(fs.createWriteStream('out/public/bootstrap.css'));
+gulp.task('kss', ['clean'], function(cb) {
+  var options = {
+    continueOnError: false,
+    pipeStdout: true
+  };
+  var reportOptions = {
+    err: true,
+    stderr: true,
+    stdout: true
+  };
+  return gulp.src('styleguide')
+    .pipe(exec('kss-node --config=.kss-node.json', options))
+    .pipe(exec.reporter(reportOptions));
+});
 
-		// Output any errors.
-		console.log(stdout);
-    console.log(error);
-		console.log(stderr);
-	});
+/**
+ * Sets up Bootstrap for KSS.
+ */
+gulp.task('kss-bootstrap', ['kss'], function() {
+  return gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css'])
+    .pipe(gulp.dest('out/public/'));
 });
 
 /**
  * HTML Hint
  */
-gulp.task('htmlhint', function () {
-	var htmlhint = require('gulp-htmlhint');
-	gulp.src(['./out/*.html'])
-		.pipe(htmlhint())
-		.pipe(htmlhint.reporter())
-		.pipe(htmlhint.failReporter())
+gulp.task('htmlhint', ['kss'], function () {
+  var htmlhint = require('gulp-htmlhint');
+  return gulp.src(['./out/*.html'])
+    .pipe(htmlhint())
+    .pipe(htmlhint.reporter())
+    .pipe(htmlhint.failReporter())
 });
 
 /**
  * Deploy
  */
-gulp.task('deploy', function () {
-	var deploy = require('gulp-gh-pages');
-    gulp.src('./out/**/*')
-      .pipe(deploy());
+gulp.task('deploy', ['kss'], function () {
+  var deploy = require('gulp-gh-pages');
+  return gulp.src('./out/**/*')
+    .pipe(deploy());
 });
 
 /**
  * Serve
  */
-gulp.task('serve', serve({
-	root: ['out'],
-	port: 8000
+gulp.task('serve', ['kss'], serve({
+  root: ['out'],
+  port: 8000
 }));
 
 /**
  * Watch
  */
-gulp.task('watch', function() {
-	gulp.watch(['styleguide/**', 'bootstrap/**'], ['kss']);
+gulp.task('watch', ['kss-bootstrap'], function() {
+  gulp.watch(['styleguide/**', 'bootstrap/**'], ['kss-bootstrap']);
 });
 
 /**
  * Default tasks
  */
-gulp.task('start', ['clean', 'kss', 'serve', 'watch']);
-gulp.task('test', ['kss', 'htmlhint']);
+gulp.task('start', ['clean', 'kss-bootstrap', 'serve', 'watch']);
+gulp.task('test', ['kss-bootstrap', 'htmlhint']);
 gulp.task('default', ['test']);

@@ -12,7 +12,7 @@ This project includes two components:
 
 ## Dependencies
 
-* [kss-node](https://github.com/kss-node/kss-node) `>=2.0.0-alpha.1`
+* [kss-node](https://github.com/kss-node/kss-node) `>=2.0.2`
 
 ## Build
 
@@ -33,7 +33,16 @@ This project includes two components:
   * `out` represents where the rendered styleguide should be output
 
 
-## Test and Deploy
+## Development
+
+Use the following command to serve and watch the development environment:
+
+    npm start
+
+### Testing
 
     npm test
+
+### Deployment
+
     npm run deploy
