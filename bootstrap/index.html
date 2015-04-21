@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap Styleguide</title>
+    <title>Style Guide</title>
     <meta name="description" content="" />
     <meta name="generator" content="kss-node" />
     <meta name="viewport" content="width=device-width, minimal-ui">
@@ -11,7 +11,7 @@
     <link type="text/css" rel="stylesheet" href="public/prettify.css">
     {{{styles}}}
   </head>
-  <body data-spy="scroll" data-target="nav.affix">
+  <body data-spy="scroll" data-target="#sidebar">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -36,90 +36,81 @@
       </div>
     </nav>
     <div class="container">
-      <div class="col-md-9">
-        <div role="main">
-          <article>
-            {{#if homepage}}
-              {{{homepage}}}
-            {{else}}
-
-              {{!
-                Find each section, in order.
-                If there's no markup or modifiers supplied, use a Markdown-only
-                layout instead.
-
-                The "root" element comes first in this loop, and can be detected using
-                the "#whenDepth 1" block as seen below.
-              }}
-              {{#eachSection rootName}}
-                {{#ifDepth 1}}
-                  <h1 class="kss-title" id="{{ referenceURI }}">{{ header }}</h1>
-                {{else}}
-                 <section class="kss-depth-{{ depth }}">
-                  <h{{ depth }} class="kss-title" id="{{ referenceURI }}">
-                    <span class="kss-ref badge pull-right">{{ referenceURI }}</span> {{ header }}
-                  </h{{ depth }}>
-                {{/ifDepth}}
-                {{#if markup}}
-                  {{#if description}}
-                    <div class="kss-box">{{{description}}}</div>
-                  {{/if}}
-
-                  {{{markup}}}
-
-                  {{#eachModifier}}
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>{{name}}</code></h4>{{{description}}}
-                      </div>
-                      <div class="panel-body">
-                        {{{markup}}}
-                      </div>
-                    </div>
-                  {{/eachModifier}}
-
-                  <pre class="prettyprint lang-html">{{markup}}</pre>
-
-                {{else}}
-                  {{#if description}}
-                    {{{description}}}
-                  {{/if}}
-                {{/if}}
-                {{#ifDepth 1}}
-                {{else}}
-                  </section>
-                {{/ifDepth}}
-              {{/eachSection}}
-            {{/if}}
-          </article>
-        </div>
-      </div>
-      <div class="col-md-3">
+      <div class="row row-offcanvas row-offcanvas-right">
         {{#if homepage}}
-          {{!-- Nothing --}}
+          <article class="col-md-12">
+            <section class="kss-depth-{{ depth }} jumbotron">
+              <h1>Styleguide</h1>
+            </section>
+            {{{homepage}}}
         {{else}}
-          <nav class="affix" data-spy="affix">
-            <ul class="nav">
-              {{#eachSection rootName}}
-                {{#ifDepth 1}}
-                  <!--<a href="#" class="list-group-item disabled">
-                    <h4 class="list-group-item-heading">{{ header }}</h4>
-                  </a>-->
-                {{else}}
-                  {{#ifDepth 2}}
-                    <li class="parent">
-                      <a href="#{{referenceURI}}"><!--<span class="kss-ref badge" >{{ referenceURI }}</span> -->{{ header }}</a>
-                    </li>
-                  {{else}}
-                    <li class="child">
-                      <a href="#{{referenceURI}}"><!--<span class="kss-ref badge">{{ referenceURI }}</span> - -->{{ header }}</a>
-                    </li>
-                  {{/ifDepth}}
-                {{/ifDepth}}
-              {{/eachSection}}
-            </ul>
-          </nav>
+          <article class="col-xs-12 col-sm-9">
+
+          {{!
+            Find each section, in order.
+            If there's no markup or modifiers supplied, use a Markdown-only
+            layout instead.
+
+            The "root" element comes first in this loop, and can be detected using
+            the "#whenDepth 1" block as seen below.
+          }}
+          {{#eachSection rootName}}
+            {{#ifDepth 1}}
+              <p class="pull-right visible-xs">
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+              </p>
+              <section class="kss-depth-{{ depth }} jumbotron">
+                <h1 class="kss-title" id="{{ referenceURI }}">{{ header }}</h1>
+            {{else}}
+              <section class="kss-depth-{{ depth }}">
+                <h{{ depth }} class="kss-title" id="{{ referenceURI }}">
+                  <span class="kss-ref badge pull-right">{{ referenceURI }}</span> {{ header }}
+                </h{{ depth }}>
+            {{/ifDepth}}
+            {{#if markup}}
+              {{#if description}}
+                <div class="kss-box">{{{description}}}</div>
+              {{/if}}
+
+              <div class="kss-example">{{{markup}}}</div>
+              <pre class="prettyprint lang-html">{{markup}}</pre>
+
+              {{#eachModifier}}
+                <h4>{{{description}}} <span class="pull-right"><code>{{name}}</code></span></h4>
+                <div class="kss-example">{{{markup}}}</div>
+              {{/eachModifier}}
+
+              <hr />
+
+            {{else}}
+              {{#if description}}
+                {{{description}}}
+              {{/if}}
+            {{/if}}
+            </section>
+          {{/eachSection}}
         {{/if}}
+        </article>
+      {{#if homepage}}
+      {{else}}
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group" data-spy="affix">
+            {{#eachSection rootName}}
+              {{#ifDepth 0}}
+                <!--<h4 class="list-group-item-heading">{{ header }}</h4>-->
+              {{/ifDepth}}
+              {{#ifDepth 1}}
+                <!--<li><a href="#" class="list-group-item disabled">
+                  <h4 class="list-group-item-heading">{{ header }}</h4>
+                </a></li>-->
+              {{/ifDepth}}
+              {{#ifDepth 2}}
+                <a class="list-group-item" href="#{{referenceURI}}"><!--<span class="kss-ref badge" >{{ referenceURI }}</span> -->{{ header }}</a>
+              {{/ifDepth}}
+            {{/eachSection}}
+          </div>
+        </div>
+      {{/if}}
       </div>
     </div>
 
@@ -134,24 +125,12 @@
         prettyPrint();
 
         // Set the navigation to be the correct width.
-        jQuery('#sidebar').width(jQuery('.col-md-3').width());
+        jQuery('#sidebar .list-group').on('affix.bs.affix', function () {
+          jQuery('#sidebar .list-group').width(jQuery('.col-sm-3').width());
+        });
 
-        // Turn the list into a tree.
-        jQuery('li.parent').each(function() {
-          // Construct a ul for the children.
-          var ul = $('<ul class="children"></ul>');
-
-          // Find all the children from the parent.
-          var next = $(this).next();
-          while ($(next).hasClass('child')) {
-            // Append all the children to the ul.
-            $(next).appendTo(ul);
-            next = $(this).next();
-          }
-
-          // If there are children, add them to the parent.
-          ul.has('li').appendTo(this);
-
+        jQuery('[data-toggle="offcanvas"]').click(function () {
+          jQuery('.row-offcanvas').toggleClass('active')
         });
       });
     </script>

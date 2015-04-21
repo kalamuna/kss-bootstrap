@@ -12,7 +12,7 @@ Styleguide 1.4
 /*
 User input
 
-Use the &lt;kbd&gt; to indicate input that is typically entered via keyboard.
+Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.
 
 Markup:
 To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>

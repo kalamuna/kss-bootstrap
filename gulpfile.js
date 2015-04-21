@@ -6,6 +6,7 @@ var serve = require('gulp-serve');
 var fs = require('fs');
 var del = require('del');
 var exec = require('gulp-exec');
+var concat = require('gulp-concat');
 
 /**
  * Clean
@@ -36,7 +37,12 @@ gulp.task('kss', ['clean'], function(cb) {
  * Sets up Bootstrap for KSS.
  */
 gulp.task('kss-bootstrap', ['kss'], function() {
-  return gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css'])
+  var sources = [
+    'node_modules/bootstrap/dist/css/bootstrap.css',
+    'node_modules/bootstrap/dist/css/bootstrap-theme.css'
+  ];
+  return gulp.src(sources)
+    .pipe(concat('bootstrap.css'))
     .pipe(gulp.dest('out/public/'));
 });
 

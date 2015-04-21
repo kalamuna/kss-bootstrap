@@ -11,11 +11,11 @@ Markup:
 </ul>
 
 .nav-tabs - Simple navigation
-.nav-pills - nav pills
-.nav-tabs.nav-stacked - simple nav stacked
-.nav-pills.nav-stacked - nav pills stacked
-.nav-tabs.nav-justified - simple nav justified
-.nav-pills.nav-justified - nav pills justified
+.nav-pills - Pill navigation
+.nav-tabs.nav-stacked - Stacked navigation
+.nav-pills.nav-stacked - Pill and stacked navigation
+.nav-tabs.nav-justified - Justified navigation
+.nav-pills.nav-justified - Pill and justified navigation
 
 Styleguide 2.3
 */

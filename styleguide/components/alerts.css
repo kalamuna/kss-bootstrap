@@ -7,10 +7,10 @@ Markup:
 <div class="alert {{modifier_class}}">Well done! You successfully read this important alert message.</div>
 <div class="alert {{modifier_class}} alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div>
 
-.alert-success - alert success
-.alert-info - alert info
-.alert-warning - alert warning
-.alert-danger - alert danger
+.alert-success - Success
+.alert-info - Information
+.alert-warning - Warning
+.alert-danger - Danger
 
 Styleguide 2.8
 */
