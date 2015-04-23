@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap Styleguide</title>
+    <title>Style Guide</title>
     <meta name="description" content="" />
     <meta name="generator" content="kss-node" />
     <meta name="viewport" content="width=device-width, minimal-ui">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="public/bootstrap.css">
 
   </head>
-  <body data-spy="scroll" data-target="nav.affix">
+  <body data-spy="scroll" data-target="#sidebar">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -41,68 +41,74 @@
       </div>
     </nav>
     <div class="container">
-      <div class="col-md-9">
-        <div role="main">
-          <article>
+      <div class="row row-offcanvas row-offcanvas-right">
+          <article class="col-xs-12 col-sm-9">
 
-                  <h1 class="kss-title" id="1">CSS</h1>
-                    <p>Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system.</p>
+              <p class="pull-right visible-xs">
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+              </p>
+              <section class="kss-depth-1 jumbotron">
+                <h1 class="kss-title" id="1">CSS</h1>
+                <p>Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system.</p>
 
-                 <section class="kss-depth-2">
-                  <h2 class="kss-title" id="1.1">
-                    <span class="kss-ref badge pull-right">1.1</span> Typography
-                  </h2>
-                    <p>Use any of the available button classes to quickly create a styled button.</p>
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="1.1">
+                  <span class="kss-ref badge pull-right">1.1</span> Typography
+                </h2>
+                <p>Use any of the available button classes to quickly create a styled button.</p>
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.1.1">
-                    <span class="kss-ref badge pull-right">1.1.1</span> Headings
-                  </h3>
-                    <div class="kss-box"><p>Default styling of typography headings.</p>
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.1.1">
+                  <span class="kss-ref badge pull-right">1.1.1</span> Headings
+                </h3>
+                <div class="kss-box"><p>Default styling of typography headings.</p>
 </div>
 
-                  <h1>Heading 1</h1>
+              <div class="kss-example"><h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
-<h5>Heading 5</h5>
-
-
-                  <pre class="prettyprint lang-html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+<h5>Heading 5</h5></div>
+              <pre class="prettyprint lang-html">&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
 &lt;h3&gt;Heading 3&lt;/h3&gt;
 &lt;h4&gt;Heading 4&lt;/h4&gt;
 &lt;h5&gt;Heading 5&lt;/h5&gt;</pre>
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.1.2">
-                    <span class="kss-ref badge pull-right">1.1.2</span> Paragraph
-                  </h3>
-                    <div class="kss-box"><p>Default styling of typography paragraphs.</p>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.1.2">
+                  <span class="kss-ref badge pull-right">1.1.2</span> Paragraph
+                </h3>
+                <div class="kss-box"><p>Default styling of typography paragraphs.</p>
 </div>
 
-                  <p>The quick brown fox jumps over the lazy dog. Foxy parsons quiz and cajole the
+              <div class="kss-example"><p>The quick brown fox jumps over the lazy dog. Foxy parsons quiz and cajole the
 lovably dim wiki-girl. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. How
 razorback-jumping frogs can level six piqued gymnasts! All questions asked by
-five watched experts — amaze the judge.</p>
-
-
-                  <pre class="prettyprint lang-html">&lt;p&gt;The quick brown fox jumps over the lazy dog. Foxy parsons quiz and cajole the
+five watched experts — amaze the judge.</p></div>
+              <pre class="prettyprint lang-html">&lt;p&gt;The quick brown fox jumps over the lazy dog. Foxy parsons quiz and cajole the
 lovably dim wiki-girl. Watch &quot;Jeopardy!&quot;, Alex Trebek&#x27;s fun TV quiz game. How
 razorback-jumping frogs can level six piqued gymnasts! All questions asked by
 five watched experts — amaze the judge.&lt;/p&gt;</pre>
 
-                  </section>
-                 <section class="kss-depth-2">
-                  <h2 class="kss-title" id="1.2">
-                    <span class="kss-ref badge pull-right">1.2</span> Tables
-                  </h2>
-                    <div class="kss-box"><p>For basic styling-light padding and only horizontal dividers-add the base class .table to any &lt;table&gt;. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we have opted to isolate our custom table styles.</p>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="1.2">
+                  <span class="kss-ref badge pull-right">1.2</span> Tables
+                </h2>
+                <div class="kss-box"><p>For basic styling-light padding and only horizontal dividers-add the base class .table to any &lt;table&gt;. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we have opted to isolate our custom table styles.</p>
 </div>
 
-                  <table class="table ">
+              <div class="kss-example"><table class="table ">
   <thead>
     <tr>
       <th>#</th>
@@ -131,158 +137,8 @@ five watched experts — amaze the judge.&lt;/p&gt;</pre>
       <td>@twitter</td>
     </tr>
   </tbody>
-</table>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.table-striped</code></h4>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>
-                      </div>
-                      <div class="panel-body">
-                        <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.table-bordered</code></h4>Add <code>.table-bordered</code> for borders on all sides of the table and cells.
-                      </div>
-                      <div class="panel-body">
-                        <table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.table-hover</code></h4>Add <code>.table-hover</code> to enable a hover state on table rows within a &lt;tbody&gt;.
-                      </div>
-                      <div class="panel-body">
-                        <table class="table table-hover">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.table-condensed</code></h4>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.
-                      </div>
-                      <div class="panel-body">
-                        <table class="table table-condensed">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-                      </div>
-                    </div>
-
-                  <pre class="prettyprint lang-html">&lt;table class=&quot;table &quot;&gt;
+</table></div>
+              <pre class="prettyprint lang-html">&lt;table class=&quot;table &quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;#&lt;/th&gt;
@@ -313,15 +169,142 @@ five watched experts — amaze the judge.&lt;/p&gt;</pre>
   &lt;/tbody&gt;
 &lt;/table&gt;</pre>
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.2.1">
-                    <span class="kss-ref badge pull-right">1.2.1</span> Contextual classes
-                  </h3>
-                    <div class="kss-box"><p>Use contextual classes to color table rows or individual cells.</p>
+                <h4>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code> <span class="pull-right"><code>.table-striped</code></span></h4>
+                <div class="kss-example"><table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table></div>
+                <h4>Add <code>.table-bordered</code> for borders on all sides of the table and cells. <span class="pull-right"><code>.table-bordered</code></span></h4>
+                <div class="kss-example"><table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table></div>
+                <h4>Add <code>.table-hover</code> to enable a hover state on table rows within a &lt;tbody&gt;. <span class="pull-right"><code>.table-hover</code></span></h4>
+                <div class="kss-example"><table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table></div>
+                <h4>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half. <span class="pull-right"><code>.table-condensed</code></span></h4>
+                <div class="kss-example"><table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.2.1">
+                  <span class="kss-ref badge pull-right">1.2.1</span> Contextual classes
+                </h3>
+                <div class="kss-box"><p>Use contextual classes to color table rows or individual cells.</p>
 </div>
 
-                  <table class="table">
+              <div class="kss-example"><table class="table">
   <thead>
       <tr>
         <th>#</th>
@@ -350,195 +333,8 @@ five watched experts — amaze the judge.&lt;/p&gt;</pre>
       <td>Column content</td>
     </tr>
   </tbody>
-</table>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.active</code></h4>Applies the hover color to a particular row or cell
-                      </div>
-                      <div class="panel-body">
-                        <table class="table">
-  <thead>
-      <tr>
-        <th>#</th>
-        <th>Column heading</th>
-        <th>Column heading</th>
-        <th>Column heading</th>
-      </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr class="active">
-      <td>2</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-  </tbody>
-</table>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.success</code></h4>Indicates a successful or positive action
-                      </div>
-                      <div class="panel-body">
-                        <table class="table">
-  <thead>
-      <tr>
-        <th>#</th>
-        <th>Column heading</th>
-        <th>Column heading</th>
-        <th>Column heading</th>
-      </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr class="success">
-      <td>2</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-  </tbody>
-</table>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.info</code></h4>Indicates a neutral informative change or action
-                      </div>
-                      <div class="panel-body">
-                        <table class="table">
-  <thead>
-      <tr>
-        <th>#</th>
-        <th>Column heading</th>
-        <th>Column heading</th>
-        <th>Column heading</th>
-      </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr class="info">
-      <td>2</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-  </tbody>
-</table>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.warning</code></h4>Indicates a warning that might need attention
-                      </div>
-                      <div class="panel-body">
-                        <table class="table">
-  <thead>
-      <tr>
-        <th>#</th>
-        <th>Column heading</th>
-        <th>Column heading</th>
-        <th>Column heading</th>
-      </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr class="warning">
-      <td>2</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-  </tbody>
-</table>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.danger</code></h4>Indicates a dangerous or potentially negative action
-                      </div>
-                      <div class="panel-body">
-                        <table class="table">
-  <thead>
-      <tr>
-        <th>#</th>
-        <th>Column heading</th>
-        <th>Column heading</th>
-        <th>Column heading</th>
-      </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr class="danger">
-      <td>2</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-  </tbody>
-</table>
-                      </div>
-                    </div>
-
-                  <pre class="prettyprint lang-html">&lt;table class=&quot;table&quot;&gt;
+</table></div>
+              <pre class="prettyprint lang-html">&lt;table class=&quot;table&quot;&gt;
   &lt;thead&gt;
       &lt;tr&gt;
         &lt;th&gt;#&lt;/th&gt;
@@ -569,15 +365,173 @@ five watched experts — amaze the judge.&lt;/p&gt;</pre>
   &lt;/tbody&gt;
 &lt;/table&gt;</pre>
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.2.2">
-                    <span class="kss-ref badge pull-right">1.2.2</span> Responsive tables
-                  </h3>
-                    <div class="kss-box"><p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
+                <h4>Applies the hover color to a particular row or cell <span class="pull-right"><code>.active</code></span></h4>
+                <div class="kss-example"><table class="table">
+  <thead>
+      <tr>
+        <th>#</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="active">
+      <td>2</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+  </tbody>
+</table></div>
+                <h4>Indicates a successful or positive action <span class="pull-right"><code>.success</code></span></h4>
+                <div class="kss-example"><table class="table">
+  <thead>
+      <tr>
+        <th>#</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="success">
+      <td>2</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+  </tbody>
+</table></div>
+                <h4>Indicates a neutral informative change or action <span class="pull-right"><code>.info</code></span></h4>
+                <div class="kss-example"><table class="table">
+  <thead>
+      <tr>
+        <th>#</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+  </tbody>
+</table></div>
+                <h4>Indicates a warning that might need attention <span class="pull-right"><code>.warning</code></span></h4>
+                <div class="kss-example"><table class="table">
+  <thead>
+      <tr>
+        <th>#</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="warning">
+      <td>2</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+  </tbody>
+</table></div>
+                <h4>Indicates a dangerous or potentially negative action <span class="pull-right"><code>.danger</code></span></h4>
+                <div class="kss-example"><table class="table">
+  <thead>
+      <tr>
+        <th>#</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="danger">
+      <td>2</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+  </tbody>
+</table></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.2.2">
+                  <span class="kss-ref badge pull-right">1.2.2</span> Responsive tables
+                </h3>
+                <div class="kss-box"><p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
 </div>
 
-                  <div class="table-responsive">
+              <div class="kss-example"><div class="table-responsive">
     <table class="table">
         <thead>
             <tr>
@@ -608,10 +562,8 @@ five watched experts — amaze the judge.&lt;/p&gt;</pre>
             </tr>
           </tbody>
     </table>
-</div>
-
-
-                  <pre class="prettyprint lang-html">&lt;div class=&quot;table-responsive&quot;&gt;
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;table-responsive&quot;&gt;
     &lt;table class=&quot;table&quot;&gt;
         &lt;thead&gt;
             &lt;tr&gt;
@@ -644,15 +596,18 @@ five watched experts — amaze the judge.&lt;/p&gt;</pre>
     &lt;/table&gt;
 &lt;/div&gt;</pre>
 
-                  </section>
-                 <section class="kss-depth-2">
-                  <h2 class="kss-title" id="1.3">
-                    <span class="kss-ref badge pull-right">1.3</span> Forms
-                  </h2>
-                    <div class="kss-box"><p>Individual form controls automatically receive some global styling. All textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements with .form-control are set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.</p>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="1.3">
+                  <span class="kss-ref badge pull-right">1.3</span> Forms
+                </h2>
+                <div class="kss-box"><p>Individual form controls automatically receive some global styling. All textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements with .form-control are set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.</p>
 </div>
 
-                  <form class="" role="form">
+              <div class="kss-example"><form class="" role="form">
   <div class="form-group">
     <label>Email address</label>
     <input type="email" class="form-control" placeholder="Enter email" name="email">
@@ -672,38 +627,8 @@ five watched experts — amaze the judge.&lt;/p&gt;</pre>
     </label>
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
-</form>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.form-inline</code></h4>inline forms
-                      </div>
-                      <div class="panel-body">
-                        <form class="form-inline" role="form">
-  <div class="form-group">
-    <label>Email address</label>
-    <input type="email" class="form-control" placeholder="Enter email" name="email">
-  </div>
-  <div class="form-group">
-    <label>Password</label>
-    <input type="password" class="form-control" placeholder="Password" name="password">
-  </div>
-  <div class="form-group">
-    <label>File input</label>
-    <input type="file" name="file">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" name="check"> Check me out
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
-                      </div>
-                    </div>
-
-                  <pre class="prettyprint lang-html">&lt;form class=&quot;&quot; role=&quot;form&quot;&gt;
+</form></div>
+              <pre class="prettyprint lang-html">&lt;form class=&quot;&quot; role=&quot;form&quot;&gt;
   &lt;div class=&quot;form-group&quot;&gt;
     &lt;label&gt;Email address&lt;/label&gt;
     &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Enter email&quot; name=&quot;email&quot;&gt;
@@ -725,351 +650,259 @@ five watched experts — amaze the judge.&lt;/p&gt;</pre>
   &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
 &lt;/form&gt;</pre>
 
-                  </section>
-                 <section class="kss-depth-2">
-                  <h2 class="kss-title" id="1.4">
-                    <span class="kss-ref badge pull-right">1.4</span> Code
-                  </h2>
-                    <div class="kss-box"><p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+                <h4>Inline forms <span class="pull-right"><code>.form-inline</code></span></h4>
+                <div class="kss-example"><form class="form-inline" role="form">
+  <div class="form-group">
+    <label>Email address</label>
+    <input type="email" class="form-control" placeholder="Enter email" name="email">
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" placeholder="Password" name="password">
+  </div>
+  <div class="form-group">
+    <label>File input</label>
+    <input type="file" name="file">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="check"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="1.4">
+                  <span class="kss-ref badge pull-right">1.4</span> Code
+                </h2>
+                <div class="kss-box"><p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
 </div>
 
-                  For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+              <div class="kss-example">For example, <code>&lt;section&gt;</code> should be wrapped as inline.</div>
+              <pre class="prettyprint lang-html">For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped as inline.</pre>
 
 
-                  <pre class="prettyprint lang-html">For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped as inline.</pre>
+              <hr />
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.4.1">
-                    <span class="kss-ref badge pull-right">1.4.1</span> User input
-                  </h3>
-                    <div class="kss-box"><p>Use the &lt;kbd&gt; to indicate input that is typically entered via keyboard.</p>
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.4.1">
+                  <span class="kss-ref badge pull-right">1.4.1</span> User input
+                </h3>
+                <div class="kss-box"><p>Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
 </div>
 
-                  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
-
-
-                  <pre class="prettyprint lang-html">To switch directories, type &lt;kbd&gt;cd&lt;/kbd&gt; followed by the name of the directory.&lt;br&gt;
+              <div class="kss-example">To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></div>
+              <pre class="prettyprint lang-html">To switch directories, type &lt;kbd&gt;cd&lt;/kbd&gt; followed by the name of the directory.&lt;br&gt;
 To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt;/kbd&gt;&lt;/kbd&gt;</pre>
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.4.2">
-                    <span class="kss-ref badge pull-right">1.4.2</span> Basic block
-                  </h3>
-                    <div class="kss-box"><p>Use &lt;pre&gt; for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.4.2">
+                  <span class="kss-ref badge pull-right">1.4.2</span> Basic block
+                </h3>
+                <div class="kss-box"><p>Use &lt;pre&gt; for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
 </div>
 
-                  <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+              <div class="kss-example"><pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre></div>
+              <pre class="prettyprint lang-html">&lt;pre&gt;&amp;lt;p&amp;gt;Sample text here...&amp;lt;/p&amp;gt;&lt;/pre&gt;</pre>
 
 
-                  <pre class="prettyprint lang-html">&lt;pre&gt;&amp;lt;p&amp;gt;Sample text here...&amp;lt;/p&amp;gt;&lt;/pre&gt;</pre>
+              <hr />
 
-                  </section>
-                 <section class="kss-depth-2">
-                  <h2 class="kss-title" id="1.6">
-                    <span class="kss-ref badge pull-right">1.6</span> Buttons
-                  </h2>
-                    <div class="kss-box"><p>Use any of the available button classes to quickly create a styled button.</p>
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="1.6">
+                  <span class="kss-ref badge pull-right">1.6</span> Buttons
+                </h2>
+                <div class="kss-box"><p>Use any of the available button classes to quickly create a styled button.</p>
 </div>
 
-                  <button type="button" class="btn ">Button</button>
+              <div class="kss-example"><button type="button" class="btn ">Button</button></div>
+              <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn &quot;&gt;Button&lt;/button&gt;</pre>
 
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.btn-default</code></h4>Default
-                      </div>
-                      <div class="panel-body">
-                        <button type="button" class="btn btn-default">Button</button>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.btn-success</code></h4>Success
-                      </div>
-                      <div class="panel-body">
-                        <button type="button" class="btn btn-success">Button</button>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.btn-info</code></h4>Info
-                      </div>
-                      <div class="panel-body">
-                        <button type="button" class="btn btn-info">Button</button>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.btn-warning</code></h4>Warning
-                      </div>
-                      <div class="panel-body">
-                        <button type="button" class="btn btn-warning">Button</button>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.btn-danger</code></h4>Danger
-                      </div>
-                      <div class="panel-body">
-                        <button type="button" class="btn btn-danger">Button</button>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.btn-link</code></h4>Link
-                      </div>
-                      <div class="panel-body">
-                        <button type="button" class="btn btn-link">Button</button>
-                      </div>
-                    </div>
+                <h4>Default <span class="pull-right"><code>.btn-default</code></span></h4>
+                <div class="kss-example"><button type="button" class="btn btn-default">Button</button></div>
+                <h4>Success <span class="pull-right"><code>.btn-success</code></span></h4>
+                <div class="kss-example"><button type="button" class="btn btn-success">Button</button></div>
+                <h4>Info <span class="pull-right"><code>.btn-info</code></span></h4>
+                <div class="kss-example"><button type="button" class="btn btn-info">Button</button></div>
+                <h4>Warning <span class="pull-right"><code>.btn-warning</code></span></h4>
+                <div class="kss-example"><button type="button" class="btn btn-warning">Button</button></div>
+                <h4>Danger <span class="pull-right"><code>.btn-danger</code></span></h4>
+                <div class="kss-example"><button type="button" class="btn btn-danger">Button</button></div>
+                <h4>Link <span class="pull-right"><code>.btn-link</code></span></h4>
+                <div class="kss-example"><button type="button" class="btn btn-link">Button</button></div>
 
-                  <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn &quot;&gt;Button&lt;/button&gt;</pre>
+              <hr />
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.6.1">
-                    <span class="kss-ref badge pull-right">1.6.1</span> Sizes
-                  </h3>
-                    <div class="kss-box"><p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.6.1">
+                  <span class="kss-ref badge pull-right">1.6.1</span> Sizes
+                </h3>
+                <div class="kss-box"><p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
 </div>
 
-                  <button type="button" class="btn ">Button</button>
+              <div class="kss-example"><button type="button" class="btn ">Button</button></div>
+              <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn &quot;&gt;Button&lt;/button&gt;</pre>
 
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.btn-lg</code></h4>Large
-                      </div>
-                      <div class="panel-body">
-                        <button type="button" class="btn btn-lg">Button</button>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.btn-sm</code></h4>Small
-                      </div>
-                      <div class="panel-body">
-                        <button type="button" class="btn btn-sm">Button</button>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.btn-xs</code></h4>Extra small
-                      </div>
-                      <div class="panel-body">
-                        <button type="button" class="btn btn-xs">Button</button>
-                      </div>
-                    </div>
+                <h4>Large <span class="pull-right"><code>.btn-lg</code></span></h4>
+                <div class="kss-example"><button type="button" class="btn btn-lg">Button</button></div>
+                <h4>Small <span class="pull-right"><code>.btn-sm</code></span></h4>
+                <div class="kss-example"><button type="button" class="btn btn-sm">Button</button></div>
+                <h4>Extra small <span class="pull-right"><code>.btn-xs</code></span></h4>
+                <div class="kss-example"><button type="button" class="btn btn-xs">Button</button></div>
 
-                  <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn &quot;&gt;Button&lt;/button&gt;</pre>
+              <hr />
 
-                  </section>
-                 <section class="kss-depth-2">
-                  <h2 class="kss-title" id="1.7">
-                    <span class="kss-ref badge pull-right">1.7</span> Images
-                  </h2>
-                    <p>There are a number of ways to expose images.</p>
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="1.7">
+                  <span class="kss-ref badge pull-right">1.7</span> Images
+                </h2>
+                <p>There are a number of ways to expose images.</p>
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.7.1">
-                    <span class="kss-ref badge pull-right">1.7.1</span> Responsive images
-                  </h3>
-                    <div class="kss-box"><p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.</p>
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.7.1">
+                  <span class="kss-ref badge pull-right">1.7.1</span> Responsive images
+                </h3>
+                <div class="kss-box"><p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.</p>
 </div>
 
-                  <img src="http://placehold.it/140x140" class="img-responsive" alt="Responsive image">
+              <div class="kss-example"><img src="http://placehold.it/140x140" class="img-responsive" alt="Responsive image"></div>
+              <pre class="prettyprint lang-html">&lt;img src=&quot;http://placehold.it/140x140&quot; class=&quot;img-responsive&quot; alt=&quot;Responsive image&quot;&gt;</pre>
 
 
-                  <pre class="prettyprint lang-html">&lt;img src=&quot;http://placehold.it/140x140&quot; class=&quot;img-responsive&quot; alt=&quot;Responsive image&quot;&gt;</pre>
+              <hr />
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.7.2">
-                    <span class="kss-ref badge pull-right">1.7.2</span> Image shapes
-                  </h3>
-                    <div class="kss-box"><p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.7.2">
+                  <span class="kss-ref badge pull-right">1.7.2</span> Image shapes
+                </h3>
+                <div class="kss-box"><p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
 </div>
 
-                  <img src="http://placehold.it/140x140" alt="..." class="">
+              <div class="kss-example"><img src="http://placehold.it/140x140" alt="..." class=""></div>
+              <pre class="prettyprint lang-html">&lt;img src=&quot;http://placehold.it/140x140&quot; alt=&quot;...&quot; class=&quot;&quot;&gt;</pre>
 
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.img-rounded</code></h4>Rounded
-                      </div>
-                      <div class="panel-body">
-                        <img src="http://placehold.it/140x140" alt="..." class="img-rounded">
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.img-circle</code></h4>Circle
-                      </div>
-                      <div class="panel-body">
-                        <img src="http://placehold.it/140x140" alt="..." class="img-circle">
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4><code>.img-thumbnail</code></h4>Thumbnail
-                      </div>
-                      <div class="panel-body">
-                        <img src="http://placehold.it/140x140" alt="..." class="img-thumbnail">
-                      </div>
-                    </div>
+                <h4>Rounded <span class="pull-right"><code>.img-rounded</code></span></h4>
+                <div class="kss-example"><img src="http://placehold.it/140x140" alt="..." class="img-rounded"></div>
+                <h4>Circle <span class="pull-right"><code>.img-circle</code></span></h4>
+                <div class="kss-example"><img src="http://placehold.it/140x140" alt="..." class="img-circle"></div>
+                <h4>Thumbnail <span class="pull-right"><code>.img-thumbnail</code></span></h4>
+                <div class="kss-example"><img src="http://placehold.it/140x140" alt="..." class="img-thumbnail"></div>
 
-                  <pre class="prettyprint lang-html">&lt;img src=&quot;http://placehold.it/140x140&quot; alt=&quot;...&quot; class=&quot;&quot;&gt;</pre>
+              <hr />
 
-                  </section>
-                 <section class="kss-depth-2">
-                  <h2 class="kss-title" id="1.8">
-                    <span class="kss-ref badge pull-right">1.8</span> Helpers
-                  </h2>
-                    <p>There are many helper classes available.</p>
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="1.8">
+                  <span class="kss-ref badge pull-right">1.8</span> Helpers
+                </h2>
+                <p>There are many helper classes available.</p>
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.8.1">
-                    <span class="kss-ref badge pull-right">1.8.1</span> Contextual colors
-                  </h3>
-                    <div class="kss-box"><p>Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.</p>
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.8.1">
+                  <span class="kss-ref badge pull-right">1.8.1</span> Contextual colors
+                </h3>
+                <div class="kss-box"><p>Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.</p>
 </div>
 
-                  <p class="text-muted">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <div class="kss-example"><p class="text-muted">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
 <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-<p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-
-
-                  <pre class="prettyprint lang-html">&lt;p class=&quot;text-muted&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+<p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p></div>
+              <pre class="prettyprint lang-html">&lt;p class=&quot;text-muted&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
 &lt;p class=&quot;text-primary&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
 &lt;p class=&quot;text-success&quot;&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;
 &lt;p class=&quot;text-info&quot;&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/p&gt;
 &lt;p class=&quot;text-warning&quot;&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
 &lt;p class=&quot;text-danger&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;</pre>
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.8.2">
-                    <span class="kss-ref badge pull-right">1.8.2</span> Contextual backgrounds
-                  </h3>
-                    <div class="kss-box"><p>Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes.</p>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.8.2">
+                  <span class="kss-ref badge pull-right">1.8.2</span> Contextual backgrounds
+                </h3>
+                <div class="kss-box"><p>Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes.</p>
 </div>
 
-                  <p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <div class="kss-example"><p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 <p class="bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 <p class="bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
 <p class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-<p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-
-
-                  <pre class="prettyprint lang-html">&lt;p class=&quot;bg-primary&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+<p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p></div>
+              <pre class="prettyprint lang-html">&lt;p class=&quot;bg-primary&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
 &lt;p class=&quot;bg-success&quot;&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;
 &lt;p class=&quot;bg-info&quot;&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/p&gt;
 &lt;p class=&quot;bg-warning&quot;&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
 &lt;p class=&quot;bg-danger&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;</pre>
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.8.3">
-                    <span class="kss-ref badge pull-right">1.8.3</span> Close icon
-                  </h3>
-                    <div class="kss-box"><p>Use the generic close icon for dismissing content like modals and alerts.</p>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.8.3">
+                  <span class="kss-ref badge pull-right">1.8.3</span> Close icon
+                </h3>
+                <div class="kss-box"><p>Use the generic close icon for dismissing content like modals and alerts.</p>
 </div>
 
-                  <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <div class="kss-example"><button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+              <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;&lt;/button&gt;</pre>
 
 
-                  <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;&lt;/button&gt;</pre>
+              <hr />
 
-                  </section>
-                 <section class="kss-depth-3">
-                  <h3 class="kss-title" id="1.8.4">
-                    <span class="kss-ref badge pull-right">1.8.4</span> Carets
-                  </h3>
-                    <div class="kss-box"><p>Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in dropup menus.</p>
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="1.8.4">
+                  <span class="kss-ref badge pull-right">1.8.4</span> Carets
+                </h3>
+                <div class="kss-box"><p>Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in dropup menus.</p>
 </div>
 
-                  <span class="caret"></span>
+              <div class="kss-example"><span class="caret"></span></div>
+              <pre class="prettyprint lang-html">&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;</pre>
 
 
-                  <pre class="prettyprint lang-html">&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;</pre>
+              <hr />
 
-                  </section>
-          </article>
+            </section>
+        </article>
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group" data-spy="affix">
+                <!--<li><a href="#" class="list-group-item disabled">
+                  <h4 class="list-group-item-heading">CSS</h4>
+                </a></li>-->
+                <a class="list-group-item" href="#1.1"><!--<span class="kss-ref badge" >1.1</span> -->Typography</a>
+                <a class="list-group-item" href="#1.2"><!--<span class="kss-ref badge" >1.2</span> -->Tables</a>
+                <a class="list-group-item" href="#1.3"><!--<span class="kss-ref badge" >1.3</span> -->Forms</a>
+                <a class="list-group-item" href="#1.4"><!--<span class="kss-ref badge" >1.4</span> -->Code</a>
+                <a class="list-group-item" href="#1.6"><!--<span class="kss-ref badge" >1.6</span> -->Buttons</a>
+                <a class="list-group-item" href="#1.7"><!--<span class="kss-ref badge" >1.7</span> -->Images</a>
+                <a class="list-group-item" href="#1.8"><!--<span class="kss-ref badge" >1.8</span> -->Helpers</a>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3">
-          <nav class="affix" data-spy="affix">
-            <ul class="nav">
-                  <!--<a href="#" class="list-group-item disabled">
-                    <h4 class="list-group-item-heading">CSS</h4>
-                  </a>-->
-                    <li class="parent">
-                      <a href="#1.1"><!--<span class="kss-ref badge" >1.1</span> -->Typography</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.1.1"><!--<span class="kss-ref badge">1.1.1</span> - -->Headings</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.1.2"><!--<span class="kss-ref badge">1.1.2</span> - -->Paragraph</a>
-                    </li>
-                    <li class="parent">
-                      <a href="#1.2"><!--<span class="kss-ref badge" >1.2</span> -->Tables</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.2.1"><!--<span class="kss-ref badge">1.2.1</span> - -->Contextual classes</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.2.2"><!--<span class="kss-ref badge">1.2.2</span> - -->Responsive tables</a>
-                    </li>
-                    <li class="parent">
-                      <a href="#1.3"><!--<span class="kss-ref badge" >1.3</span> -->Forms</a>
-                    </li>
-                    <li class="parent">
-                      <a href="#1.4"><!--<span class="kss-ref badge" >1.4</span> -->Code</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.4.1"><!--<span class="kss-ref badge">1.4.1</span> - -->User input</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.4.2"><!--<span class="kss-ref badge">1.4.2</span> - -->Basic block</a>
-                    </li>
-                    <li class="parent">
-                      <a href="#1.6"><!--<span class="kss-ref badge" >1.6</span> -->Buttons</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.6.1"><!--<span class="kss-ref badge">1.6.1</span> - -->Sizes</a>
-                    </li>
-                    <li class="parent">
-                      <a href="#1.7"><!--<span class="kss-ref badge" >1.7</span> -->Images</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.7.1"><!--<span class="kss-ref badge">1.7.1</span> - -->Responsive images</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.7.2"><!--<span class="kss-ref badge">1.7.2</span> - -->Image shapes</a>
-                    </li>
-                    <li class="parent">
-                      <a href="#1.8"><!--<span class="kss-ref badge" >1.8</span> -->Helpers</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.8.1"><!--<span class="kss-ref badge">1.8.1</span> - -->Contextual colors</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.8.2"><!--<span class="kss-ref badge">1.8.2</span> - -->Contextual backgrounds</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.8.3"><!--<span class="kss-ref badge">1.8.3</span> - -->Close icon</a>
-                    </li>
-                    <li class="child">
-                      <a href="#1.8.4"><!--<span class="kss-ref badge">1.8.4</span> - -->Carets</a>
-                    </li>
-            </ul>
-          </nav>
       </div>
     </div>
 
@@ -1084,24 +917,12 @@ To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt
         prettyPrint();
 
         // Set the navigation to be the correct width.
-        jQuery('#sidebar').width(jQuery('.col-md-3').width());
+        jQuery('#sidebar .list-group').on('affix.bs.affix', function () {
+          jQuery('#sidebar .list-group').width(jQuery('.col-sm-3').width());
+        });
 
-        // Turn the list into a tree.
-        jQuery('li.parent').each(function() {
-          // Construct a ul for the children.
-          var ul = $('<ul class="children"></ul>');
-
-          // Find all the children from the parent.
-          var next = $(this).next();
-          while ($(next).hasClass('child')) {
-            // Append all the children to the ul.
-            $(next).appendTo(ul);
-            next = $(this).next();
-          }
-
-          // If there are children, add them to the parent.
-          ul.has('li').appendTo(this);
-
+        jQuery('[data-toggle="offcanvas"]').click(function () {
+          jQuery('.row-offcanvas').toggleClass('active')
         });
       });
     </script>

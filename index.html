@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap Styleguide</title>
+    <title>Style Guide</title>
     <meta name="description" content="" />
     <meta name="generator" content="kss-node" />
     <meta name="viewport" content="width=device-width, minimal-ui">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="public/bootstrap.css">
 
   </head>
-  <body data-spy="scroll" data-target="nav.affix">
+  <body data-spy="scroll" data-target="#sidebar">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -41,10 +41,12 @@
       </div>
     </nav>
     <div class="container">
-      <div class="col-md-9">
-        <div role="main">
-          <article>
-               <h1 id="kss-bootstrap">KSS Bootstrap</h1>
+      <div class="row row-offcanvas row-offcanvas-right">
+          <article class="col-md-12">
+            <section class="kss-depth- jumbotron">
+              <h1>Styleguide</h1>
+            </section>
+             <h1 id="kss-bootstrap">KSS Bootstrap</h1>
 <p>A <a href="https://en.wikipedia.org/wiki/Style_guide">style guide</a> provides a means of documenting basic rules or features that will allow you to ensure consistency in the design. It makes your website look and read consistently, translating to a better user experience, higher usability and ultimately fulfils a website’s goals more effectively.</p>
 <p><a href="https://github.com/robloach/kss-bootstrap">KSS Bootstrap</a> is a <a href="http://warpspire.com/kss/">Knyle Style Sheet</a>-powered <a href="http://getbootstrap.com">Bootstrap</a> style guide to test various Bootstrap components in three different sections:</p>
 <ul>
@@ -55,10 +57,7 @@
 <h2 id="download">Download</h2>
 <p>Visit the <a href="https://github.com/RobLoach/kss-bootstrap">KSS Bootstrap</a> project to get both the KSS Styleguide components, and the Bootstrap kss-node template.</p>
 
-          </article>
-        </div>
-      </div>
-      <div class="col-md-3">
+        </article>
       </div>
     </div>
 
@@ -73,24 +72,12 @@
         prettyPrint();
 
         // Set the navigation to be the correct width.
-        jQuery('#sidebar').width(jQuery('.col-md-3').width());
+        jQuery('#sidebar .list-group').on('affix.bs.affix', function () {
+          jQuery('#sidebar .list-group').width(jQuery('.col-sm-3').width());
+        });
 
-        // Turn the list into a tree.
-        jQuery('li.parent').each(function() {
-          // Construct a ul for the children.
-          var ul = $('<ul class="children"></ul>');
-
-          // Find all the children from the parent.
-          var next = $(this).next();
-          while ($(next).hasClass('child')) {
-            // Append all the children to the ul.
-            $(next).appendTo(ul);
-            next = $(this).next();
-          }
-
-          // If there are children, add them to the parent.
-          ul.has('li').appendTo(this);
-
+        jQuery('[data-toggle="offcanvas"]').click(function () {
+          jQuery('.row-offcanvas').toggleClass('active')
         });
       });
     </script>
