@@ -129,18 +129,20 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
                 <div class="kss-box"><p>A rendered modal with header, body, and set of actions in the footer.</p>
 </div>
 
-              <div class="kss-example"><button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".modal">
+              <div class="kss-example"><!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   Launch demo modal
 </button>
-<div class="modal fade">
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h4 class="modal-title">Modal title</h4>
-    </div>
-    <div class="modal-body">
-      <p>One fine body&hellip;</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -148,19 +150,26 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
       </div>
     </div>
   </div>
-</div></div>
-              <pre class="prettyprint lang-html">&lt;button class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;.modal&quot;&gt;
+</div>
+<style>
+.modal-backdrop {
+  display: none;
+}
+</style></div>
+              <pre class="prettyprint lang-html">&lt;!-- Button trigger modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;
   Launch demo modal
 &lt;/button&gt;
-&lt;div class=&quot;modal fade&quot;&gt;
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
   &lt;div class=&quot;modal-dialog&quot;&gt;
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;
-      &lt;h4 class=&quot;modal-title&quot;&gt;Modal title&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;modal-body&quot;&gt;
-      &lt;p&gt;One fine body&amp;hellip;&lt;/p&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;One fine body&amp;hellip;&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-footer&quot;&gt;
         &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
@@ -168,7 +177,12 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;
+&lt;style&gt;
+.modal-backdrop {
+  display: none;
+}
+&lt;/style&gt;</pre>
 
 
               <hr />
