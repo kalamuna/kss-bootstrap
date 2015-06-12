@@ -5,10 +5,10 @@
   "author": "Rob Loach (http://github.com/robloach)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RobLoach/kss-bootstrap"
+    "url": "https://github.com/kalamuna/kss-bootstrap"
   },
   "bugs": {
-    "url": "https://github.com/robloach/kss-bootstrap/issues"
+    "url": "https://github.com/kalamuna/kss-bootstrap/issues"
   },
   "license": "MIT",
   "maintainers": [

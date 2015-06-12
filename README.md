@@ -1,6 +1,6 @@
-# KSS Bootstrap [![Build Status](https://travis-ci.org/RobLoach/kss-bootstrap.svg?branch=master)](https://travis-ci.org/RobLoach/kss-bootstrap) [![Dependency Status](https://david-dm.org/robloach/kss-bootstrap.svg)](https://david-dm.org/robloach/kss-bootstrap) [![devDependency Status](https://david-dm.org/robloach/kss-bootstrap/dev-status.svg)](https://david-dm.org/robloach/kss-bootstrap#info=devDependencies)
+# KSS Bootstrap [![Build Status](https://travis-ci.org/kalamuna/kss-bootstrap.svg?branch=master)](https://travis-ci.org/kalamuna/kss-bootstrap) [![Dependency Status](https://david-dm.org/kalamuna/kss-bootstrap.svg)](https://david-dm.org/kalamuna/kss-bootstrap) [![devDependency Status](https://david-dm.org/kalamuna/kss-bootstrap/dev-status.svg)](https://david-dm.org/kalamuna/kss-bootstrap#info=devDependencies)
 
-[KSS Bootstrap](https://github.com/robloach/kss-bootstrap) is a [Knyle Style Sheet](http://warpspire.com/kss/) template and style guide for [Bootstrap](http://getbootstrap.com).
+[KSS Bootstrap](https://github.com/kalamuna/kss-bootstrap) is a [Knyle Style Sheet](http://warpspire.com/kss/) template and style guide for [Bootstrap](http://getbootstrap.com).
 
 
 ## Usage
