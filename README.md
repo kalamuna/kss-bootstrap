@@ -12,7 +12,7 @@ This project includes two components:
 
 ## Dependencies
 
-* [kss-node](https://github.com/kss-node/kss-node) `>=2.0.2`
+* [kss-node](https://github.com/kss-node/kss-node) `>=2.1.0`
 
 ## Build
 
@@ -29,8 +29,8 @@ This project includes two components:
   ```
 
   * `styleguide` is the directory to which KSS Styleguide to use
-  * `bootstrap` is the directory of which KSS template to use
   * `out` represents where the rendered styleguide should be output
+  * `bootstrap` is the directory of which KSS template to use
 
 
 ## Development
