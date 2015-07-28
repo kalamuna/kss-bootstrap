@@ -15,6 +15,12 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-styleguide-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="./index.html">Styleguide</a>
         </div>
         <div class="collapse navbar-collapse navbar-styleguide-collapse">
@@ -30,7 +36,7 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row">
+      <div class="row row-offcanvas row-offcanvas-right">
         {{#if homepage}}
           <article class="col-md-12">
             <section class="kss-depth-{{ depth }} jumbotron">
@@ -50,6 +56,9 @@
           }}
           {{#eachSection rootName}}
             {{#ifDepth 1}}
+              <p class="pull-right visible-xs">
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+              </p>
               <section class="kss-depth-{{ depth }} jumbotron">
                 <h1 class="kss-title" id="{{ referenceURI }}">{{ header }}</h1>
             {{else}}
@@ -84,7 +93,7 @@
         </article>
       {{#if homepage}}
       {{else}}
-        <div class="col-xs-6 col-sm-3" id="sidebar">
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
           <div class="list-group" data-spy="affix">
             {{#eachSection rootName}}
               {{#ifDepth 0}}
@@ -118,6 +127,10 @@
         // Set the navigation to be the correct width.
         jQuery('#sidebar .list-group').on('affix.bs.affix', function () {
           jQuery('#sidebar .list-group').width(jQuery('.col-sm-3').width());
+        });
+
+        jQuery('[data-toggle="offcanvas"]').click(function () {
+          jQuery('.row-offcanvas').toggleClass('active')
         });
       });
     </script>
