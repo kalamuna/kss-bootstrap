@@ -34,3 +34,29 @@ five watched experts — amaze the judge.</p>
 
 Styleguide 1.1.2
 */
+
+/*
+Lists
+
+Default styling of lists.
+
+Markup:
+<ul>
+<li>A list item</li>
+<li>A list item</li>
+<li>A list item</li>
+</ul>
+
+Styleguide 1.1.3
+*/
+
+/*
+Blockquote
+
+Default styling of blockquotes.
+
+Markup:
+<blockquote>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</blockquote>
+
+Styleguide 1.1.4
+*/
