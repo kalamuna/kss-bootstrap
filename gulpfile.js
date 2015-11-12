@@ -12,7 +12,9 @@ var concat = require('gulp-concat');
  * Clean
  */
 gulp.task('clean', function(cb) {
-  del('out', cb);
+  del('out').then(function () {
+    cb();
+  });
 });
 
 /**
