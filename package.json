@@ -28,7 +28,7 @@
     "gulp-serve": "^1.0.0"
   },
   "dependencies": {
-    "kss": "~2.1.0"
+    "kss": "git://github.com/RobLoach/kss-node.git#xdemo"
   },
   "scripts": {
     "start": "gulp start",
