@@ -27,12 +27,12 @@
     "gulp-htmlhint": "~0.3.0",
     "gulp-serve": "^1.0.0"
   },
-  "dependencies": {
-    "kss": "git://github.com/RobLoach/kss-node.git#xdemo"
-  },
   "scripts": {
     "start": "gulp start",
     "test": "gulp",
     "deploy": "gulp deploy"
+  },
+  "dependencies": {
+    "kss": "^2.1.1"
   }
 }
