@@ -3,7 +3,7 @@ Panels
 
 While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.
 
-Styleguide 2.12
+Styleguide components.panel
 */
 
 /*
@@ -18,7 +18,7 @@ Markup:
   </div>
 </div>
 
-Styleguide 2.12.1
+Styleguide components.panel.basic
 */
 
 /*
@@ -44,7 +44,7 @@ Markup:
   </div>
 </div>
 
-Styleguide 2.12.2
+Styleguide components.panel.heading
 */
 
 /*
@@ -60,7 +60,7 @@ Markup:
   <div class="panel-footer">Panel footer</div>
 </div>
 
-Styleguide 2.12.3
+Styleguide components.panel.footer
 */
 
 /*
@@ -84,5 +84,5 @@ Markup:
 .panel-warning - Warning
 .panel-danger - Danger
 
-Styleguide 2.12.4
+Styleguide components.panel.contextual
 */

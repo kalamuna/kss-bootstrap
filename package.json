@@ -19,7 +19,7 @@
   ],
   "devDependencies": {
     "bootstrap": "~3.3.4",
-    "del": "~2.0.2",
+    "del": "~2.2.0",
     "gulp": "~3.9.0",
     "gulp-concat": "^2.5.2",
     "gulp-exec": "^2.1.1",
