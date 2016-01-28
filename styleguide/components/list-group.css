@@ -12,7 +12,7 @@ Markup:
   <li class="list-group-item">Vestibulum at eros</li>
 </ul>
 
-Styleguide 2.11
+Styleguide components.list-group
 */
 
 /*
@@ -20,11 +20,12 @@ Badges
 
 Add the badges component to any list group item and it will automatically be positioned on the right.
 
-Markup: <ul class="list-group">
+Markup:
+<ul class="list-group">
   <li class="list-group-item"><span class="badge">14</span>Cras justo odio</li>
   <li class="list-group-item"><span class="badge">2</span>Dapibus ac facilisis in</li>
   <li class="list-group-item"><span class="badge">1</span>Morbi leo risus</li>
 </ul>
 
-Styleguide 2.11.1
+Styleguide components.list-group.badges
 */

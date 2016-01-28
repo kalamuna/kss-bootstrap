@@ -15,7 +15,7 @@ Markup:
 .progress-bar-warning - Warning
 .progress-bar-danger - Danger
 
-Styleguide 2.9
+Styleguide components.progress
 */
 
 /*
@@ -30,7 +30,7 @@ Markup:
   </div>
 </div>
 
-Styleguide 2.9.1
+Styleguide components.progress.label
 */
 
 /*
@@ -50,7 +50,7 @@ Markup:
   </div>
 </div>
 
-Styleguide 2.9.2
+Styleguide components.progress.width
 */
 
 /*
@@ -82,7 +82,7 @@ Markup:
 
 .active - Animate by adding <code>.active</code> to <code>.progress-bar-striped</code>.
 
-Styleguide 2.9.3
+Styleguide components.progress.striped
 */
 
 /*
@@ -103,5 +103,5 @@ Markup:
   </div>
 </div>
 
-Styleguide 2.9.4
+Styleguide components.progress.stacked
 */

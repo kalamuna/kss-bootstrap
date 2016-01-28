@@ -3,25 +3,7 @@ Popover
 
 Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don't rely on images, use CSS3 for animations, and data-attributes for local title storage.
 
-Markup:
-<button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on left
-</button>
-<button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on top
-</button>
-<button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on bottom
-</button>
-<button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on right
-</button>
-<script>window.addEventListener("load", function() {
-  jQuery(document).ready(function() {
-    jQuery('.poptime').popover();
-  });
-});</script>
+Markup: popover.hbs
 
-Styleguide 3.2
+Styleguide javascript.popover
 */

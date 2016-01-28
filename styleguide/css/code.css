@@ -6,7 +6,7 @@ Wrap inline snippets of code with <code>&lt;code&gt;</code>.
 Markup:
 For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
-Styleguide 1.4
+Styleguide css.code
 */
 
 /*
@@ -18,7 +18,7 @@ Markup:
 To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
 To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 
-Styleguide 1.4.1
+Styleguide css.code.userinput
 */
 
 /*
@@ -29,5 +29,5 @@ Use &lt;pre&gt; for multiple lines of code. Be sure to escape any angle brackets
 Markup:
 <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
 
-Styleguide 1.4.2
+Styleguide css.code.basic
 */
