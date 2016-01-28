@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <!-- Latest compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="public/kss.css">
+    <link type="text/css" rel="stylesheet" href="public/prettify.css">
+    <link rel="stylesheet" href="public/bootstrap.css">
+
+  </head>
+  <body data-spy="scroll" data-target="#sidebar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">Styleguide</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-styleguide-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+              <li>
+                <a href="section-components.html"><!--components.0: -->Components</a>
+              </li>
+              <li>
+                <a href="section-css.html"><!--css.0: -->CSS</a>
+              </li>
+              <li>
+                <a href="section-javascript.html"><!--javascript.0: -->JavaScript</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+          <article class="col-xs-12 col-sm-9">
+
+              <section class="kss-depth-1 jumbotron">
+                <h1 class="kss-title" id="components">Components</h1>
+                <p>Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.</p>
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-alert">
+                  <span class="kss-ref badge pull-right">components-alert</span> Alerts
+                </h2>
+                <div class="kss-box"><p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
+</div>
+
+              <div class="kss-example"><div class="alert [modifier class]">Well done! You successfully read this important alert message.</div>
+<div class="alert [modifier class] alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;alert [modifier class]&quot;&gt;Well done! You successfully read this important alert message.&lt;/div&gt;
+&lt;div class=&quot;alert [modifier class] alert-dismissable&quot;&gt;Well done! You successfully read this important alert message.&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;&lt;/div&gt;</pre>
+
+                <h4>Success <span class="pull-right"><code>.alert-success</code></span></h4>
+                <div class="kss-example"><div class="alert alert-success">Well done! You successfully read this important alert message.</div>
+<div class="alert alert-success alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div></div>
+                <h4>Information <span class="pull-right"><code>.alert-info</code></span></h4>
+                <div class="kss-example"><div class="alert alert-info">Well done! You successfully read this important alert message.</div>
+<div class="alert alert-info alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div></div>
+                <h4>Warning <span class="pull-right"><code>.alert-warning</code></span></h4>
+                <div class="kss-example"><div class="alert alert-warning">Well done! You successfully read this important alert message.</div>
+<div class="alert alert-warning alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div></div>
+                <h4>Danger <span class="pull-right"><code>.alert-danger</code></span></h4>
+                <div class="kss-example"><div class="alert alert-danger">Well done! You successfully read this important alert message.</div>
+<div class="alert alert-danger alert-dismissable">Well done! You successfully read this important alert message.<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-badge">
+                  <span class="kss-ref badge pull-right">components-badge</span> Badges
+                </h2>
+                <div class="kss-box"><p>Easily highlight new or unread items by adding a <code>&lt;span class=&quot;badge&quot;&gt;</code> to links, Bootstrap navs, and more.</p>
+</div>
+
+              <div class="kss-example"><a href="#">Inbox <span class="badge">42</span></a></div>
+              <pre class="prettyprint lang-html">&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/a&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-breadcrumb">
+                  <span class="kss-ref badge pull-right">components-breadcrumb</span> Breadcrumbs
+                </h2>
+                <div class="kss-box"><p>Indicate the current page&#39;s location within a navigational hierarchy.</p>
+</div>
+
+              <div class="kss-example"><ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol></div>
+              <pre class="prettyprint lang-html">&lt;ol class=&quot;breadcrumb&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
+&lt;/ol&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-btn-group">
+                  <span class="kss-ref badge pull-right">components-btn-group</span> Buttons group
+                </h2>
+                <div class="kss-box"><p>Group of buttons</p>
+</div>
+
+              <div class="kss-example"><div class="btn-group [modifier class]">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;btn-group [modifier class]&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</pre>
+
+                <h4>Large <span class="pull-right"><code>.btn-group-lg</code></span></h4>
+                <div class="kss-example"><div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div></div>
+                <h4>Small <span class="pull-right"><code>.btn-group-sm</code></span></h4>
+                <div class="kss-example"><div class="btn-group btn-group-sm">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div></div>
+                <h4>Extra small <span class="pull-right"><code>.btn-group-xs</code></span></h4>
+                <div class="kss-example"><div class="btn-group btn-group-xs">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-dropdown">
+                  <span class="kss-ref badge pull-right">components-dropdown</span> Dropdown
+                </h2>
+                <div class="kss-box"><p>Wrap the dropdown&#39;s trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then add the menu&#39;s HTML.</p>
+</div>
+
+              <div class="kss-example"><div class="dropdown">
+  <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+    Dropdown <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;a id=&quot;dLabel&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; data-target=&quot;#&quot; href=&quot;/page.html&quot;&gt;
+    Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu1&quot;&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-jumbotron">
+                  <span class="kss-ref badge pull-right">components-jumbotron</span> Jumbotron
+                </h2>
+                <div class="kss-box"><p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
+</div>
+
+              <div class="kss-example"><div class="jumbotron">
+  <div class="container">
+    <h1>Hello, world!</h1>
+    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+  </div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;jumbotron&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;p&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
+    &lt;p&gt;&lt;a class=&quot;btn btn-primary btn-lg&quot; role=&quot;button&quot;&gt;Learn more&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-label">
+                  <span class="kss-ref badge pull-right">components-label</span> Labels
+                </h2>
+                <div class="kss-box"><p>Add any of the below mentioned modifier classes to change the appearance of a label.</p>
+</div>
+
+              <div class="kss-example"><h5>Example heading <span class="label [modifier class]">New</span></h5></div>
+              <pre class="prettyprint lang-html">&lt;h5&gt;Example heading &lt;span class=&quot;label [modifier class]&quot;&gt;New&lt;/span&gt;&lt;/h5&gt;</pre>
+
+                <h4>Default <span class="pull-right"><code>.label-default</code></span></h4>
+                <div class="kss-example"><h5>Example heading <span class="label label-default">New</span></h5></div>
+                <h4>Primary <span class="pull-right"><code>.label-primary</code></span></h4>
+                <div class="kss-example"><h5>Example heading <span class="label label-primary">New</span></h5></div>
+                <h4>Success <span class="pull-right"><code>.label-success</code></span></h4>
+                <div class="kss-example"><h5>Example heading <span class="label label-success">New</span></h5></div>
+                <h4>Info <span class="pull-right"><code>.label-info</code></span></h4>
+                <div class="kss-example"><h5>Example heading <span class="label label-info">New</span></h5></div>
+                <h4>Warning <span class="pull-right"><code>.label-warning</code></span></h4>
+                <div class="kss-example"><h5>Example heading <span class="label label-warning">New</span></h5></div>
+                <h4>Danger <span class="pull-right"><code>.label-danger</code></span></h4>
+                <div class="kss-example"><h5>Example heading <span class="label label-danger">New</span></h5></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-list-group">
+                  <span class="kss-ref badge pull-right">components-list-group</span> List group
+                </h2>
+                <div class="kss-box"><p>List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.</p>
+</div>
+
+              <div class="kss-example"><ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul></div>
+              <pre class="prettyprint lang-html">&lt;ul class=&quot;list-group&quot;&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;/li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;/li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="components-list-group-badges">
+                  <span class="kss-ref badge pull-right">components-list-group-badges</span> Badges
+                </h3>
+                <div class="kss-box"><p>Add the badges component to any list group item and it will automatically be positioned on the right.</p>
+</div>
+
+              <div class="kss-example"><ul class="list-group">
+  <li class="list-group-item"><span class="badge">14</span>Cras justo odio</li>
+  <li class="list-group-item"><span class="badge">2</span>Dapibus ac facilisis in</li>
+  <li class="list-group-item"><span class="badge">1</span>Morbi leo risus</li>
+</ul></div>
+              <pre class="prettyprint lang-html">&lt;ul class=&quot;list-group&quot;&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;14&lt;/span&gt;Cras justo odio&lt;/li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;2&lt;/span&gt;Dapibus ac facilisis in&lt;/li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;1&lt;/span&gt;Morbi leo risus&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-media">
+                  <span class="kss-ref badge pull-right">components-media</span> Media objects
+                </h2>
+                <div class="kss-box"><p>Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.</p>
+</div>
+
+              <div class="kss-example"><div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="http://placehold.it/140x140" alt="...">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;media&quot;&gt;
+  &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;
+    &lt;img class=&quot;media-object&quot; src=&quot;http://placehold.it/140x140&quot; alt=&quot;...&quot;&gt;
+  &lt;/a&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt;
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-nav">
+                  <span class="kss-ref badge pull-right">components-nav</span> Navs
+                </h2>
+                <div class="kss-box"><p>Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
+</div>
+
+              <div class="kss-example"><ul class="nav [modifier class]" role="tablist">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul></div>
+              <pre class="prettyprint lang-html">&lt;ul class=&quot;nav [modifier class]&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+                <h4>Simple navigation <span class="pull-right"><code>.nav-tabs</code></span></h4>
+                <div class="kss-example"><ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul></div>
+                <h4>Pill navigation <span class="pull-right"><code>.nav-pills</code></span></h4>
+                <div class="kss-example"><ul class="nav nav-pills" role="tablist">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul></div>
+                <h4>Stacked navigation <span class="pull-right"><code>.nav-tabs.nav-stacked</code></span></h4>
+                <div class="kss-example"><ul class="nav nav-tabs nav-stacked" role="tablist">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul></div>
+                <h4>Pill and stacked navigation <span class="pull-right"><code>.nav-pills.nav-stacked</code></span></h4>
+                <div class="kss-example"><ul class="nav nav-pills nav-stacked" role="tablist">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul></div>
+                <h4>Justified navigation <span class="pull-right"><code>.nav-tabs.nav-justified</code></span></h4>
+                <div class="kss-example"><ul class="nav nav-tabs nav-justified" role="tablist">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul></div>
+                <h4>Pill and justified navigation <span class="pull-right"><code>.nav-pills.nav-justified</code></span></h4>
+                <div class="kss-example"><ul class="nav nav-pills nav-justified" role="tablist">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-pagination">
+                  <span class="kss-ref badge pull-right">components-pagination</span> Pagination
+                </h2>
+                <div class="kss-box"><p>Provide pagination links for your site or app with the multi-page pagination component, or the simpler pager alternative.</p>
+</div>
+
+              <div class="kss-example"><ul class="pagination [modifier class]">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">Previous</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">Next</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul></div>
+              <pre class="prettyprint lang-html">&lt;ul class=&quot;pagination [modifier class]&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+                <h4>Large <span class="pull-right"><code>.pagination-lg</code></span></h4>
+                <div class="kss-example"><ul class="pagination pagination-lg">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">Previous</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">Next</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul></div>
+                <h4>Small <span class="pull-right"><code>.pagination-sm</code></span></h4>
+                <div class="kss-example"><ul class="pagination pagination-sm">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">Previous</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">Next</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-panel">
+                  <span class="kss-ref badge pull-right">components-panel</span> Panels
+                </h2>
+                <p>While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.</p>
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="components-panel-basic">
+                  <span class="kss-ref badge pull-right">components-panel-basic</span> Basic example
+                </h3>
+                <div class="kss-box"><p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
+</div>
+
+              <div class="kss-example"><div class="panel panel-default">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Basic panel example
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="components-panel-contextual">
+                  <span class="kss-ref badge pull-right">components-panel-contextual</span> Contextual alternatives
+                </h3>
+                <div class="kss-box"><p>Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
+</div>
+
+              <div class="kss-example"><div class="panel [modifier class]">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;panel [modifier class]&quot;&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;
+    &lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                <h4>Primary <span class="pull-right"><code>.panel-primary</code></span></h4>
+                <div class="kss-example"><div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div></div>
+                <h4>Success <span class="pull-right"><code>.panel-success</code></span></h4>
+                <div class="kss-example"><div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div></div>
+                <h4>Information <span class="pull-right"><code>.panel-info</code></span></h4>
+                <div class="kss-example"><div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div></div>
+                <h4>Warning <span class="pull-right"><code>.panel-warning</code></span></h4>
+                <div class="kss-example"><div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div></div>
+                <h4>Danger <span class="pull-right"><code>.panel-danger</code></span></h4>
+                <div class="kss-example"><div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="components-panel-footer">
+                  <span class="kss-ref badge pull-right">components-panel-footer</span> Panel with footer
+                </h3>
+                <div class="kss-box"><p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note that panel footers do not inherit colors and borders when using contextual variations as they are not meant to be in the foreground.</p>
+</div>
+
+              <div class="kss-example"><div class="panel panel-default">
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;/div&gt;
+  &lt;div class=&quot;panel-footer&quot;&gt;Panel footer&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="components-panel-heading">
+                  <span class="kss-ref badge pull-right">components-panel-heading</span> Panel with heading
+                </h3>
+                <div class="kss-box"><p>Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any &gt;h1&lt;-&gt;h6&lt; with a <code>.panel-title</code> class to add a pre-styled heading.</p>
+<p>For proper link coloring, be sure to place links in headings within <code>.panel-title</code>.</p>
+</div>
+
+              <div class="kss-example"><div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading without title&lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;
+    &lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="components-progress">
+                  <span class="kss-ref badge pull-right">components-progress</span> Progress bars
+                </h2>
+                <div class="kss-box"><p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>
+</div>
+
+              <div class="kss-example"><div class="progress">
+  <div class="progress-bar [modifier class]" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar [modifier class]&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%;&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;60% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                <h4>Success <span class="pull-right"><code>.progress-bar-success</code></span></h4>
+                <div class="kss-example"><div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div></div>
+                <h4>Information <span class="pull-right"><code>.progress-bar-info</code></span></h4>
+                <div class="kss-example"><div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div></div>
+                <h4>Warning <span class="pull-right"><code>.progress-bar-warning</code></span></h4>
+                <div class="kss-example"><div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div></div>
+                <h4>Danger <span class="pull-right"><code>.progress-bar-danger</code></span></h4>
+                <div class="kss-example"><div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="components-progress-label">
+                  <span class="kss-ref badge pull-right">components-progress-label</span> With label
+                </h3>
+                <div class="kss-box"><p>Remove the <code>&lt;span&gt;</code> with <code>.sr-only</code> class from within the progress bar to show a visible percentage.</p>
+</div>
+
+              <div class="kss-example"><div class="progress">
+  <div class="progress-bar " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar &quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%;&quot;&gt;
+    60%
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="components-progress-stacked">
+                  <span class="kss-ref badge pull-right">components-progress-stacked</span> Stacked
+                </h3>
+                <div class="kss-box"><p>Place multiple bars into the same <code>.progress</code> to stack them.</p>
+</div>
+
+              <div class="kss-example"><div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 35%">
+    <span class="sr-only">35% Complete (success)</span>
+  </div>
+  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+    <span class="sr-only">20% Complete (warning)</span>
+  </div>
+  <div class="progress-bar progress-bar-danger" style="width: 10%">
+    <span class="sr-only">10% Complete (danger)</span>
+  </div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 35%&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;35% Complete (success)&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;progress-bar progress-bar-warning progress-bar-striped&quot; style=&quot;width: 20%&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;20% Complete (warning)&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 10%&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;10% Complete (danger)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="components-progress-striped">
+                  <span class="kss-ref badge pull-right">components-progress-striped</span> Striped
+                </h3>
+                <div class="kss-box"><p>Use <code>.progress-bar-striped</code> to add a gradient to create a striped effect. Not available in IE9 and below.</p>
+</div>
+
+              <div class="kss-example"><div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped [modifier class]" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped [modifier class]" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped [modifier class]" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete (warning)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped [modifier class]" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80% Complete (danger)</span>
+  </div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-success progress-bar-striped [modifier class]&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;40% Complete (success)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-info progress-bar-striped [modifier class]&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;20% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-warning progress-bar-striped [modifier class]&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;60% Complete (warning)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-danger progress-bar-striped [modifier class]&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;80&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 80%&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;80% Complete (danger)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                <h4>Animate by adding <code>.active</code> to <code>.progress-bar-striped</code>. <span class="pull-right"><code>.active</code></span></h4>
+                <div class="kss-example"><div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete (warning)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80% Complete (danger)</span>
+  </div>
+</div></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3">
+                <h3 class="kss-title" id="components-progress-width">
+                  <span class="kss-ref badge pull-right">components-progress-width</span> With min-width
+                </h3>
+                <div class="kss-box"><p>To ensure that the label text remains legible even for low percentages, consider adding a <code>min-width</code> to the progress bar.</p>
+</div>
+
+              <div class="kss-example"><div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+    0%
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 2%;">
+    2%
+  </div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;0&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;min-width: 2em;&quot;&gt;
+    0%
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;2&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;min-width: 2em; width: 2%;&quot;&gt;
+    2%
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+        </article>
+        <div class="col-xs-6 col-sm-3" id="sidebar">
+          <div class="list-group" data-spy="affix">
+                <!--<li><a href="#" class="list-group-item disabled">
+                  <h4 class="list-group-item-heading">Components</h4>
+                </a></li>-->
+                <a class="list-group-item" href="#components-alert"><!--<span class="kss-ref badge" >components-alert</span> -->Alerts</a>
+                <a class="list-group-item" href="#components-badge"><!--<span class="kss-ref badge" >components-badge</span> -->Badges</a>
+                <a class="list-group-item" href="#components-breadcrumb"><!--<span class="kss-ref badge" >components-breadcrumb</span> -->Breadcrumbs</a>
+                <a class="list-group-item" href="#components-btn-group"><!--<span class="kss-ref badge" >components-btn-group</span> -->Buttons group</a>
+                <a class="list-group-item" href="#components-dropdown"><!--<span class="kss-ref badge" >components-dropdown</span> -->Dropdown</a>
+                <a class="list-group-item" href="#components-jumbotron"><!--<span class="kss-ref badge" >components-jumbotron</span> -->Jumbotron</a>
+                <a class="list-group-item" href="#components-label"><!--<span class="kss-ref badge" >components-label</span> -->Labels</a>
+                <a class="list-group-item" href="#components-list-group"><!--<span class="kss-ref badge" >components-list-group</span> -->List group</a>
+                <a class="list-group-item" href="#components-media"><!--<span class="kss-ref badge" >components-media</span> -->Media objects</a>
+                <a class="list-group-item" href="#components-nav"><!--<span class="kss-ref badge" >components-nav</span> -->Navs</a>
+                <a class="list-group-item" href="#components-pagination"><!--<span class="kss-ref badge" >components-pagination</span> -->Pagination</a>
+                <a class="list-group-item" href="#components-panel"><!--<span class="kss-ref badge" >components-panel</span> -->Panels</a>
+                <a class="list-group-item" href="#components-progress"><!--<span class="kss-ref badge" >components-progress</span> -->Progress bars</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="public/kss.js"></script>
+    <script src="public/prettify.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        // Ensure code blocks are highlighted properly...
+        jQuery('pre>code').addClass('prettyprint');
+        prettyPrint();
+
+        // Set the navigation to be the correct width.
+        jQuery('#sidebar .list-group').on('affix.bs.affix', function () {
+          jQuery('#sidebar .list-group').width(jQuery('.col-sm-3').width());
+        });
+      });
+    </script>
+    
+  </body>
+</html>

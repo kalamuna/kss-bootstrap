@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <!-- Latest compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="public/kss.css">
+    <link type="text/css" rel="stylesheet" href="public/prettify.css">
+    <link rel="stylesheet" href="public/bootstrap.css">
+
+  </head>
+  <body data-spy="scroll" data-target="#sidebar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">Styleguide</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-styleguide-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+              <li>
+                <a href="section-components.html"><!--components.0: -->Components</a>
+              </li>
+              <li>
+                <a href="section-css.html"><!--css.0: -->CSS</a>
+              </li>
+              <li>
+                <a href="section-javascript.html"><!--javascript.0: -->JavaScript</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+          <article class="col-xs-12 col-sm-9">
+
+              <section class="kss-depth-1 jumbotron">
+                <h1 class="kss-title" id="javascript">JavaScript</h1>
+                <p>Bring Bootstrap&#39;s components to life with over a dozen custom jQuery plugins. Easily include them all, or one by one.</p>
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="javascript-carousel">
+                  <span class="kss-ref badge pull-right">javascript-carousel</span> Carousel
+                </h2>
+                <div class="kss-box"><p>The slideshow below shows a generic plugin and component for cycling through elements like a carousel.</p>
+</div>
+
+              <div class="kss-example"><div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://placehold.it/350x150" alt="...">
+      <div class="carousel-caption">
+        First slide
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/350x150" alt="...">
+      <div class="carousel-caption">
+        Second slide
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/350x150" alt="...">
+      <div class="carousel-caption">
+        Third slide
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="left-arrow">&larr;</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="right-arrow">&rarr;</span>
+  </a>
+</div>
+<script>window.addEventListener("load", function() {
+  jQuery(document).ready(function() {
+    jQuery('#carousel-example-generic').carousel();
+  });
+});</script>
+</div>
+              <pre class="prettyprint lang-html">&lt;div id=&quot;carousel-example-generic&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;div class=&quot;carousel-inner&quot;&gt;
+    &lt;div class=&quot;item active&quot;&gt;
+      &lt;img src=&quot;http://placehold.it/350x150&quot; alt=&quot;...&quot;&gt;
+      &lt;div class=&quot;carousel-caption&quot;&gt;
+        First slide
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;
+      &lt;img src=&quot;http://placehold.it/350x150&quot; alt=&quot;...&quot;&gt;
+      &lt;div class=&quot;carousel-caption&quot;&gt;
+        Second slide
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;
+      &lt;img src=&quot;http://placehold.it/350x150&quot; alt=&quot;...&quot;&gt;
+      &lt;div class=&quot;carousel-caption&quot;&gt;
+        Third slide
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;a class=&quot;left carousel-control&quot; href=&quot;#carousel-example-generic&quot; data-slide=&quot;prev&quot;&gt;
+    &lt;span class=&quot;left-arrow&quot;&gt;&amp;larr;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;right carousel-control&quot; href=&quot;#carousel-example-generic&quot; data-slide=&quot;next&quot;&gt;
+    &lt;span class=&quot;right-arrow&quot;&gt;&amp;rarr;&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;script&gt;window.addEventListener(&quot;load&quot;, function() {
+  jQuery(document).ready(function() {
+    jQuery(&#x27;#carousel-example-generic&#x27;).carousel();
+  });
+});&lt;/script&gt;
+</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="javascript-collapse">
+                  <span class="kss-ref badge pull-right">javascript-collapse</span> Collapse
+                </h2>
+                <div class="kss-box"><p>Get base styles and flexible support for collapsible components like accordions and navigation.</p>
+</div>
+
+              <div class="kss-example"><div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot;&gt;
+          Collapsible Group Item #1
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse collapse in&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot;&gt;
+          Collapsible Group Item #2
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot;&gt;
+          Collapsible Group Item #3
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="javascript-dropdown">
+                  <span class="kss-ref badge pull-right">javascript-dropdown</span> Dropdowns
+                </h2>
+                <div class="kss-box"><p>Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.</p>
+</div>
+
+              <div class="kss-example"><nav id="navbar-example" class="navbar navbar-default navbar-static">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project Name</a>
+    </div>
+    <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+            Dropdown
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+            Dropdown
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li id="fat-menu" class="dropdown">
+          <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+            Dropdown
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.nav-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+              <pre class="prettyprint lang-html">&lt;nav id=&quot;navbar-example&quot; class=&quot;navbar navbar-default navbar-static&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+      &lt;button class=&quot;navbar-toggle collapsed&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.bs-example-js-navbar-collapse&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Project Name&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;collapse navbar-collapse bs-example-js-navbar-collapse&quot;&gt;
+      &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+        &lt;li class=&quot;dropdown&quot;&gt;
+          &lt;a id=&quot;drop1&quot; href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;
+            Dropdown
+            &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+          &lt;/a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;drop1&quot;&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dropdown&quot;&gt;
+          &lt;a id=&quot;drop2&quot; href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;
+            Dropdown
+            &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+          &lt;/a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;drop2&quot;&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+        &lt;li id=&quot;fat-menu&quot; class=&quot;dropdown&quot;&gt;
+          &lt;a id=&quot;drop3&quot; href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;
+            Dropdown
+            &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+          &lt;/a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;drop3&quot;&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+            &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;https://twitter.com/fat&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;&lt;!-- /.nav-collapse --&gt;
+  &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+&lt;/nav&gt;
+</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="javascript-modal">
+                  <span class="kss-ref badge pull-right">javascript-modal</span> Modals
+                </h2>
+                <div class="kss-box"><p>A rendered modal with header, body, and set of actions in the footer.</p>
+</div>
+
+              <div class="kss-example"><!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+.modal-backdrop {
+  display: none;
+}
+</style>
+</div>
+              <pre class="prettyprint lang-html">&lt;!-- Button trigger modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;
+  Launch demo modal
+&lt;/button&gt;
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;One fine body&amp;hellip;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-dismiss=&quot;modal&quot;&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.modal-backdrop {
+  display: none;
+}
+&lt;/style&gt;
+</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="javascript-popover">
+                  <span class="kss-ref badge pull-right">javascript-popover</span> Popover
+                </h2>
+                <div class="kss-box"><p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don&#39;t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+</div>
+
+              <div class="kss-example"><button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on left
+</button>
+<button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on top
+</button>
+<button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on bottom
+</button>
+<button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on right
+</button>
+<script>window.addEventListener("load", function() {
+  jQuery(document).ready(function() {
+    jQuery('.poptime').popover();
+  });
+});</script>
+</div>
+              <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default poptime&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on left
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default poptime&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on top
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default poptime&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on bottom
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default poptime&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on right
+&lt;/button&gt;
+&lt;script&gt;window.addEventListener(&quot;load&quot;, function() {
+  jQuery(document).ready(function() {
+    jQuery(&#x27;.poptime&#x27;).popover();
+  });
+});&lt;/script&gt;
+</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="javascript-tooltip">
+                  <span class="kss-ref badge pull-right">javascript-tooltip</span> Tooltip
+                </h2>
+                <div class="kss-box"><p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don&#39;t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+</div>
+
+              <div class="kss-example">javascript.tooltip</div>
+              <pre class="prettyprint lang-html">javascript.tooltip</pre>
+
+
+              <hr />
+
+            </section>
+        </article>
+        <div class="col-xs-6 col-sm-3" id="sidebar">
+          <div class="list-group" data-spy="affix">
+                <!--<li><a href="#" class="list-group-item disabled">
+                  <h4 class="list-group-item-heading">JavaScript</h4>
+                </a></li>-->
+                <a class="list-group-item" href="#javascript-carousel"><!--<span class="kss-ref badge" >javascript-carousel</span> -->Carousel</a>
+                <a class="list-group-item" href="#javascript-collapse"><!--<span class="kss-ref badge" >javascript-collapse</span> -->Collapse</a>
+                <a class="list-group-item" href="#javascript-dropdown"><!--<span class="kss-ref badge" >javascript-dropdown</span> -->Dropdowns</a>
+                <a class="list-group-item" href="#javascript-modal"><!--<span class="kss-ref badge" >javascript-modal</span> -->Modals</a>
+                <a class="list-group-item" href="#javascript-popover"><!--<span class="kss-ref badge" >javascript-popover</span> -->Popover</a>
+                <a class="list-group-item" href="#javascript-tooltip"><!--<span class="kss-ref badge" >javascript-tooltip</span> -->Tooltip</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="public/kss.js"></script>
+    <script src="public/prettify.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        // Ensure code blocks are highlighted properly...
+        jQuery('pre>code').addClass('prettyprint');
+        prettyPrint();
+
+        // Set the navigation to be the correct width.
+        jQuery('#sidebar .list-group').on('affix.bs.affix', function () {
+          jQuery('#sidebar .list-group').width(jQuery('.col-sm-3').width());
+        });
+      });
+    </script>
+    
+  </body>
+</html>
