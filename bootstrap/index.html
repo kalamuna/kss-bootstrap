@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="{{#unless NODE_ENV}} {{npm_package_config_kstatic_base}} {{else}} {{npm_package_config_kstatic_drupalRemote}} {{/if}}" />
     <meta charset="utf-8">
     <title>Style Guide</title>
     <meta name="description" content="" />
@@ -51,18 +52,21 @@
           {{#eachSection rootName}}
             {{#ifDepth 1}}
               <section class="kss-depth-{{ depth }} jumbotron">
-                <h1 class="kss-title" id="{{ referenceURI }}">{{ header }}</h1>
+                <div class="component-description">
+                  <h1 class="kss-title" id="{{ referenceURI }}">{{ header }}</h1>
             {{else}}
               <section class="kss-depth-{{ depth }}">
-                <h{{ depth }} class="kss-title" id="{{ referenceURI }}">
-                  <span class="kss-ref badge pull-right">{{ referenceURI }}</span> {{ header }}
-                </h{{ depth }}>
+                <div class="component-description">
+                  <h{{ depth }} class="kss-title" id="{{ referenceURI }}">
+                    <span class="kss-ref badge pull-right">{{ referenceURI }}</span> {{ header }}
+                  </h{{ depth }}>
             {{/ifDepth}}
             {{#if markup}}
               {{#if description}}
                 <div class="kss-box">{{{description}}}</div>
-              {{/if}}
 
+              {{/if}}
+                </div><!-- // closes .component-description -->
               <div class="kss-example">{{{markup}}}</div>
               <pre class="prettyprint lang-html">{{markup}}</pre>
 
