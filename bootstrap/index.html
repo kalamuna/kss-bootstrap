@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="{{#unless NODE_ENV}} {{npm_package_config_kstatic_base}} {{else}} {{npm_package_config_kstatic_drupalRemote}} {{/if}}" />
+    <base href="{{#if NODE_ENV}} {{npm_package_config_kstatic_drupalRemote}} {{else}} {{npm_package_config_kstatic_base}} {{/if}}" />
     <meta charset="utf-8">
     <title>Style Guide</title>
     <meta name="description" content="" />
@@ -66,7 +66,6 @@
                 <div class="kss-box">{{{description}}}</div>
 
               {{/if}}
-                </div><!-- // closes .component-description -->
               <div class="kss-example">{{{markup}}}</div>
               <pre class="prettyprint lang-html">{{markup}}</pre>
 
@@ -77,11 +76,12 @@
 
               <hr />
 
-            {{else}}
-              {{#if description}}
-                {{{description}}}
+              {{else}}
+                {{#if description}}
+                  {{{description}}}
+                {{/if}}
               {{/if}}
-            {{/if}}
+              </div><!-- // closes .component-description -->
             </section>
           {{/eachSection}}
         {{/if}}
