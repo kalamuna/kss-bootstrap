@@ -9,7 +9,7 @@ Styleguide css.typography
 /*
 Headings
 
-Default styling of typography headings.
+All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.
 
 Markup:
 <h1>Heading 1</h1>
@@ -25,15 +25,15 @@ Styleguide css.typography.headings
 /*
 Headings with Subheadings
 
-Create lighter, secondary text in any heading with a generic <small> tag or the .small class.
+Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code> tag or the <code>.small</code> class.
 
 Markup:
-<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
-<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
-<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
-<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
-<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
-<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+<h1>h1. Heading 1 <small>Secondary text</small></h1>
+<h2>h2. Heading 2 <small>Secondary text</small></h2>
+<h3>h3. Heading 3 <small>Secondary text</small></h3>
+<h4>h4. Heading 4 <small>Secondary text</small></h4>
+<h5>h5. Heading 5 <small>Secondary text</small></h5>
+<h6>h6. Heading 6 <small>Secondary text</small></h6>
 
 Styleguide: css.typography.headings-subheadings
 */
@@ -66,16 +66,138 @@ Styleguide css.typography.leadbodycopy
 /*
 Lists
 
-Default styling of lists.
+A collection of styles associated with creating lists.
+
+Styleguide css.typography.lists
+*/
+
+/*
+Unordered
+
+A list of items in which the order does not explicitly matter.
 
 Markup:
 <ul>
-<li>A list item</li>
-<li>A list item</li>
-<li>A list item</li>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
 </ul>
 
-Styleguide css.typography.lists
+Styleguide css.typography.lists.unordered
+*/
+
+/*
+Ordered
+
+A list of items in which the order <em>does</em> not explicitly matter.
+
+Markup:
+<ul>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit</li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ul>
+
+Styleguide css.typography.lists.ordered
+*/
+
+/*
+Unstyled
+
+Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.
+
+Markup:
+<ul class="list-unstyled">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ul>
+
+Styleguide css.typography.lists.unstyled
+*/
+
+/*
+Inline
+
+Place all list items on a single line with <code>display: inline-block;</code> and some light padding.
+
+Markup:
+<ul class="list-inline">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+</ul>
+
+Styleguide css.typography.lists.inline
+*/
+
+/*
+Description
+
+A list of terms with their associated descriptions.
+
+Markup:
+<dl>
+  <dt>Description lists</dt>
+  <dd>A description list is perfect for defining terms.</dd>
+  <dt>Euismod</dt>
+  <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+  <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+  <dt>Malesuada porta</dt>
+  <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+</dl>
+
+Styleguide css.typography.lists.description
+*/
+
+/*
+Horizontal description
+
+Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s, but when the navbar expands, so do these.
+
+Markup:
+<dl class="dl-horizontal">
+  <dt>Description lists</dt>
+  <dd>A description list is perfect for defining terms.</dd>
+  <dt>Euismod</dt>
+  <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+  <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+  <dt>Malesuada porta</dt>
+  <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+  <dt>Felis euismod semper eget lacinia</dt>
+  <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+</dl>
+
+Styleguide css.typography.lists.horizontal
 */
 
 /*
