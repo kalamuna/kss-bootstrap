@@ -23,7 +23,23 @@ Styleguide css.typography.headings
 */
 
 /*
-Paragraph
+Headings with Subheadings
+
+Create lighter, secondary text in any heading with a generic <small> tag or the .small class.
+
+Markup:
+<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+
+Styleguide: css.typography.headings-subheadings
+*/
+
+/*
+Body copy
 
 Default styling of typography paragraphs.
 
@@ -33,7 +49,18 @@ lovably dim wiki-girl. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. How
 razorback-jumping frogs can level six piqued gymnasts! All questions asked by
 five watched experts — amaze the judge.</p>
 
-Styleguide css.typography.paragraph
+Styleguide css.typography.bodycopy
+*/
+
+/*
+Lead body copy
+
+Make a paragraph stand out by adding .lead.
+
+Markup:
+<p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+
+Styleguide css.typography.leadbodycopy
 */
 
 /*
