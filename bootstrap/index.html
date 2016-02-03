@@ -61,11 +61,16 @@
                     <span class="kss-ref badge pull-right">{{ referenceURI }}</span> {{ header }}
                   </h{{ depth }}>
             {{/ifDepth}}
-            {{#if markup}}
-              {{#if description}}
-                <div class="kss-box">{{{description}}}</div>
 
-              {{/if}}
+            {{#eachParameter}}
+              <h4><span class="pull-right"><code>{{name}}</code></span> {{{description}}}</h4>
+            {{/eachParameter}}
+
+            {{#if description}}
+              <div class="kss-box">{{{description}}}</div>
+            {{/if}}
+
+            {{#if markup}}
               <div class="kss-example">{{{markup}}}</div>
               <pre class="prettyprint lang-html">{{markup}}</pre>
 
@@ -75,12 +80,7 @@
               {{/eachModifier}}
 
               <hr />
-
-              {{else}}
-                {{#if description}}
-                  {{{description}}}
-                {{/if}}
-              {{/if}}
+            {{/if}}
               </div><!-- // closes .component-description -->
             </section>
           {{/eachSection}}
