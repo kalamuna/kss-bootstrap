@@ -6,5 +6,7 @@ Easily highlight new or unread items by adding a <code>&lt;span class="badge"&gt
 Markup:
 <a href="#">Inbox <span class="badge">42</span></a>
 
+Weight: 11
+
 Styleguide components.badge
 */

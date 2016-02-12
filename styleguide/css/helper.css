@@ -3,6 +3,8 @@ Helpers
 
 There are many helper classes available.
 
+Weight: 8
+
 Styleguide css.helper
 */
 
@@ -34,6 +36,8 @@ Markup:
 <p class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
 <p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
 
+Weight: 1
+
 Styleguide css.helper.background
 */
 
@@ -45,6 +49,8 @@ Use the generic close icon for dismissing content like modals and alerts.
 Markup:
 <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 
+Weight: 1
+
 Styleguide css.helper.close
 */
 
@@ -55,6 +61,8 @@ Use carets to indicate dropdown functionality and direction. Note that the defau
 
 Markup:
 <span class="caret"></span>
+
+Weight: 2
 
 Styleguide css.helper.caret
 */

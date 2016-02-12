@@ -6,6 +6,8 @@ Wrap inline snippets of code with <code>&lt;code&gt;</code>.
 Markup:
 For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
+Weight: 3
+
 Styleguide css.code
 */
 
@@ -28,6 +30,8 @@ Use &lt;pre&gt; for multiple lines of code. Be sure to escape any angle brackets
 
 Markup:
 <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+
+Weight: 1
 
 Styleguide css.code.basic
 */

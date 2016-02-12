@@ -3,6 +3,8 @@ Panels
 
 While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.
 
+Weight: 19
+
 Styleguide components.panel
 */
 
@@ -60,6 +62,8 @@ Markup:
   <div class="panel-footer">Panel footer</div>
 </div>
 
+Weight: 1
+
 Styleguide components.panel.footer
 */
 
@@ -83,6 +87,8 @@ Markup:
 .panel-info - Information
 .panel-warning - Warning
 .panel-danger - Danger
+
+Weight: 2
 
 Styleguide components.panel.contextual
 */
