@@ -11,6 +11,12 @@ footer {
   min-height: 4em;
   position: relative;
 }
+.kss-example:after,
+.kss-example:before {
+  clear: both;
+  content: " ";
+  display: table;
+}
 
 /**
  * Off Canvas
