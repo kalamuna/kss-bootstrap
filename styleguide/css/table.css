@@ -10,6 +10,8 @@ Markup: table.hbs
 .table-hover - Add <code>.table-hover</code> to enable a hover state on table rows within a &lt;tbody&gt;.
 .table-condensed - Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.
 
+Weight: 4
+
 Styleguide css.table
 */
 

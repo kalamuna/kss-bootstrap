@@ -3,6 +3,8 @@ Typography
 
 The below provides typographical styles that are present across the site.
 
+Weight: 2
+
 Styleguide css.typography
 */
 
@@ -49,6 +51,8 @@ lovably dim wiki-girl. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. How
 razorback-jumping frogs can level six piqued gymnasts! All questions asked by
 five watched experts — amaze the judge.</p>
 
+Weight: 1
+
 Styleguide css.typography.bodycopy
 */
 
@@ -67,6 +71,8 @@ Styleguide css.typography.leadbodycopy
 Lists
 
 A collection of styles associated with creating lists.
+
+Weight: 2
 
 Styleguide css.typography.lists
 */
@@ -115,6 +121,8 @@ Markup:
   <li>Eget porttitor lorem</li>
 </ul>
 
+Weight: 1
+
 Styleguide css.typography.lists.ordered
 */
 
@@ -142,6 +150,8 @@ Markup:
   <li>Eget porttitor lorem</li>
 </ul>
 
+Weight: 1
+
 Styleguide css.typography.lists.unstyled
 */
 
@@ -156,6 +166,8 @@ Markup:
   <li>Consectetur adipiscing elit</li>
   <li>Integer molestie lorem at massa</li>
 </ul>
+
+Weight: 2
 
 Styleguide css.typography.lists.inline
 */
@@ -175,6 +187,8 @@ Markup:
   <dt>Malesuada porta</dt>
   <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
 </dl>
+
+Weight: 3
 
 Styleguide css.typography.lists.description
 */
@@ -197,6 +211,8 @@ Markup:
   <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
 </dl>
 
+Weight: 3
+
 Styleguide css.typography.lists.horizontal
 */
 
@@ -207,6 +223,8 @@ Default styling of blockquotes.
 
 Markup:
 <blockquote>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</blockquote>
+
+Weight: 2
 
 Styleguide css.typography.blockquote
 */

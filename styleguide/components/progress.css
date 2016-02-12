@@ -15,6 +15,8 @@ Markup:
 .progress-bar-warning - Warning
 .progress-bar-danger - Danger
 
+Weight: 16
+
 Styleguide components.progress
 */
 
@@ -82,6 +84,8 @@ Markup:
 
 .active - Animate by adding <code>.active</code> to <code>.progress-bar-striped</code>.
 
+Weight: 1
+
 Styleguide components.progress.striped
 */
 
@@ -102,6 +106,8 @@ Markup:
     <span class="sr-only">10% Complete (danger)</span>
   </div>
 </div>
+
+Weight: 2
 
 Styleguide components.progress.stacked
 */
