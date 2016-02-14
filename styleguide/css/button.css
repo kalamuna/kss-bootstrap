@@ -1,7 +1,7 @@
 /*
 Buttons
 
-Use any of the available button classes to quickly create a styled button.
+Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.
 
 Markup:
 <button type="button" class="btn {{modifier_class}}">Button</button>
@@ -31,4 +31,68 @@ Markup:
 .btn-xs - Extra small
 
 Styleguide css.button.sizes
+*/
+
+/*
+Active State
+
+Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For <code>&lt;button</code> elements, this is done via <code>:active</code>. For <code>&lt;a&gt;</code> elements, it's done with <code>.active</code>. However, you may use <code>.active</code> on <code>&lt;button&gt;</code>s (and include the <code>aria-pressed="true"</code> attribute) should you need to replicate the active state programmatically.
+
+Styleguide css.button.activestate
+*/
+
+/*
+Button Element
+
+No need to add <code>:active</code> as it's a pseudo-class, but if you need to force the same appearance, go ahead and add <code>.active</code>.
+
+Markup:
+<button type="button" class="btn btn-primary btn-lg active">Primary button</button>
+<button type="button" class="btn btn-default btn-lg active">Button</button>
+
+Styleguide css.button.activestate.button
+*/
+
+/*
+Anchor Element
+
+Add the <code>.active</code> class to <code>&lt;a&gt;</code> buttons.
+
+Markup:
+<a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
+<a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+
+Styleguide css.button.activestate.anchor
+*/
+
+/*
+Disabled State
+
+Make buttons look unclickable by fading them back with <code>opacity</code>.
+
+Styleguide css.button.disabledstate
+*/
+
+/*
+Button Element
+
+Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.
+
+Markup:
+<button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary button</button>
+<button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+
+Styleguide css.button.disabledstate.button
+*/
+
+/*
+Anchor Element
+
+Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.
+
+Markup:
+<a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
+<a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
+
+Styleguide css.button.disabledstate.anchor
 */
