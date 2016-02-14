@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="  " />
     <meta charset="utf-8">
     <title>Style Guide</title>
     <meta name="description" content="" />
@@ -12,6 +11,7 @@
     <link type="text/css" rel="stylesheet" href="public/prettify.css">
     <link rel="stylesheet" href="public/bootstrap.css">
 
+    <script src="http://code.jquery.com/jquery.js"></script>
   </head>
   <body class="kss-styleguide" data-spy="scroll" data-target="#sidebar">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -21,7 +21,7 @@
         </div>
         <div class="collapse navbar-collapse navbar-styleguide-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Home</a></li>
+            <li><a href="./">Home</a></li>
               <li>
                 <a href="section-components.html"><!--components.0: -->Components</a>
               </li>
@@ -42,204 +42,80 @@
               <section class="kss-depth-1 jumbotron">
                 <div class="component-description">
                   <h1 class="kss-title" id="javascript">JavaScript</h1>
-                  <p>Bring Bootstrap&#39;s components to life with over a dozen custom jQuery plugins. Easily include them all, or one by one.</p>
+
+
+              <div class="kss-box"><p>Bring Bootstrap&#39;s components to life with over a dozen custom jQuery plugins. Easily include them all, or one by one.</p>
+</div>
 
               </div><!-- // closes .component-description -->
             </section>
               <section class="kss-depth-2">
                 <div class="component-description">
-                  <h2 class="kss-title" id="javascript-carousel">
-                    <span class="kss-ref badge pull-right">javascript-carousel</span> Carousel
+                  <h2 class="kss-title" id="javascript-modal">
+                    <span class="kss-ref badge pull-right">javascript-modal</span> Modals
                   </h2>
-                <div class="kss-box"><p>The slideshow below shows a generic plugin and component for cycling through elements like a carousel.</p>
+
+
+              <div class="kss-box"><p>A rendered modal with header, body, and set of actions in the footer.</p>
 </div>
 
-              <div class="kss-example"><div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="http://placehold.it/350x150" alt="...">
-      <div class="carousel-caption">
-        First slide
+              <div class="kss-example"><!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/350x150" alt="...">
-      <div class="carousel-caption">
-        Second slide
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
       </div>
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/350x150" alt="...">
-      <div class="carousel-caption">
-        Third slide
-      </div>
-    </div>
-  </div>
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-    <span class="left-arrow">&larr;</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-    <span class="right-arrow">&rarr;</span>
-  </a>
-</div>
-<script>window.addEventListener("load", function() {
-  jQuery(document).ready(function() {
-    jQuery('#carousel-example-generic').carousel();
-  });
-});</script>
-</div>
-              <pre class="prettyprint lang-html">&lt;div id=&quot;carousel-example-generic&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
-  &lt;ol class=&quot;carousel-indicators&quot;&gt;
-    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
-    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
-    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-  &lt;div class=&quot;carousel-inner&quot;&gt;
-    &lt;div class=&quot;item active&quot;&gt;
-      &lt;img src=&quot;http://placehold.it/350x150&quot; alt=&quot;...&quot;&gt;
-      &lt;div class=&quot;carousel-caption&quot;&gt;
-        First slide
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;item&quot;&gt;
-      &lt;img src=&quot;http://placehold.it/350x150&quot; alt=&quot;...&quot;&gt;
-      &lt;div class=&quot;carousel-caption&quot;&gt;
-        Second slide
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;item&quot;&gt;
-      &lt;img src=&quot;http://placehold.it/350x150&quot; alt=&quot;...&quot;&gt;
-      &lt;div class=&quot;carousel-caption&quot;&gt;
-        Third slide
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;a class=&quot;left carousel-control&quot; href=&quot;#carousel-example-generic&quot; data-slide=&quot;prev&quot;&gt;
-    &lt;span class=&quot;left-arrow&quot;&gt;&amp;larr;&lt;/span&gt;
-  &lt;/a&gt;
-  &lt;a class=&quot;right carousel-control&quot; href=&quot;#carousel-example-generic&quot; data-slide=&quot;next&quot;&gt;
-    &lt;span class=&quot;right-arrow&quot;&gt;&amp;rarr;&lt;/span&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
-&lt;script&gt;window.addEventListener(&quot;load&quot;, function() {
-  jQuery(document).ready(function() {
-    jQuery(&#x27;#carousel-example-generic&#x27;).carousel();
-  });
-});&lt;/script&gt;
-</pre>
-
-
-              <hr />
-
-              </div><!-- // closes .component-description -->
-            </section>
-              <section class="kss-depth-2">
-                <div class="component-description">
-                  <h2 class="kss-title" id="javascript-collapse">
-                    <span class="kss-ref badge pull-right">javascript-collapse</span> Collapse
-                  </h2>
-                <div class="kss-box"><p>Get base styles and flexible support for collapsible components like accordions and navigation.</p>
-</div>
-
-              <div class="kss-example"><div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          Collapsible Group Item #1
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          Collapsible Group Item #2
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          Collapsible Group Item #3
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
       </div>
     </div>
   </div>
 </div>
+<style>
+.modal-backdrop {
+  display: none;
+}
+</style>
 </div>
-              <pre class="prettyprint lang-html">&lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt;
-  &lt;div class=&quot;panel panel-default&quot;&gt;
-    &lt;div class=&quot;panel-heading&quot;&gt;
-      &lt;h4 class=&quot;panel-title&quot;&gt;
-        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot;&gt;
-          Collapsible Group Item #1
-        &lt;/a&gt;
-      &lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse collapse in&quot;&gt;
-      &lt;div class=&quot;panel-body&quot;&gt;
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+              <pre class="prettyprint lang-html">&lt;!-- Button trigger modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;
+  Launch demo modal
+&lt;/button&gt;
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;/h4&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;panel panel-default&quot;&gt;
-    &lt;div class=&quot;panel-heading&quot;&gt;
-      &lt;h4 class=&quot;panel-title&quot;&gt;
-        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot;&gt;
-          Collapsible Group Item #2
-        &lt;/a&gt;
-      &lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse collapse&quot;&gt;
-      &lt;div class=&quot;panel-body&quot;&gt;
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;One fine body&amp;hellip;&lt;/p&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;panel panel-default&quot;&gt;
-    &lt;div class=&quot;panel-heading&quot;&gt;
-      &lt;h4 class=&quot;panel-title&quot;&gt;
-        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot;&gt;
-          Collapsible Group Item #3
-        &lt;/a&gt;
-      &lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse collapse&quot;&gt;
-      &lt;div class=&quot;panel-body&quot;&gt;
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-dismiss=&quot;modal&quot;&gt;Save changes&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+&lt;style&gt;
+.modal-backdrop {
+  display: none;
+}
+&lt;/style&gt;
 </pre>
 
 
               <hr />
-
               </div><!-- // closes .component-description -->
             </section>
               <section class="kss-depth-2">
@@ -247,7 +123,9 @@
                   <h2 class="kss-title" id="javascript-dropdown">
                     <span class="kss-ref badge pull-right">javascript-dropdown</span> Dropdowns
                   </h2>
-                <div class="kss-box"><p>Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.</p>
+
+
+              <div class="kss-box"><p>Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.</p>
 </div>
 
               <div class="kss-example"><nav id="navbar-example" class="navbar navbar-default navbar-static">
@@ -371,75 +249,242 @@
 
 
               <hr />
-
               </div><!-- // closes .component-description -->
             </section>
               <section class="kss-depth-2">
                 <div class="component-description">
-                  <h2 class="kss-title" id="javascript-modal">
-                    <span class="kss-ref badge pull-right">javascript-modal</span> Modals
+                  <h2 class="kss-title" id="javascript-scrollspy">
+                    <span class="kss-ref badge pull-right">javascript-scrollspy</span> ScrollSpy
                   </h2>
-                <div class="kss-box"><p>A rendered modal with header, body, and set of actions in the footer.</p>
+
+
+              <div class="kss-box"><p>The ScrollSpy plugin is for automatically updating nav targets based on scroll position. Scroll the area below the navbar and watch the active class change. The dropdown sub items will be highlighted as well.</p>
 </div>
 
-              <div class="kss-example"><!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <p>One fine body&hellip;</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-      </div>
+              <div class="kss-example"><nav class="navbar navbar-default navbar-static" id="scrollspy-example">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=
+      ".bs-example-js-navbar-scrollspy" data-toggle="collapse" type=
+      "button"><span class="sr-only">Toggle navigation</span> <span class=
+      "icon-bar"></span> <span class="icon-bar"></span> <span class=
+      "icon-bar"></span></button> <a class="navbar-brand" href="#">Project
+      Name</a>
+    </div>
+    <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#fat">@fat</a>
+        </li>
+        <li>
+          <a href="#mdo">@mdo</a>
+        </li>
+        <li class="dropdown">
+          <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+          data-toggle="dropdown" href="#" id="navbarDrop1" role=
+          "button">Dropdown <span class="caret"></span></a>
+          <ul aria-labelledby="navbarDrop1" class="dropdown-menu">
+            <li>
+              <a href="#one">one</a>
+            </li>
+            <li>
+              <a href="#two">two</a>
+            </li>
+            <li class="divider" role="separator"></li>
+            <li>
+              <a href="#three">three</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
+<div class="scrollspy-example" data-offset="0" data-spy="scroll" data-target=
+"#scrollspy-example" style=
+"position: relative; height: 200px; margin-top: 10px; overflow: auto;">
+  <h4 id="fat">@fat</h4>
+  <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim
+  lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever.
+  Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf
+  moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you
+  probably haven't heard of them et cardigan trust fund culpa biodiesel wes
+  anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh
+  artisan ullamco consequat.</p>
+  <h4 id="mdo">@mdo</h4>
+  <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork
+  beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko
+  nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck,
+  mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles
+  non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer
+  vice keytar deserunt.</p>
+  <h4 id="one">one</h4>
+  <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea.
+  Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore
+  single-origin coffee in magna veniam. High life id vinyl, echo park consequat
+  quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi
+  DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny
+  pack iphone.</p>
+  <h4 id="two">two</h4>
+  <p>In incididunt echo park, officia deserunt mcsweeney's proident master
+  cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch
+  +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four
+  loko, cupidatat terry richardson master cleanse. Assumenda you probably
+  haven't heard of them art party fanny pack, tattooed nulla cardigan tempor
+  ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit
+  wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore
+  enim nostrud mlkshk brooklyn nesciunt.</p>
+  <h4 id="three">three</h4>
+  <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim
+  lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever.
+  Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf
+  moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you
+  probably haven't heard of them et cardigan trust fund culpa biodiesel wes
+  anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh
+  artisan ullamco consequat.</p>
+  <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck.
+  Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats
+  you probably haven't heard of them consequat hoodie gluten-free lo-fi fap
+  aliquip. Labore elit placeat before they sold out, terry richardson proident
+  brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan.
+  Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor
+  veniam. Anim mollit minim commodo ullamco thundercats.</p>
 </div>
-<style>
-.modal-backdrop {
-  display: none;
-}
-</style>
+<script type="text/javascript">
+  jQuery(function() {
+    jQuery('body').scrollspy({
+      target: '#scrollspy-example'
+    });
+  });
+</script>
 </div>
-              <pre class="prettyprint lang-html">&lt;!-- Button trigger modal --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;
-  Launch demo modal
-&lt;/button&gt;
-&lt;!-- Modal --&gt;
-&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot;&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;One fine body&amp;hellip;&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-dismiss=&quot;modal&quot;&gt;Save changes&lt;/button&gt;
-      &lt;/div&gt;
+              <pre class="prettyprint lang-html">&lt;nav class=&quot;navbar navbar-default navbar-static&quot; id=&quot;scrollspy-example&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+      &lt;button class=&quot;navbar-toggle collapsed&quot; data-target=
+      &quot;.bs-example-js-navbar-scrollspy&quot; data-toggle=&quot;collapse&quot; type=
+      &quot;button&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt; &lt;span class=
+      &quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=
+      &quot;icon-bar&quot;&gt;&lt;/span&gt;&lt;/button&gt; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Project
+      Name&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;collapse navbar-collapse bs-example-js-navbar-scrollspy&quot;&gt;
+      &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+        &lt;li class=&quot;active&quot;&gt;
+          &lt;a href=&quot;#fat&quot;&gt;@fat&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#mdo&quot;&gt;@mdo&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dropdown&quot;&gt;
+          &lt;a aria-expanded=&quot;false&quot; aria-haspopup=&quot;true&quot; class=&quot;dropdown-toggle&quot;
+          data-toggle=&quot;dropdown&quot; href=&quot;#&quot; id=&quot;navbarDrop1&quot; role=
+          &quot;button&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+          &lt;ul aria-labelledby=&quot;navbarDrop1&quot; class=&quot;dropdown-menu&quot;&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;#one&quot;&gt;one&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;#two&quot;&gt;two&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;divider&quot; role=&quot;separator&quot;&gt;&lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;#three&quot;&gt;three&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;scrollspy-example&quot; data-offset=&quot;0&quot; data-spy=&quot;scroll&quot; data-target=
+&quot;#scrollspy-example&quot; style=
+&quot;position: relative; height: 200px; margin-top: 10px; overflow: auto;&quot;&gt;
+  &lt;h4 id=&quot;fat&quot;&gt;@fat&lt;/h4&gt;
+  &lt;p&gt;Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim
+  lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever.
+  Anim keffiyeh carles cardigan. Velit seitan mcsweeney&#x27;s photo booth 3 wolf
+  moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you
+  probably haven&#x27;t heard of them et cardigan trust fund culpa biodiesel wes
+  anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh
+  artisan ullamco consequat.&lt;/p&gt;
+  &lt;h4 id=&quot;mdo&quot;&gt;@mdo&lt;/h4&gt;
+  &lt;p&gt;Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork
+  beard. Freegan beard aliqua cupidatat mcsweeney&#x27;s vero. Cupidatat four loko
+  nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck,
+  mcsweeney&#x27;s quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles
+  non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer
+  vice keytar deserunt.&lt;/p&gt;
+  &lt;h4 id=&quot;one&quot;&gt;one&lt;/h4&gt;
+  &lt;p&gt;Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea.
+  Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore
+  single-origin coffee in magna veniam. High life id vinyl, echo park consequat
+  quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi
+  DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny
+  pack iphone.&lt;/p&gt;
+  &lt;h4 id=&quot;two&quot;&gt;two&lt;/h4&gt;
+  &lt;p&gt;In incididunt echo park, officia deserunt mcsweeney&#x27;s proident master
+  cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch
+  +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four
+  loko, cupidatat terry richardson master cleanse. Assumenda you probably
+  haven&#x27;t heard of them art party fanny pack, tattooed nulla cardigan tempor
+  ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit
+  wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore
+  enim nostrud mlkshk brooklyn nesciunt.&lt;/p&gt;
+  &lt;h4 id=&quot;three&quot;&gt;three&lt;/h4&gt;
+  &lt;p&gt;Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim
+  lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever.
+  Anim keffiyeh carles cardigan. Velit seitan mcsweeney&#x27;s photo booth 3 wolf
+  moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you
+  probably haven&#x27;t heard of them et cardigan trust fund culpa biodiesel wes
+  anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh
+  artisan ullamco consequat.&lt;/p&gt;
+  &lt;p&gt;Keytar twee blog, culpa messenger bag marfa whatever delectus food truck.
+  Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats
+  you probably haven&#x27;t heard of them consequat hoodie gluten-free lo-fi fap
+  aliquip. Labore elit placeat before they sold out, terry richardson proident
+  brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan.
+  Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor
+  veniam. Anim mollit minim commodo ullamco thundercats.&lt;/p&gt;
 &lt;/div&gt;
-&lt;style&gt;
-.modal-backdrop {
-  display: none;
-}
-&lt;/style&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  jQuery(function() {
+    jQuery(&#x27;body&#x27;).scrollspy({
+      target: &#x27;#scrollspy-example&#x27;
+    });
+  });
+&lt;/script&gt;
 </pre>
 
 
               <hr />
+              </div><!-- // closes .component-description -->
+            </section>
+              <section class="kss-depth-2">
+                <div class="component-description">
+                  <h2 class="kss-title" id="javascript-tooltip">
+                    <span class="kss-ref badge pull-right">javascript-tooltip</span> Tooltip
+                  </h2>
 
+
+              <div class="kss-box"><p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don&#39;t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+</div>
+
+              <div class="kss-example"><button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+<button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+<button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+<button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+<script>window.onload = function() { jQuery(document).ready(function() { jQuery('.tip').tooltip(); }); }</script>
+</div>
+              <pre class="prettyprint lang-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;&gt;Tooltip on left&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;&gt;Tooltip on top&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;Tooltip on bottom&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;&gt;Tooltip on right&lt;/button&gt;
+&lt;script&gt;window.onload = function() { jQuery(document).ready(function() { jQuery(&#x27;.tip&#x27;).tooltip(); }); }&lt;/script&gt;
+</pre>
+
+
+              <hr />
               </div><!-- // closes .component-description -->
             </section>
               <section class="kss-depth-2">
@@ -447,7 +492,9 @@
                   <h2 class="kss-title" id="javascript-popover">
                     <span class="kss-ref badge pull-right">javascript-popover</span> Popover
                   </h2>
-                <div class="kss-box"><p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don&#39;t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+
+
+              <div class="kss-box"><p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don&#39;t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
 </div>
 
               <div class="kss-example"><button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
@@ -491,23 +538,204 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
 
 
               <hr />
-
               </div><!-- // closes .component-description -->
             </section>
               <section class="kss-depth-2">
                 <div class="component-description">
-                  <h2 class="kss-title" id="javascript-tooltip">
-                    <span class="kss-ref badge pull-right">javascript-tooltip</span> Tooltip
+                  <h2 class="kss-title" id="javascript-collapse">
+                    <span class="kss-ref badge pull-right">javascript-collapse</span> Collapse
                   </h2>
-                <div class="kss-box"><p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don&#39;t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+
+
+              <div class="kss-box"><p>Get base styles and flexible support for collapsible components like accordions and navigation.</p>
 </div>
 
-              <div class="kss-example">javascript.tooltip</div>
-              <pre class="prettyprint lang-html">javascript.tooltip</pre>
+              <div class="kss-example"><div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot;&gt;
+          Collapsible Group Item #1
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse collapse in&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot;&gt;
+          Collapsible Group Item #2
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot;&gt;
+          Collapsible Group Item #3
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 
 
               <hr />
+              </div><!-- // closes .component-description -->
+            </section>
+              <section class="kss-depth-2">
+                <div class="component-description">
+                  <h2 class="kss-title" id="javascript-carousel">
+                    <span class="kss-ref badge pull-right">javascript-carousel</span> Carousel
+                  </h2>
 
+
+              <div class="kss-box"><p>The slideshow below shows a generic plugin and component for cycling through elements like a carousel.</p>
+</div>
+
+              <div class="kss-example"><div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://placehold.it/350x150" alt="...">
+      <div class="carousel-caption">
+        First slide
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/350x150" alt="...">
+      <div class="carousel-caption">
+        Second slide
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/350x150" alt="...">
+      <div class="carousel-caption">
+        Third slide
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="left-arrow">&larr;</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="right-arrow">&rarr;</span>
+  </a>
+</div>
+<script>window.addEventListener("load", function() {
+  jQuery(document).ready(function() {
+    jQuery('#carousel-example-generic').carousel();
+  });
+});</script>
+</div>
+              <pre class="prettyprint lang-html">&lt;div id=&quot;carousel-example-generic&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;div class=&quot;carousel-inner&quot;&gt;
+    &lt;div class=&quot;item active&quot;&gt;
+      &lt;img src=&quot;http://placehold.it/350x150&quot; alt=&quot;...&quot;&gt;
+      &lt;div class=&quot;carousel-caption&quot;&gt;
+        First slide
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;
+      &lt;img src=&quot;http://placehold.it/350x150&quot; alt=&quot;...&quot;&gt;
+      &lt;div class=&quot;carousel-caption&quot;&gt;
+        Second slide
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;
+      &lt;img src=&quot;http://placehold.it/350x150&quot; alt=&quot;...&quot;&gt;
+      &lt;div class=&quot;carousel-caption&quot;&gt;
+        Third slide
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;a class=&quot;left carousel-control&quot; href=&quot;#carousel-example-generic&quot; data-slide=&quot;prev&quot;&gt;
+    &lt;span class=&quot;left-arrow&quot;&gt;&amp;larr;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;right carousel-control&quot; href=&quot;#carousel-example-generic&quot; data-slide=&quot;next&quot;&gt;
+    &lt;span class=&quot;right-arrow&quot;&gt;&amp;rarr;&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;script&gt;window.addEventListener(&quot;load&quot;, function() {
+  jQuery(document).ready(function() {
+    jQuery(&#x27;#carousel-example-generic&#x27;).carousel();
+  });
+});&lt;/script&gt;
+</pre>
+
+
+              <hr />
               </div><!-- // closes .component-description -->
             </section>
         </article>
@@ -516,18 +744,18 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
                 <!--<li><a href="#" class="list-group-item disabled">
                   <h4 class="list-group-item-heading">JavaScript</h4>
                 </a></li>-->
-                <a class="list-group-item" href="#javascript-carousel"><!--<span class="kss-ref badge" >javascript-carousel</span> -->Carousel</a>
-                <a class="list-group-item" href="#javascript-collapse"><!--<span class="kss-ref badge" >javascript-collapse</span> -->Collapse</a>
-                <a class="list-group-item" href="#javascript-dropdown"><!--<span class="kss-ref badge" >javascript-dropdown</span> -->Dropdowns</a>
                 <a class="list-group-item" href="#javascript-modal"><!--<span class="kss-ref badge" >javascript-modal</span> -->Modals</a>
-                <a class="list-group-item" href="#javascript-popover"><!--<span class="kss-ref badge" >javascript-popover</span> -->Popover</a>
+                <a class="list-group-item" href="#javascript-dropdown"><!--<span class="kss-ref badge" >javascript-dropdown</span> -->Dropdowns</a>
+                <a class="list-group-item" href="#javascript-scrollspy"><!--<span class="kss-ref badge" >javascript-scrollspy</span> -->ScrollSpy</a>
                 <a class="list-group-item" href="#javascript-tooltip"><!--<span class="kss-ref badge" >javascript-tooltip</span> -->Tooltip</a>
+                <a class="list-group-item" href="#javascript-popover"><!--<span class="kss-ref badge" >javascript-popover</span> -->Popover</a>
+                <a class="list-group-item" href="#javascript-collapse"><!--<span class="kss-ref badge" >javascript-collapse</span> -->Collapse</a>
+                <a class="list-group-item" href="#javascript-carousel"><!--<span class="kss-ref badge" >javascript-carousel</span> -->Carousel</a>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="http://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="public/kss.js"></script>
     <script src="public/prettify.js"></script>
