@@ -27,6 +27,10 @@
     "gulp-htmlhint": "~0.3.1",
     "gulp-serve": "^1.2.0"
   },
+  "files": [
+    "bootstrap",
+    "styleguide"
+  ],
   "scripts": {
     "start": "gulp start",
     "test": "gulp",
