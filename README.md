@@ -26,12 +26,12 @@ This project includes two components:
 2. Render the site using the following command:
 
   ``` bash
-  kss-node styleguide out -t bootstrap
+  kss-node node_modules/kss-bootstrap/styleguide out -t node_modules/kss-bootstrap/bootstrap
   ```
 
-  * `styleguide` is the directory to which KSS Styleguide to use
+  * `node_modules/kss-bootstrap/styleguide` is the directory to which KSS Styleguide to use
   * `out` represents where the rendered styleguide should be output
-  * `bootstrap` is the directory of which KSS template to use
+  * `node_modules/kss-bootstrap/bootstrap` is the directory of which KSS template to use
 
 ## Development
 
