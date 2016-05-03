@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.1: May 3rd, 2016
+
+- Updated README.md copy
+
 ## 0.6.0: February 14th, 2016
 
 - Added List styleguides
