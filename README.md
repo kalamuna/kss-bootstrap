@@ -13,7 +13,7 @@ This project includes two components:
 
 ## Dependencies
 
-* [kss-node](https://github.com/kss-node/kss-node) `>=2.1.0`
+* [kss-node](https://github.com/kss-node/kss-node) `>=2.1.0 <3`
 
 ## Build
 
