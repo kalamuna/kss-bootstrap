@@ -1,6 +1,6 @@
 {
   "name": "kss-bootstrap",
-  "version": "0.6.1",
+  "version": "3.0.0",
   "description": "A KSS template and style guide for Bootstrap.",
   "author": "Rob Loach (http://github.com/robloach)",
   "repository": {
@@ -37,6 +37,7 @@
     "deploy": "gulp deploy"
   },
   "dependencies": {
-    "kss": "^2.4.0"
+    "jquery": "^3.1.0",
+    "kss": "^3.0.0-beta.14"
   }
 }

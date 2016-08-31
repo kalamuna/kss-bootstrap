@@ -1,6 +1,7 @@
 {
   "source": "styleguide",
-  "template": "bootstrap",
+  "builder": "node_modules/kss/builder/twig",
   "destination": "out",
-  "css": "public/bootstrap.css"
+  "css": "public/main.css",
+  "js": "public/main.js"
 }
