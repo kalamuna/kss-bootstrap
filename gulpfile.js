@@ -31,20 +31,33 @@ gulp.task('kss', ['clean'], function(cb) {
     stdout: true
   };
   return gulp.src('styleguide')
-    .pipe(exec('kss-node --config=.kss-node.json', options))
+    .pipe(exec('kss --config=.kss-node.json', options))
     .pipe(exec.reporter(reportOptions));
 });
 
 /**
- * Sets up Bootstrap for KSS.
+ * Sets up Bootstrap CSS for KSS.
  */
-gulp.task('kss-bootstrap', ['kss'], function() {
+gulp.task('kss-bootstrap-css', ['kss'], function() {
   var sources = [
     'node_modules/bootstrap/dist/css/bootstrap.css',
     'node_modules/bootstrap/dist/css/bootstrap-theme.css'
   ];
   return gulp.src(sources)
-    .pipe(concat('bootstrap.css'))
+    .pipe(concat('main.css'))
+    .pipe(gulp.dest('out/public/'));
+});
+
+/**
+ * Sets up Bootstrap JS for KSS.
+ */
+gulp.task('kss-bootstrap-js', ['kss'], function() {
+  var sources = [
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/bootstrap/dist/js/bootstrap.js'
+  ];
+  return gulp.src(sources)
+    .pipe(concat('main.js'))
     .pipe(gulp.dest('out/public/'));
 });
 
@@ -82,6 +95,11 @@ gulp.task('serve', ['kss-bootstrap'], serve({
 gulp.task('watch', ['kss-bootstrap'], function() {
   gulp.watch(['styleguide/**', 'bootstrap/**'], ['kss-bootstrap']);
 });
+
+/**
+ * Set up the assets.
+ */
+gulp.task('kss-bootstrap', ['kss-bootstrap-css', 'kss-bootstrap-js']);
 
 /**
  * Default tasks

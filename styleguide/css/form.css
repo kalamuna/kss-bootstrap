@@ -3,7 +3,7 @@ Forms
 
 Individual form controls automatically receive some global styling. All textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements with .form-control are set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.
 
-Markup: form.hbs
+Markup: form.twig
 
 .form-inline - Inline forms
 
