@@ -8,7 +8,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
 Weight: 3
 
-Styleguide css.code
+Styleguide: bootstrap.css.code
 */
 
 /*
@@ -20,7 +20,7 @@ Markup:
 To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
 To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 
-Styleguide css.code.userinput
+Styleguide: bootstrap.css.code.userinput
 */
 
 /*
@@ -33,5 +33,5 @@ Markup:
 
 Weight: 1
 
-Styleguide css.code.basic
+Styleguide: bootstrap.css.code.basic
 */

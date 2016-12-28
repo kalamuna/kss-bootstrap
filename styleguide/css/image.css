@@ -5,7 +5,7 @@ There are a number of ways to expose images.
 
 Weight: 7
 
-Styleguide css.image
+Styleguide: bootstrap.css.image
 */
 
 /*
@@ -16,7 +16,7 @@ Images in Bootstrap 3 can be made responsive-friendly via the addition of the <c
 Markup:
 <img src="http://placehold.it/140x140" class="img-responsive" alt="Responsive image">
 
-Styleguide css.image.responsive
+Styleguide: bootstrap.css.image.responsive
 */
 
 /*
@@ -31,5 +31,5 @@ Markup:
 .img-circle - Circle
 .img-thumbnail - Thumbnail
 
-Styleguide css.image.shape
+Styleguide: bootstrap.css.image.shape
 */

@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.0: 2016-12-28
+
+- Brought the Bootstrap styles to its own heading
+
 ## 0.6.1: May 3rd, 2016
 
 - Updated README.md copy

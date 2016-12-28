@@ -12,7 +12,7 @@ Markup: table.twig
 
 Weight: 4
 
-Styleguide css.table
+Styleguide: bootstrap.css.table
 */
 
 /*
@@ -28,7 +28,7 @@ Markup: table.contextual.twig
 .warning - Indicates a warning that might need attention
 .danger - Indicates a dangerous or potentially negative action
 
-Styleguide css.table.contextual
+Styleguide: bootstrap.css.table.contextual
 */
 
 /*
@@ -38,5 +38,5 @@ Create responsive tables by wrapping any <code>.table</code> in <code>.table-res
 
 Markup: table.responsive.twig
 
-Styleguide css.table.responsive
+Styleguide: bootstrap.css.table.responsive
 */
