@@ -3,6 +3,7 @@
 ## 4.0.0: March 1st, 2017
 
 - Update KSS
+- Brought the Bootstrap styles to its own heading
 
 ## 0.6.1: May 3rd, 2016
 

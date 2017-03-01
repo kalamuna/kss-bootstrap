@@ -5,7 +5,7 @@ There are many helper classes available.
 
 Weight: 8
 
-Styleguide css.helper
+Styleguide: bootstrap.css.helper
 */
 
 /*
@@ -21,7 +21,7 @@ Markup:
 <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
 <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
 
-Styleguide css.helper.color
+Styleguide: bootstrap.css.helper.color
 */
 
 /*
@@ -38,7 +38,7 @@ Markup:
 
 Weight: 1
 
-Styleguide css.helper.background
+Styleguide: bootstrap.css.helper.background
 */
 
 /*
@@ -51,7 +51,7 @@ Markup:
 
 Weight: 1
 
-Styleguide css.helper.close
+Styleguide: bootstrap.css.helper.close
 */
 
 /*
@@ -64,5 +64,5 @@ Markup:
 
 Weight: 2
 
-Styleguide css.helper.caret
+Styleguide: bootstrap.css.helper.caret
 */

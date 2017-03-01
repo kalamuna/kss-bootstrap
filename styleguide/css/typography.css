@@ -5,7 +5,7 @@ The below provides typographical styles that are present across the site.
 
 Weight: 2
 
-Styleguide css.typography
+Styleguide: bootstrap.css.typography
 */
 
 /*
@@ -21,7 +21,7 @@ Markup:
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>
 
-Styleguide css.typography.headings
+Styleguide: bootstrap.css.typography.headings
 */
 
 /*
@@ -37,7 +37,7 @@ Markup:
 <h5>h5. Heading 5 <small>Secondary text</small></h5>
 <h6>h6. Heading 6 <small>Secondary text</small></h6>
 
-Styleguide: css.typography.headings-subheadings
+Styleguide: bootstrap.css.typography.headings-subheadings
 */
 
 /*
@@ -53,7 +53,7 @@ five watched experts — amaze the judge.</p>
 
 Weight: 1
 
-Styleguide css.typography.bodycopy
+Styleguide: bootstrap.css.typography.bodycopy
 */
 
 /*
@@ -64,7 +64,7 @@ Make a paragraph stand out by adding .lead.
 Markup:
 <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
 
-Styleguide css.typography.bodycopy.lead
+Styleguide: bootstrap.css.typography.bodycopy.lead
 */
 
 /*
@@ -74,7 +74,7 @@ A collection of styles associated with creating lists.
 
 Weight: 2
 
-Styleguide css.typography.lists
+Styleguide: bootstrap.css.typography.lists
 */
 
 /*
@@ -101,7 +101,7 @@ Markup:
   <li>Eget porttitor lorem</li>
 </ul>
 
-Styleguide css.typography.lists.unordered
+Styleguide: bootstrap.css.typography.lists.unordered
 */
 
 /*
@@ -123,7 +123,7 @@ Markup:
 
 Weight: 1
 
-Styleguide css.typography.lists.ordered
+Styleguide: bootstrap.css.typography.lists.ordered
 */
 
 /*
@@ -152,7 +152,7 @@ Markup:
 
 Weight: 1
 
-Styleguide css.typography.lists.unstyled
+Styleguide: bootstrap.css.typography.lists.unstyled
 */
 
 /*
@@ -169,7 +169,7 @@ Markup:
 
 Weight: 2
 
-Styleguide css.typography.lists.inline
+Styleguide: bootstrap.css.typography.lists.inline
 */
 
 /*
@@ -190,7 +190,7 @@ Markup:
 
 Weight: 3
 
-Styleguide css.typography.lists.description
+Styleguide: bootstrap.css.typography.lists.description
 */
 
 /*
@@ -213,7 +213,7 @@ Markup:
 
 Weight: 3
 
-Styleguide css.typography.lists.horizontal
+Styleguide: bootstrap.css.typography.lists.horizontal
 */
 
 /*
@@ -226,5 +226,5 @@ Markup:
 
 Weight: 2
 
-Styleguide css.typography.blockquote
+Styleguide: bootstrap.css.typography.blockquote
 */

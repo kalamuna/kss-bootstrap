@@ -17,7 +17,7 @@ Markup:
 
 Weight: 16
 
-Styleguide components.progress
+Styleguide: bootstrap.components.progress
 */
 
 /*
@@ -32,7 +32,7 @@ Markup:
   </div>
 </div>
 
-Styleguide components.progress.label
+Styleguide: bootstrap.components.progress.label
 */
 
 /*
@@ -52,7 +52,7 @@ Markup:
   </div>
 </div>
 
-Styleguide components.progress.width
+Styleguide: bootstrap.components.progress.width
 */
 
 /*
@@ -86,7 +86,7 @@ Markup:
 
 Weight: 1
 
-Styleguide components.progress.striped
+Styleguide: bootstrap.components.progress.striped
 */
 
 /*
@@ -109,5 +109,5 @@ Markup:
 
 Weight: 2
 
-Styleguide components.progress.stacked
+Styleguide: bootstrap.components.progress.stacked
 */

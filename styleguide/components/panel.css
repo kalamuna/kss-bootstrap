@@ -5,7 +5,7 @@ While not always necessary, sometimes you need to put your DOM in a box. For tho
 
 Weight: 19
 
-Styleguide components.panel
+Styleguide: bootstrap.components.panel
 */
 
 /*
@@ -20,7 +20,7 @@ Markup:
   </div>
 </div>
 
-Styleguide components.panel.basic
+Styleguide: bootstrap.components.panel.basic
 */
 
 /*
@@ -46,7 +46,7 @@ Markup:
   </div>
 </div>
 
-Styleguide components.panel.heading
+Styleguide: bootstrap.components.panel.heading
 */
 
 /*
@@ -64,7 +64,7 @@ Markup:
 
 Weight: 1
 
-Styleguide components.panel.footer
+Styleguide: bootstrap.components.panel.footer
 */
 
 /*
@@ -90,5 +90,5 @@ Markup:
 
 Weight: 2
 
-Styleguide components.panel.contextual
+Styleguide: bootstrap.components.panel.contextual
 */

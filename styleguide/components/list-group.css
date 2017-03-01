@@ -14,7 +14,7 @@ Markup:
 
 Weight: 18
 
-Styleguide components.list-group
+Styleguide: bootstrap.components.list-group
 */
 
 /*
@@ -29,5 +29,5 @@ Markup:
   <li class="list-group-item"><span class="badge">1</span>Morbi leo risus</li>
 </ul>
 
-Styleguide components.list-group.badges
+Styleguide: bootstrap.components.list-group.badges
 */
