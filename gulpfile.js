@@ -62,17 +62,6 @@ gulp.task('kss-bootstrap-js', ['kss'], function() {
 });
 
 /**
- * HTML Hint
- */
-gulp.task('htmlhint', ['kss-bootstrap'], function () {
-  var htmlhint = require('gulp-htmlhint');
-  return gulp.src(['./out/*.html'])
-    .pipe(htmlhint())
-    .pipe(htmlhint.reporter())
-    .pipe(htmlhint.failReporter())
-});
-
-/**
  * Deploy
  */
 gulp.task('deploy', ['kss-bootstrap'], function () {
@@ -105,5 +94,5 @@ gulp.task('kss-bootstrap', ['kss-bootstrap-css', 'kss-bootstrap-js']);
  * Default tasks
  */
 gulp.task('start', ['clean', 'kss-bootstrap', 'serve', 'watch']);
-gulp.task('test', ['kss-bootstrap', 'htmlhint']);
+gulp.task('test', ['kss-bootstrap']);
 gulp.task('default', ['test']);

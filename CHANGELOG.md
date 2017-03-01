@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.0: March 1st, 2017
+
+- Update KSS
+
 ## 0.6.1: May 3rd, 2016
 
 - Updated README.md copy
