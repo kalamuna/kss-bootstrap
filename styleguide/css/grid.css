@@ -1,0 +1,30 @@
+/*
+Grid System
+
+Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.
+
+Styleguide: bootstrap.css.grid
+*/
+
+/*
+Stacked-to-horizontal
+
+Using a single set of .col-md-* grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any .row.
+
+.container - Normal Container
+.container-fluid - Fluid Container
+
+Markup: grid-stacked.twig
+
+Styleguide: bootstrap.css.grid.stacked
+*/
+
+/*
+Mobile, tablet, desktop
+
+Build on the previous example by creating even more dynamic and powerful layouts with tablet .col-sm-* classes.
+
+Markup: grid-mobile.twig
+
+Styleguide: bootstrap.css.grid.mobile
+*/
