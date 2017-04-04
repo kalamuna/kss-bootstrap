@@ -4,6 +4,7 @@
 
 - Update KSS
 - Brought the Bootstrap styles to its own heading
+- Add Grid example
 
 ## 0.6.1: May 3rd, 2016
 
