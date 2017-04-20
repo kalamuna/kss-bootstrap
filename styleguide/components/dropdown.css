@@ -5,7 +5,7 @@ Wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>,
 
 Markup:
 <div class="dropdown">
-  <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+  <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
     Dropdown <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">

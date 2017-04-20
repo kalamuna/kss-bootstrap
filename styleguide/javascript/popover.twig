@@ -11,8 +11,10 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 <button type="button" class="btn btn-default poptime" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
   Popover on right
 </button>
-<script>window.addEventListener("load", function() {
-  jQuery(document).ready(function() {
-    jQuery('.poptime').popover();
+<script>
+  window.addEventListener("load", function() {
+    jQuery(function () {
+      jQuery('.poptime').popover();
+    });
   });
-});</script>
+</script>

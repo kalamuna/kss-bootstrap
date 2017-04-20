@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.1: April 20th, 2017
+
+- Fix jQuery 2 dependency
+
 ## 4.0.0: March 1st, 2017
 
 - Update KSS
