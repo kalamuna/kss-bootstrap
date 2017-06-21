@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1.0: June 21st, 2017
+
+- Split components into individual folders
+
 ## 4.0.1: April 20th, 2017
 
 - Fix jQuery 2 dependency
