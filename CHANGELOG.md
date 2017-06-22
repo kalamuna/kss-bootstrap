@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1.1: June 22nd, 2017
+
+- Fix for the component split.
+
 ## 4.1.0: June 21st, 2017
 
 - Split components into individual folders
